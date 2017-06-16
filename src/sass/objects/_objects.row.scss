@@ -1,0 +1,36 @@
+
+%row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: -($gutter/2);
+  margin-left: -($gutter/2);
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    %row {
+      flex-direction: row;
+
+      &--top {
+        align-items: flex-start;
+      }
+
+      &--bottom {
+        align-items: flex-end;
+      }
+
+      &--center {
+        align-items: center;
+      }
+
+      &--justify {
+        justify-content: center;
+      }
+
+      &--justify-right {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

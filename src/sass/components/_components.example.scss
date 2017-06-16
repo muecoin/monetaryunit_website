@@ -1,0 +1,149 @@
+.example {
+  @extend %container;
+
+  &__row {
+    @extend %row;
+  }
+
+  &__column {
+    @extend %column;
+  }
+
+  &__column--half {
+    @extend %column;
+    @extend %column--half;
+  }
+
+  &__value {
+    background-color: grey;
+    text-align: center;
+  }
+}
+
+.example2 {
+  @extend %container-row;
+
+  &__row {
+    @extend %row;
+  }
+
+  &__column {
+    @extend %column;
+  }
+
+  &__value {
+    background-color: grey;
+    text-align: center;
+  }
+}
+
+.example3 {
+  @extend %container-full;
+
+  &__row {
+    @extend %row;
+  }
+
+  &__column {
+    @extend %column;
+  }
+
+  &__value {
+    background-color: grey;
+    text-align: center;
+  }
+}
+
+.example4 {
+  @extend %container-full;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__container-row {
+    @extend %container-row;
+  }
+
+  &__row {
+    @extend %row;
+  }
+
+  &__column {
+    @extend %column;
+  }
+
+  &__value {
+    background-color: grey;
+    text-align: center;
+  }
+}
+
+.example5 {
+  @extend %container-full;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__container-row {
+    @extend %container-row;
+  }
+
+  &__row {
+    @extend %row;
+  }
+
+  &__row--center {
+    @extend %row;
+    @extend %row--center;
+    @extend %row--justify;
+    height: 100px;
+
+    .example5__column {
+      height: auto;
+    }
+  }
+
+  &__column {
+    @extend %column;
+    height: 100px;
+  }
+
+  &__column--center {
+    @extend %column;
+    @extend %column--center;
+  }
+
+  &__column--1of4 {
+    @extend %column;
+    @extend %column--1of4;
+  }
+
+  &__value {
+    background-color: grey;
+    text-align: center;
+  }
+}
+
+.example6 {
+  @extend %container;
+
+  &__row {
+    @extend %row;
+  }
+
+  &__column {
+    @extend %column;
+  }
+
+  &__column--1of3 {
+    @extend %column;
+    @extend %column--1of3;
+  }
+
+  &__value {
+    background-color: grey;
+    text-align: center;
+  }
+}
