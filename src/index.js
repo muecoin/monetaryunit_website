@@ -8,7 +8,7 @@ import GetStarted from './components/get-started';
 
 export default () => {
   return renderComponent(
-    <Layout>
+    <Layout className="layout">
       <Header title="Header" />
       <GetStarted title="Get started"  />
       <Footer title="Header" />
