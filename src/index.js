@@ -1,17 +1,16 @@
 import React from 'react';
 import renderComponent from './components/render-component';
 
-import Layout from './components/layout';
-import Header from './components/header';
-import Footer from './components/footer';
-import GetStarted from './components/get-started';
+import Wrapper from './components/wrapper';
+import Hero from './components/home/hero';
+import Footer from './components/common/footer';
+import GetStarted from './components/home/get-started';
 
 export default () => {
   return renderComponent(
-    <Layout>
-      <Header title="Header" />
-      <GetStarted title="Get started"  />
-      <Footer title="Header" />
-    </Layout>
+    <Wrapper>
+      <Hero />
+      <Footer title="Footer" />
+    </Wrapper>
   );
 }

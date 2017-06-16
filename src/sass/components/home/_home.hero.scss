@@ -1,0 +1,35 @@
+.hero {
+  @extend %container-full;
+  background:grey;
+
+  &__navigation {
+    @extend %container-row;
+  }
+}
+
+
+//
+// .example4 {
+//   @extend %container-full;
+//
+//   &__container {
+//     @extend %container;
+//   }
+//
+//   &__container-row {
+//     @extend %container-row;
+//   }
+//
+//   &__row {
+//     @extend %row;
+//   }
+//
+//   &__column {
+//     @extend %column;
+//   }
+//
+//   &__value {
+//     background-color: grey;
+//     text-align: center;
+//   }
+// }
