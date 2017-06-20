@@ -1,8 +1,10 @@
 .hero {
   @extend %container-row;
+  @extend %module-bottom-padding-style;
 
   &__aside {
     @extend %column;
+    @extend %column--center;
     // flip the hero's columns at the small breakpoint so image is on the right
     @include respond-to(small) {
       order: 12;
@@ -14,6 +16,7 @@
     @include respond-to(small) {
       max-width: none;
     }
+    @extend %column;
   }
   &__aside-image {
     width: 80%;
@@ -31,6 +34,7 @@
   &__lead {
     @extend %column;
     @extend %column--center;
+    padding-left: 2.5%;
   }
   &__lead-heading {
     @extend %heading-1-hero-style-white;
@@ -39,16 +43,9 @@
     @extend %heading-2-hero-style-white;
   }
   &__lead-intro {
-    @extend %paragraph-hero-style-white;
+    @extend %paragraph-hero-style-white-450mw;
   }
-
   &__lead-container {
-    @include respond-to(large) {
-      padding-right: 80px;
-    }
-  }
-
-  &__actions { //ul
 
   }
   &__actions-why-mue { //li
@@ -70,9 +67,7 @@
   &__actions-btn-why-mue, &__actions-btn-start-usin {
     @extend %button-style-1-medium;
   }
-
   &__actions-btn-start-using {
     @extend %button-style-1-medium;
   }
-
 }

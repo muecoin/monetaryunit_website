@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.layout {
+  &__hero {
+    @extend %container-full;
+    background-image: url('/assets/images/home/hero-portrait-small.jpg');
+    background-size: cover;
+    @include respond-to(small) {
+      background-image: url('/assets/images/home/hero-landscape-medium.jpg');
+    }
+    @include respond-to(large) {
+      background-image: url('/assets/images/home/hero-landscape-large.jpg');
+    }
+  }
+  &__about {
+    @extend %container-full;
+    background-image: url('/assets/images/about/about-portrait-small.jpg');
+    background-size: cover;
+    @include respond-to(small) {
+      background-image: url('/assets/images/about/about-landscape-large.jpg');
+    }
+  }
+}
+
+// classes for consistent module spacing
+%module-top-bottom-padding-style {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  @include respond-to(small) {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+  @include respond-to(medium) {
+    padding-top: 6%;
+    padding-bottom: 8%;
+  }
+}
+
+%module-bottom-padding-style {
+  padding-bottom: 80px;
+  @include respond-to(small) {
+    padding-bottom: 90px;
+  }
+  @include respond-to(medium) {
+    padding-bottom: 8%;
+  }
+}

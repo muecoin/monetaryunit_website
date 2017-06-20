@@ -1,25 +1,33 @@
 // paragraph-font-size-(l,m,s)-breakpoint
-$paragraph-font-size-l-small: 14px;
-$paragraph-font-size-l-medium: 20px;
+$paragraph-font-size-l-small: 15px;
+$paragraph-font-size-l-medium: 18px;
+$paragraph-l-margin-bottom-small: 40px;
+$paragraph-l-margin-bottom-medium: 50px;
+
 // HERO VARIANT
 $paragraph-font-size-hero-small: 15px;
 $paragraph-font-size-hero-medium: 18px;
-
 $paragraph-hero-margin-bottom-small: 16px;
 $paragraph-hero-margin-bottom-medium: 30px;
 
-// FONT
+// PARAGRAPH FONTS
 %paragraph-font-style {
   font-family: $paragraph-font-family;
+}
+// OPTIMUM LINE LENGTH
+%paragraph-max-width {
+  max-width: 910px;
 }
 
 // SIZING
 %paragraph-size-l-style {
   @include font-size($paragraph-font-size-l-small);
-  margin-bottom: $paragraph-hero-margin-bottom-small;
+  margin-bottom: $paragraph-l-margin-bottom-small;
+  line-height: 30px;
   @include respond-to(medium) {
-    margin-bottom: $paragraph-hero-margin-bottom-medium;
-    @include font-size($paragraph-font-size-l-small);
+    line-height: 38px;
+    margin-bottom: $paragraph-l-margin-bottom-medium;
+    @include font-size($paragraph-font-size-l-medium);
   }
 }
 
@@ -33,10 +41,7 @@ $paragraph-hero-margin-bottom-medium: 30px;
     margin-bottom: $paragraph-hero-margin-bottom-medium;
     @include font-size($paragraph-font-size-hero-medium);
   }
-
 }
-
-
 
 // STYLING
 %paragraph-l-style {
@@ -44,7 +49,7 @@ $paragraph-hero-margin-bottom-medium: 30px;
   @extend %paragraph-size-l-style;
 }
 
-// HERO variation
+// HERO VARIATION
 %paragraph-hero-style {
   @extend %paragraph-font-style;
   @extend %paragraph-size-hero-style;
@@ -62,6 +67,12 @@ $paragraph-hero-margin-bottom-medium: 30px;
   @extend %white-text;
 }
 
+%paragraph-l-style-white-center {
+  @extend %paragraph-l-style-white;
+  @extend %paragraph-max-width;
+  @extend %center-text;
+}
+
 // HERO VARIATION
 %paragraph-hero-style-white {
   @extend %paragraph-hero-style;
@@ -69,14 +80,13 @@ $paragraph-hero-margin-bottom-medium: 30px;
 }
 
 %paragraph-l-style-white {
-  @extend %paragraph-hero-style-white;
-  max-width: 470px;
+  @extend %paragraph-l-style-white;
 }
 
-
-
-
-
+%paragraph-hero-style-white-450mw {
+  @extend %paragraph-hero-style-white;
+  @extend %hero-max-width;
+}
 
 
 

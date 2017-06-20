@@ -1,0 +1,17 @@
+.about {
+  @extend %container-row;
+  @extend %module-top-bottom-padding-style;
+  &__intro {
+    @extend %column;
+  }
+  &__intro-heading {
+    @extend %heading-1-style-white-center;
+  }
+  &__intro-paragraph {
+    @extend %paragraph-l-style-white-center;
+  }
+
+  &__benefits-list{
+
+  }
+}

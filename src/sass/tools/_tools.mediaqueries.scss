@@ -1,13 +1,3 @@
-// _component.scss
-//
-// .element {
-//   color: hotpink;
-//
-//   @include respond-to(small) {
-//     color: tomato;
-//   }
-// }
-
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: #{map-get($breakpoints, $breakpoint)}) {

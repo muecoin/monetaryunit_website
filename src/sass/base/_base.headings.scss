@@ -3,8 +3,8 @@
 $heading-font-size-l-small: 33px;
 $heading-font-size-l-medium: 52px;
 // HERO VARIANT
-$heading-l-hero-margin-bottom-small: 25px;
-$heading-l-hero-margin-bottom-medium: 30px;
+$heading-l-hero-margin-bottom-small: 50px;
+$heading-l-hero-margin-bottom-medium: 60px;
 // H2
 $heading-font-size-m-small: 23px;
 $heading-font-size-m-medium: 36px;
@@ -101,6 +101,25 @@ $heading-m-hero-margin-bottom-medium: 30px;
 %heading-2-hero-style-white {
   @extend %heading-2-hero-style;
   @extend %white-text;
+}
+
+// CENTERED VARIATION
+%heading-1-style-white-center {
+  @extend %heading-1-style-white;
+  @extend %center-text;
+}
+%heading-2-style-white-center {
+  @extend %heading-2-style-white;
+  @extend %center-text;
+}
+
+%heading-1-style-dark-center {
+  @extend %heading-1-style-dark;
+  @extend %center-text;
+}
+%heading-2-style-dark-center {
+  @extend %heading-2-style-dark;
+  @extend %center-text;
 }
 
 // DEFUALT ELEMENT STYLES

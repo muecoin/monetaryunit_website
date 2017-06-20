@@ -1,19 +1,20 @@
 import '../sass/index.scss';
 import $ from 'jquery';
 
-import myplugin from './my-plugin';
+import Navigation from './navigation';
 
 const init = () => {
-  initHome();
-  contentHome();
+  //initHome();
+  //contentHome();
+  //Navigation.start();
 }
 
 const initHome = () => {
-  myplugin();
+  // modal initialised
 }
 
 const contentHome = () => {
-  console.log();
+  //
 }
 
 $(document).ready(init);
