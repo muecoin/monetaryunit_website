@@ -1,35 +1,78 @@
 .hero {
-  @extend %container-full;
-  background:grey;
+  @extend %container-row;
 
-  &__navigation {
-    @extend %container-row;
+  &__aside {
+    @extend %column;
+    // flip the hero's columns at the small breakpoint so image is on the right
+    @include respond-to(small) {
+      order: 12;
+    }
   }
+  &__aside-image-container {
+    margin: 0 auto;
+    max-width: 470px;
+    @include respond-to(small) {
+      max-width: none;
+    }
+  }
+  &__aside-image {
+    width: 80%;
+    display: block;
+    margin: 50px auto 25px auto;
+    max-width: 550px;
+    @include respond-to(small) {
+      order: 12;
+      width: 90%;
+      margin-top: 19%;
+      margin: 50px 0 25px auto;
+    }
+  }
+
+  &__lead {
+    @extend %column;
+    @extend %column--center;
+  }
+  &__lead-heading {
+    @extend %heading-1-hero-style-white;
+  }
+  &__lead-subheading {
+    @extend %heading-2-hero-style-white;
+  }
+  &__lead-intro {
+    @extend %paragraph-hero-style-white;
+  }
+
+  &__lead-container {
+    @include respond-to(large) {
+      padding-right: 80px;
+    }
+  }
+
+  &__actions { //ul
+
+  }
+  &__actions-why-mue { //li
+    display: block;
+    margin-bottom: 17px;
+    @include respond-to(large) {
+      display: inline-block;
+      max-width: 48%;
+      margin-right: 35px;
+    }
+  }
+  &__actions-start-using { //li
+    display: block;
+    @include respond-to(large) {
+      display: inline-block;
+      max-width: 48%;
+    }
+  }
+  &__actions-btn-why-mue, &__actions-btn-start-usin {
+    @extend %button-style-1-medium;
+  }
+
+  &__actions-btn-start-using {
+    @extend %button-style-1-medium;
+  }
+
 }
-
-
-//
-// .example4 {
-//   @extend %container-full;
-//
-//   &__container {
-//     @extend %container;
-//   }
-//
-//   &__container-row {
-//     @extend %container-row;
-//   }
-//
-//   &__row {
-//     @extend %row;
-//   }
-//
-//   &__column {
-//     @extend %column;
-//   }
-//
-//   &__value {
-//     background-color: grey;
-//     text-align: center;
-//   }
-// }

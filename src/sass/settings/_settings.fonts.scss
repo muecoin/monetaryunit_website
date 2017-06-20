@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'HouseSansRegular';
+  src: url('../assets/fonts/hinted-RNHouseSans-Regular.eot');
+  src: url('../assets/fonts/hinted-RNHouseSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/hinted-RNHouseSans-Regular.woff2') format('woff2'),
+    url('../assets/fonts/hinted-RNHouseSans-Regular.woff') format('woff'),
+    url('../assets/fonts/hinted-RNHouseSans-Regular.ttf') format('truetype'),
+    url('../assets/fonts/hinted-RNHouseSans-Regular.svg#RNHouseSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HouseSansBold';
+  src: url('../assets/fonts/hinted-RNHouseSans-Bold.eot');
+  src: url('../assets/fonts/hinted-RNHouseSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/hinted-RNHouseSans-Bold.woff2') format('woff2'),
+    url('../assets/fonts/hinted-RNHouseSans-Bold.woff') format('woff'),
+    url('../assets/fonts/hinted-RNHouseSans-Bold.ttf') format('truetype'),
+    url('../assets/fonts/hinted-RNHouseSans-Bold.svg#RNHouseSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

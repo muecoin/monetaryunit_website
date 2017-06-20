@@ -1,0 +1,86 @@
+// paragraph-font-size-(l,m,s)-breakpoint
+$paragraph-font-size-l-small: 14px;
+$paragraph-font-size-l-medium: 20px;
+// HERO VARIANT
+$paragraph-font-size-hero-small: 15px;
+$paragraph-font-size-hero-medium: 18px;
+
+$paragraph-hero-margin-bottom-small: 16px;
+$paragraph-hero-margin-bottom-medium: 30px;
+
+// FONT
+%paragraph-font-style {
+  font-family: $paragraph-font-family;
+}
+
+// SIZING
+%paragraph-size-l-style {
+  @include font-size($paragraph-font-size-l-small);
+  margin-bottom: $paragraph-hero-margin-bottom-small;
+  @include respond-to(medium) {
+    margin-bottom: $paragraph-hero-margin-bottom-medium;
+    @include font-size($paragraph-font-size-l-small);
+  }
+}
+
+// HERO VARIANT
+%paragraph-size-hero-style {
+  @include font-size($paragraph-font-size-hero-small);
+  margin-bottom: $paragraph-hero-margin-bottom-small;
+  line-height: 20px;
+  @include respond-to(medium) {
+    line-height: 30px;
+    margin-bottom: $paragraph-hero-margin-bottom-medium;
+    @include font-size($paragraph-font-size-hero-medium);
+  }
+
+}
+
+
+
+// STYLING
+%paragraph-l-style {
+  @extend %paragraph-font-style;
+  @extend %paragraph-size-l-style;
+}
+
+// HERO variation
+%paragraph-hero-style {
+  @extend %paragraph-font-style;
+  @extend %paragraph-size-hero-style;
+}
+
+// DARK BLUE TEXT
+%paragraph-l-style-dark {
+  @extend %paragraph-l-style;
+  @extend %dark-blue-text;
+}
+
+// WHITE COLOR
+%paragraph-l-style-white {
+  @extend %paragraph-l-style;
+  @extend %white-text;
+}
+
+// HERO VARIATION
+%paragraph-hero-style-white {
+  @extend %paragraph-hero-style;
+  @extend %white-text;
+}
+
+%paragraph-l-style-white {
+  @extend %paragraph-hero-style-white;
+  max-width: 470px;
+}
+
+
+
+
+
+
+
+
+// DEFUALT ELEMENT STYLES
+p {
+  @extend %paragraph-l-style-dark;
+}

@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.layout {
+  &__hero {
+    @extend %container-full;
+    background-image: url('/assets/images/home/hero-portrait-small.jpg');
+    background-size: cover;
+    @include respond-to(small) {
+      background-image: url('/assets/images/home/hero-landscape-medium.jpg');
+    }
+    @include respond-to(large) {
+      background-image: url('/assets/images/home/hero-landscape-large.jpg');
+    }
+  }
+  &__about {
+    @extend %container-full;
+  }
+}

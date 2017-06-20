@@ -3,6 +3,9 @@ var path = require('path');
 var glob = require("glob");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+
 
 const getHtmlPlugins = () => {
   var plugins = [];
@@ -57,9 +60,17 @@ module.exports = [
           exclude: /(node_modules)/,
           use: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' })
         },
+        {
+          test: /\.woff(2)?$|\.eot$|\.ttf$|\.svg$/,
+          exclude: /(node_modules)/,
+          use: ['file-loader?name=/assets/fonts/[name].[ext]']
+        },
       ]
     },
     plugins: [
+      new CopyWebpackPlugin([
+        { from: './src/assets/images', to: 'assets/images' },
+      ]),
       new ExtractTextPlugin('assets/css/[name].css'),
       ...getHtmlPlugins(),
     ]

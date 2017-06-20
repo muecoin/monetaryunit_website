@@ -1,0 +1,112 @@
+// Heading-font-size-(l,m,s)-breakpoint
+// H1
+$heading-font-size-l-small: 33px;
+$heading-font-size-l-medium: 52px;
+// HERO VARIANT
+$heading-l-hero-margin-bottom-small: 25px;
+$heading-l-hero-margin-bottom-medium: 30px;
+// H2
+$heading-font-size-m-small: 23px;
+$heading-font-size-m-medium: 36px;
+// HERO VARIANT
+$heading-m-hero-margin-bottom-small: 17px;
+$heading-m-hero-margin-bottom-medium: 30px;
+
+// FONT
+%heading-font-style {
+  font-family: $heading-font-family;
+}
+
+// SIZING
+%heading-l-size-style {
+  @include font-size($heading-font-size-l-small);
+  margin-bottom: $heading-l-hero-margin-bottom-small;
+  @include respond-to(medium) {
+    margin-bottom: $heading-l-hero-margin-bottom-medium;
+    @include font-size($heading-font-size-l-medium);
+  }
+}
+%heading-m-size-style {
+  @include font-size($heading-font-size-m-small);
+  margin-bottom: $heading-m-hero-margin-bottom-small;
+  @include respond-to(medium) {
+    margin-bottom: $heading-m-hero-margin-bottom-medium;
+    @include font-size($heading-font-size-m-medium);
+  }
+}
+
+// HERO VARIANT
+%heading-l-size-hero-style {
+  @include font-size($heading-font-size-l-small);
+  margin-bottom: 9px;
+  @include respond-to(medium) {
+    margin-bottom: 13px;
+    @include font-size($heading-font-size-l-medium);
+  }
+}
+%heading-m-size-hero-style {
+  @include font-size($heading-font-size-m-small);
+
+  @include respond-to(medium) {
+    @include font-size($heading-font-size-m-medium);
+  }
+}
+
+
+// STYLING
+%heading-1-style {
+  @extend %heading-font-style;
+  @extend %heading-l-size-style;
+}
+%heading-2-style {
+  @extend %heading-font-style;
+  @extend %heading-m-size-style;
+}
+
+// HERO variation
+%heading-1-hero-style {
+  @extend %heading-font-style;
+  @extend %heading-l-size-hero-style;
+}
+%heading-2-hero-style {
+  @extend %heading-font-style;
+  @extend %heading-m-size-hero-style;
+}
+
+// DARK BLUE TEXT
+%heading-1-style-dark {
+  @extend %heading-1-style;
+  @extend %dark-blue-text;
+}
+%heading-2-style-dark {
+  @extend %heading-2-style;
+  @extend %dark-blue-text;
+}
+
+// WHITE COLOR
+%heading-1-style-white {
+  @extend %heading-1-style;
+  @extend %white-text;
+}
+%heading-2-style-white {
+  @extend %heading-2-style;
+  @extend %white-text;
+}
+
+// HERO VARIATION
+%heading-1-hero-style-white {
+  @extend %heading-1-hero-style;
+  @extend %white-text;
+}
+%heading-2-hero-style-white {
+  @extend %heading-2-hero-style;
+  @extend %white-text;
+}
+
+// DEFUALT ELEMENT STYLES
+h1 {
+  @extend %heading-1-style-dark;
+}
+h2 {
+  @extend %heading-2-style-dark;
+}

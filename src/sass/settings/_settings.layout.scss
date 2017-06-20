@@ -1,15 +1,17 @@
 $gutter: 15px !default;
 
 $breakpoints: (
-  'small': '768px',
+  'smallest': '320px',
+  'very-small': '600px',
+  'small': '639px',
   'medium': '992px',
-  'large': '1200px'
+  'large': '1450px'
 ) !default;
 
 $containers: (
-  'small': (720px + $gutter),
+  'small': (620px + $gutter),
   'medium': (940px + $gutter),
-  'large': (1140px + $gutter)
+  'large': (1350px + $gutter)
 ) !default;
 
 $sizes: (
@@ -28,3 +30,7 @@ $sizes: (
   '3of5': '60%',
   '4of5': '80%'
 ) !default;
+
+$spacing-l-size: 2.5em;
+$spacing-m-size: 1.5em;
+$spacing-s-size: .5em;

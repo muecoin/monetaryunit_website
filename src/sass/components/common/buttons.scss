@@ -1,0 +1,74 @@
+$button-1-font-size-small: 14px;
+$button-1-font-size-medium: 18px;
+$button-1-font-size-large: 21px;
+
+
+// SIZING
+%button-1-small {
+  padding: 5px 12px;
+  @include font-size($button-1-font-size-small);
+}
+
+%button-1-medium {
+  padding: 11px 12px;
+  @include font-size($button-1-font-size-medium);
+}
+
+%button-1-large {
+  padding: 13px 19px;
+  @include font-size($button-1-font-size-large);
+}
+
+// STYLING
+
+%button-rounded-small {
+  border-radius: 4px;
+}
+%button-rounded-medium {
+  border-radius: 7px;
+}
+%button-rounded-large {
+  border-radius: 9px;
+}
+
+%button-white-bg {
+  background-color: $white;
+}
+
+%orange-text {
+  color: $orange;
+}
+
+%btn-reset {
+  text-decoration: none;
+  display: inline-block;
+}
+
+%bold-btn-font {
+  font-family: $button-font-family;
+}
+
+%btn-style-1 {
+  @extend %bold-btn-font;
+  @extend %button-white-bg;
+  @extend %orange-text;
+  @extend %btn-reset;
+}
+
+%button-style-1-small {
+  @extend %button-rounded-small;
+  @extend %btn-style-1;
+  @extend %button-1-small;
+}
+
+%button-style-1-medium {
+  @extend %button-rounded-medium;
+  @extend %btn-style-1;
+  @extend %button-1-medium;
+}
+
+%button-style-1-large {
+  @extend %button-rounded-large;
+  @extend %btn-style-1;
+  @extend %button-1-large;
+}
