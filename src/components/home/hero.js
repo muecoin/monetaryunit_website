@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({ title }) => (
-  <div className="hero">
+  <section className="hero">
       <div className="hero__aside">
         <div className="hero__aside-image-container">
           <img className="hero__aside-image" src="assets/images/home/hero-mobiles-medium.png" />
@@ -23,5 +23,5 @@ export default ({ title }) => (
           </ul>
         </div>
       </div>
-  </div>
+  </section>
 )

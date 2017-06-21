@@ -23,6 +23,19 @@ html, body {
       background-image: url('/assets/images/about/about-landscape-large.jpg');
     }
   }
+  &__why-choose-mue {
+    @extend %container-full;
+    background-color: $white;
+  }
+  &__get-started {
+    @extend %container-full;
+    background-color: $yellow;
+  }
+  &__footer {
+    @extend %container-full;
+    background-color: $medium-blue;
+  }
+
 }
 
 // classes for consistent module spacing

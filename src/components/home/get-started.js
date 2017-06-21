@@ -1,23 +1,26 @@
 import React from 'react';
 
-export default ({ title }) => (
-  <div className="get-started">
-    <h2 className="get-started__header">{title}</h2>
-    <div className="get-started__investors">
+export default () => (
+  <section className="get-started">
+    <h1 className="get-started__heading">Get Started</h1>
 
+    <div className="get-started__guides-list">
+      <div className="get-started__guide-item">
+        <div className="get-started__guide">Guide</div>
+      </div>
+      <div className="get-started__guide-item">
+        <div className="get-started__guide">Guide</div>
+      </div>
+      <div className="get-started__guide-item">
+        <div className="get-started__guide">Guide</div>
+      </div>
+      <div className="get-started__guide-item">
+        <div className="get-started__guide">Guide</div>
+      </div>
     </div>
-    <div className="get-started__consumers">
 
+    <div className="get-started__wallet-cta-container">
+      <a className="get-started__wallet-download" href="">Download wallet now</a>
     </div>
-    <div className="get-started-merchants">
-
-    </div>
-    <div className="get-started-developers">
-
-    </div>
-
-    <div className="get-started-download">
-
-    </div>
-  </div>
+  </section>
 )

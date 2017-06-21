@@ -1,0 +1,26 @@
+.footer {
+  @extend %container-row;
+  @extend %module-top-bottom-padding-style;
+
+	&__sitemap {
+		@extend %container-row;
+	}
+	&__sitemap-column {
+		@extend %column;
+	}
+
+
+
+  // &__project-progress {
+  //   @extend %container-row;
+  // }
+  // &__project-progress-list {
+  //   @extend %column;
+  // }
+  // &__block {
+  //   height: 100px;
+  //   width: 100%;
+  //   background: red;
+  // }
+
+}

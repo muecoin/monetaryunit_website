@@ -14,9 +14,10 @@ $paragraph-hero-margin-bottom-medium: 30px;
 %paragraph-font-style {
   font-family: $paragraph-font-family;
 }
-// OPTIMUM LINE LENGTH
-%paragraph-max-width {
-  max-width: 910px;
+
+%center-max-width-text {
+  @extend %paragraph-max-width;
+  @extend %center-text;
 }
 
 // SIZING
@@ -43,7 +44,7 @@ $paragraph-hero-margin-bottom-medium: 30px;
   }
 }
 
-// STYLING
+
 %paragraph-l-style {
   @extend %paragraph-font-style;
   @extend %paragraph-size-l-style;
@@ -69,8 +70,20 @@ $paragraph-hero-margin-bottom-medium: 30px;
 
 %paragraph-l-style-white-center {
   @extend %paragraph-l-style-white;
-  @extend %paragraph-max-width;
-  @extend %center-text;
+  @extend %center-max-width-text;
+}
+%paragraph-l-style-white-center {
+  @extend %paragraph-l-style-white;
+  @extend %center-max-width-text;
+}
+
+%paragraph-l-style-dark-center {
+  @extend %paragraph-l-style-dark;
+  @extend %center-max-width-text;
+}
+%paragraph-l-style-dark-center {
+  @extend %paragraph-l-style-dark;
+  @extend %center-max-width-text;
 }
 
 // HERO VARIATION

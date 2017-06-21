@@ -8,6 +8,7 @@ $button-1-font-size-large-small: 19px;
 $button-1-font-size-large-medium: 21px;
 
 
+
 // SIZING
 %button-1-small {
   padding: 5px 12px;
@@ -26,7 +27,7 @@ $button-1-font-size-large-medium: 21px;
 }
 
 %button-1-large {
-  padding: 13px 19px;
+  padding: 17px 26px;
   @include font-size($button-1-font-size-large-small);
   @include respond-to(medium) {
     @include font-size($button-1-font-size-large-medium);

@@ -4,6 +4,10 @@
   &__intro {
     @extend %column;
   }
+  &__intro-text-container {
+    @extend %center-element;
+    @extend %paragraph-max-width;
+  }
   &__intro-heading {
     @extend %heading-1-style-white-center;
   }

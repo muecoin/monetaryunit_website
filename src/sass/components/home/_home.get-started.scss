@@ -1,0 +1,26 @@
+.get-started {
+  @extend %container-row;
+  @extend %module-top-bottom-padding-style;
+
+  &__heading {
+    @extend %heading-1-style-white-center;
+  }
+  &__guides-list {
+    @extend %container-row;
+  }
+  &__guide-item {
+    @extend %column;
+  }
+  &__guide {
+    background: grey;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__wallet-cta-container {
+    @extend %button-style-1-large;
+  }
+  &__wallet-download {
+    @extend %center-text;
+  }
+}
