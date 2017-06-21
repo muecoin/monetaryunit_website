@@ -46,7 +46,6 @@ $heading-m-hero-margin-bottom-medium: 60px;
 }
 %heading-m-size-hero-style {
   @include font-size($heading-font-size-m-small);
-
   @include respond-to(medium) {
     @include font-size($heading-font-size-m-medium);
   }

@@ -1,3 +1,8 @@
+// FONTS
+$heading-font-family: 'HouseSansBold';
+$paragraph-font-family: 'HouseSansRegular';
+$button-font-family: 'HouseSansBold';
+
 @font-face {
   font-family: 'HouseSansRegular';
   src: url('../assets/fonts/hinted-RNHouseSans-Regular.eot');
@@ -25,4 +30,15 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// COLORS
+%white-text {
+  color: $white;
+}
+%dark-blue-text {
+  color: $dark-blue;
+}
+%hero-max-width {
+  max-width: 480px;
 }
