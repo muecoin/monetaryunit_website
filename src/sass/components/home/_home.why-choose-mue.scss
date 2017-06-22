@@ -1,6 +1,12 @@
 .why-choose-mue {
-  @extend %container-row;
-  @extend %module-top-bottom-padding-style;
+  @extend %container-full;
+  background-color: $white;
+
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-style;
+  }
+
   &__intro {
     @extend %column;
   }

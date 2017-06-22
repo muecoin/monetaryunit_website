@@ -1,6 +1,9 @@
 .join-the-community {
-  @extend %container-row;
-  @extend %module-top-bottom-padding-style;
+
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-style;
+  }
   &__intro {
     @extend %column;
   }

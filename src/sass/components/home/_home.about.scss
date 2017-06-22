@@ -1,6 +1,14 @@
 .about {
-  @extend %container-row;
-  @extend %module-top-bottom-padding-style;
+  @extend %container-full;
+  background-image: url('/assets/images/about/about-portrait-small.jpg');
+  background-size: cover;
+  @include respond-to(small) {
+    background-image: url('/assets/images/about/about-landscape-large.jpg');
+  }
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-style;
+  }
   &__intro {
     @extend %column;
   }

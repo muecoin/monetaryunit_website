@@ -1,7 +1,10 @@
 .get-started {
-  @extend %container-row;
-  @extend %module-top-bottom-padding-style;
-
+  @extend %container-full;
+  background-color: $yellow;
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-style;
+  }
   &__heading {
     @extend %heading-1-style-white-center;
   }

@@ -1,41 +1,12 @@
 html, body {
-  height: 100%;
-  margin: 0;
+  %full-height-margin-0 {
+    height: 100%;
+    margin: 0;
+  }
 }
 
-.layout {
-  &__hero {
-    @extend %container-full;
-    background-image: url('/assets/images/home/hero-portrait-small.jpg');
-    background-size: cover;
-    @include respond-to(small) {
-      background-image: url('/assets/images/home/hero-landscape-medium.jpg');
-    }
-    @include respond-to(large) {
-      background-image: url('/assets/images/home/hero-landscape-large.jpg');
-    }
-  }
-  &__about {
-    @extend %container-full;
-    background-image: url('/assets/images/about/about-portrait-small.jpg');
-    background-size: cover;
-    @include respond-to(small) {
-      background-image: url('/assets/images/about/about-landscape-large.jpg');
-    }
-  }
-  &__why-choose-mue {
-    @extend %container-full;
-    background-color: $white;
-  }
-  &__get-started {
-    @extend %container-full;
-    background-color: $yellow;
-  }
-  &__footer {
-    @extend %container-full;
-    background-color: $medium-blue;
-  }
-
+html, body {
+  @extend %full-height-margin-0;
 }
 
 // classes for consistent module spacing
