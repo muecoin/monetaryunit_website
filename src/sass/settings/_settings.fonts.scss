@@ -31,14 +31,3 @@ $button-font-family: 'HouseSansBold';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-// COLORS
-%white-text {
-  color: $white;
-}
-%dark-blue-text {
-  color: $dark-blue;
-}
-%hero-max-width {
-  max-width: 480px;
-}

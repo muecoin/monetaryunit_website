@@ -1,3 +1,7 @@
 img {
+  @extend %img-full-width;
+}
+
+%img-full-width {
   max-width: 100%;
 }

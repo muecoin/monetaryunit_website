@@ -9,6 +9,10 @@
     background-image: url('/assets/images/home/hero-landscape-large.jpg');
   }
 
+  %hero-max-width {
+    max-width: 480px;
+  }
+
   &__container {
     @extend %container-row;
     @extend %module-bottom-padding-style;

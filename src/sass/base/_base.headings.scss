@@ -1,7 +1,11 @@
 // Heading-font-size-(l,m,s)-breakpoint
+
+
+
 // H1
 $heading-font-size-l-small: 33px;
 $heading-font-size-l-medium: 52px;
+
 // HERO VARIANT
 $heading-l-hero-margin-bottom-small: 50px;
 $heading-l-hero-margin-bottom-medium: 60px;
@@ -75,31 +79,31 @@ $heading-m-hero-margin-bottom-medium: 60px;
 // DARK BLUE TEXT
 %heading-1-style-dark {
   @extend %heading-1-style;
-  @extend %dark-blue-text;
+  color: $dark-blue;
 }
 %heading-2-style-dark {
   @extend %heading-2-style;
-  @extend %dark-blue-text;
+  color: $dark-blue;
 }
 
 // WHITE COLOR
 %heading-1-style-white {
   @extend %heading-1-style;
-  @extend %white-text;
+  color: $white;
 }
 %heading-2-style-white {
   @extend %heading-2-style;
-  @extend %white-text;
+  color: $white;
 }
 
 // HERO VARIATION
 %heading-1-hero-style-white {
   @extend %heading-1-hero-style;
-  @extend %white-text;
+  color: $white;
 }
 %heading-2-hero-style-white {
   @extend %heading-2-hero-style;
-  @extend %white-text;
+  color: $white;
 }
 
 // CENTERED VARIATION
