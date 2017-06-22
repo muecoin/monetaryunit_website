@@ -1,8 +1,16 @@
-html, body {
-  %full-height-margin-0 {
-    height: 100%;
-    margin: 0;
-  }
+$layout-spacing-xxs: 10px;
+$layout-spacing-xs: 50px;
+$layout-spacing-m: 70px;
+$layout-spacing-m1: 80px;
+$layout-spacing-l: 90px;
+
+// FLUID
+$layout-spacing-fluid-m: 6%;
+$layout-spacing-fluid-m1: 8%;
+
+%full-height-margin-0 {
+  height: 100%;
+  margin: 0;
 }
 
 html, body {
@@ -12,23 +20,23 @@ html, body {
 // classes for consistent module spacing
 %module-top-bottom-padding-style {
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: $layout-spacing-l;
   @include respond-to(small) {
-    padding-top: 70px;
-    padding-bottom: 90px;
+    padding-top: $layout-spacing-m;
+    padding-bottom: $layout-spacing-l;
   }
   @include respond-to(medium) {
-    padding-top: 6%;
-    padding-bottom: 8%;
+    padding-top: $layout-spacing-fluid-m;
+    padding-bottom: $layout-spacing-fluid-m1;
   }
 }
 
 %module-bottom-padding-style {
-  padding-bottom: 80px;
+  padding-bottom: $layout-spacing-m1;
   @include respond-to(small) {
-    padding-bottom: 90px;
+    padding-bottom: $layout-spacing-l;
   }
   @include respond-to(medium) {
-    padding-bottom: 8%;
+    padding-bottom: $layout-spacing-fluid-m1;
   }
 }
