@@ -6,6 +6,9 @@
 $heading-font-size-l-small: 33px;
 $heading-font-size-l-medium: 52px;
 
+$heading-l-margin-bottom-small: 9px;
+$heading-l-margin-bottom-medium: 13px;
+
 // HERO VARIANT
 $heading-l-hero-margin-bottom-small: 50px;
 $heading-l-hero-margin-bottom-medium: 60px;
@@ -42,9 +45,9 @@ $heading-m-hero-margin-bottom-medium: 60px;
 // HERO VARIANT
 %heading-l-size-hero-style {
   @include font-size($heading-font-size-l-small);
-  margin-bottom: 9px;
+  margin-bottom: $heading-l-margin-bottom-small;
   @include respond-to(medium) {
-    margin-bottom: 13px;
+    margin-bottom: $heading-l-margin-bottom-medium;
     @include font-size($heading-font-size-l-medium);
   }
 }

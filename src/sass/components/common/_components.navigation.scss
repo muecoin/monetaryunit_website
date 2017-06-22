@@ -14,57 +14,74 @@ $button-width: 35px;
   @extend %container;
 	margin-bottom: 1%;
 	overflow: auto;
-}
-.nav__list {
-  margin: 0;
-  padding-top: 18px;
-  @include respond-to(medium) {
-    padding-top: 33px;
+
+  &__list {
+    margin: 0;
+    padding-top: 18px;
+    @include respond-to(medium) {
+      padding-top: 33px;
+    }
   }
-}
-.nav__list-item {
-  list-style-type: none;
-}
-.nav__link {
-  transition:  all .35s ease;
-  font-family: 'HouseSansBold';
-  text-decoration: none;
-  font-size: 21px;
-  display: block;
-  color: $white;
+  &__list-item {
+    list-style-type: none;
+  }
+  &__link {
+    transition:  all .35s ease;
+    font-family: 'HouseSansBold';
+    text-decoration: none;
+    font-size: 21px;
+    display: block;
+    color: $white;
+  }
 }
 
 // MOBILE/TABLET ONLY
 @media screen and (max-width: $bp-desktop-nav - 1){
-  .nav__logo {
-    display: block;
-    float: left;
-  }
-  .nav__wrapper {
-    padding-top: 0.9em;
-  }
-  .nav__logo-image {
-    width: 55px;
-  }
-  .nav__menu-button-slices {
-    position: relative;
-    float: right;
-    top: 12px;
-    height: $button-height;
-    width: $button-width;
-    cursor: pointer;
-    z-index: 1002;
-    transition: opacity .25s ease;
-    &:hover {
-      opacity: .78;
+  .nav {
+    &__logo {
+      display: block;
+      float: left;
     }
-    .nav__menu-button-slice {
+    &__wrapper {
+      padding-top: 0.9em;
+    }
+    &__logo-image {
+      width: 55px;
+    }
+    &__menu-button-slices {
+      position: relative;
+      float: right;
+      top: 12px;
+      height: $button-height;
+      width: $button-width;
+      cursor: pointer;
+      z-index: 1002;
+      transition: opacity .25s ease;
+      &:hover {
+        opacity: .78;
+      }
+    }
+
+    // BEHAVIOUR
+    &__menu-button-slices--active {
+      @extend .nav__menu-button-slices;
+      .nav__menu-button-slice--top {
+        @extend .nav__menu-button-slice--top-active;
+      }
+      .nav__menu-button-slice--middle {
+        @extend .nav__menu-button-slice--middle-active;
+      }
+      .nav__menu-button-slice--bottom {
+        @extend .nav__menu-button-slice--bottom-active;
+      }
+    }
+
+    &__menu-button-slice {
       background: $color-menu-btn;
       border: none;
       height: 4px;
       width: 100%;
       position: absolute;
-      top: 0;
       left: 0;
       transition:  all .35s ease;
       cursor: pointer;
@@ -79,165 +96,165 @@ $button-width: 35px;
         @extend .nav__menu-button-slice;
         top: 22px;
       }
-    }
-
-    &--active {
-      @extend .nav__menu-button-slices;
-      .nav__menu-button-slice--top {
+      &--top-active {
+        @extend .nav__menu-button-slice;
         transform: translateY(11px) translateX(0) rotate(45deg);
         background: $color-active;
       }
-      .nav__menu-button-slice--middle {
+      &--middle-active {
+        @extend .nav__menu-button-slice;
         opacity: 0;
         background: $color-active;
       }
-      .nav__menu-button-slice--bottom {
+      &--bottom-active {
+        @extend .nav__menu-button-slice;
         transform: translateY(-11px) translateX(0) rotate(-45deg);
         background: $color-active;
       }
     }
-  }
 
-  .nav__overlay {
-    position: fixed;
-    background: $color-main;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    &--active {
-      @extend .nav__overlay;
-      opacity: 1;
-      visibility: visible;
-      height: 100%;
-      z-index: 1000;
-    }
-  }
-
-  .nav__list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-  }
-
-  .nav__list-item {
-    display: block;
-    height: 25%;
-    height: calc(100% / 6);
-    min-height: 50px;
-    position: relative;
-    opacity: 0;
-  }
-
-  .nav__link {
-    display: block;
-    position: relative;
-    color: $color-link;
-    text-decoration: none;
-    overflow: hidden;
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
-      width: 100%;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0%;
-      transform: translateX(-50%);
-      height: 3px;
-      background: $color-active;
-      transition: .35s;
-    }
-  }
-
-  .nav__list-item {
-    animation: fadeInRight .5s ease forwards;
-    animation-delay: .35s;
-    &:nth-of-type(2) {
-      animation-delay: .4s;
-    }
-    &:nth-of-type(3) {
-      animation-delay: .45s;
-    }
-    &:nth-of-type(4) {
-      animation-delay: .50s;
-    }
-  }
-
-  .nav__overlay-menu {
-    position: relative;
-    height: 50%;
-    top: 46%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  @keyframes fadeInRight {
-    0% {
-      opacity: 0;
-      left: 20%;
-    }
-    100% {
-      opacity: 1;
+    &__overlay {
+      position: fixed;
+      background: $color-main;
+      top: 0;
       left: 0;
+      width: 100%;
+      height: 0%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+      &--active {
+        @extend .nav__overlay;
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 1000;
+      }
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%;
+    }
+
+    &__list-item {
+      display: block;
+      height: 25%;
+      height: calc(100% / 6);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+    }
+
+    &__link {
+      display: block;
+      position: relative;
+      color: $color-link;
+      text-decoration: none;
+      overflow: hidden;
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        width: 100%;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        transform: translateX(-50%);
+        height: 3px;
+        background: $color-active;
+        transition: .35s;
+      }
+    }
+
+    &__list-item {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+
+    &__overlay-menu {
+      position: relative;
+      height: 50%;
+      top: 46%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        left: 20%;
+      }
+      100% {
+        opacity: 1;
+        left: 0;
+      }
     }
   }
 }
 
 // Desktop Nav
 @include respond-to(medium) {
-  .button-container {
-    visibility: hidden;
+  .nav {
+    &__wrapper {
+      overflow: auto;
+    }
+    &__logo {
+      display: block;
+      position: absolute;
+      top: 2em;
+    }
+    &__logo-image {
+      width: 62px;
+    }
+    &__list {
+      margin: 0;
+      overflow: auto;
+      padding-left: 5.5em;
+    }
+    &__list-item {
+      list-style-type: none;
+    }
+    &__link {
+      padding: 1.1em;
+      font-size: 18px;
+      display: block;
+      float: left;
+      text-decoration: none;
+      color: $white;
+  	}
   }
-  .nav__wrapper {
-    overflow: auto;
-  }
-  .nav__logo {
-    display: block;
-    position: absolute;
-    top: 2em;
-  }
-  .nav__logo-image {
-    width: 62px;
-  }
-  .nav__list {
-    margin: 0;
-    overflow: auto;
-    padding-left: 5.5em;
-  }
-  .nav__list-item {
-    list-style-type: none;
-  }
-  .nav__link {
-    padding: 1.1em;
-    font-size: 18px;
-    display: block;
-    float: left;
-    text-decoration: none;
-    color: $white;
-	}
 }
 
 @include respond-to(large) {
-  .nav__link {
-    font-size: 21px;
-  }
-  .nav__logo-image {
-    width: 75px;
-  }
-  .nav__list {
-    padding-left: 7.5em;
+  .nav {
+    &__link {
+      font-size: 21px;
+    }
+    &__logo-image {
+      width: 75px;
+    }
+    &__list {
+      padding-left: 7.5em;
+    }
   }
 }

@@ -18,6 +18,8 @@ $paragraph-line-height-hero-medium: 30px;
 $paragraph-hero-margin-bottom-small: 16px;
 $paragraph-hero-margin-bottom-medium: 30px;
 
+$hero-p-max-width: 480px;
+
 // PARAGRAPH FONTS
 %paragraph-font-style {
   font-family: $paragraph-font-family;
@@ -106,7 +108,7 @@ $paragraph-hero-margin-bottom-medium: 30px;
 
 %paragraph-hero-style-white-450mw {
   @extend %paragraph-hero-style-white;
-  @extend %hero-max-width;
+  max-width: $hero-p-max-width;
 }
 
 
