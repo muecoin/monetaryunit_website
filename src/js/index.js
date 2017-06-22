@@ -4,9 +4,8 @@ import $ from 'jquery';
 import Navigation from './navigation';
 
 const init = () => {
-  //initHome();
-  //contentHome();
-  //Navigation.start();
+  const nav = new Navigation();
+  nav.start();
 }
 
 const initHome = () => {
@@ -17,4 +16,6 @@ const contentHome = () => {
   //
 }
 
-$(document).ready(init);
+document.addEventListener("DOMContentLoaded", function(event) {
+  init();
+});

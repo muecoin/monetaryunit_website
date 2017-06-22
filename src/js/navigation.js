@@ -1,47 +1,31 @@
-import $ from 'jquery';
-
 export default class Navigation {
   constructor(){
     this.currentMode = null;
     this.startingMode;
     this.firstTime = true;
     this.menuOpen = false;
-    this.toggle = $("#toggle");
-    this.overlay = $("#overlay-wrapper");
+    this.toggle = document.querySelector("#toggle");
+    this.overlay = document.querySelector("#overlay-wrapper");
+    this.desktopMobileBreakpoint = 992;
+  }
+
+  getBrowserWidth() {
+    return Math.max(
+      document.documentElement["clientWidth"],
+      document.body["scrollWidth"],
+      document.documentElement["scrollWidth"],
+      document.body["offsetWidth"],
+      document.documentElement["offsetWidth"]
+    );
   }
 
   start() {
-    setMode(true);
+    this.setMode(true);
     // handle class toggling for nav bar
     this.toggle.addEventListener('click', () => {
-      //  @TODO switch between nav__overlay to nav__overlay--open
-      //  @TODO switch between nav__menu-button-slices to nav__menu-button-slices--active
-      this.classList.toggle('nav__menu-button-slices--active');
-      this.toggleoverlay.classList.toggle('nav_overlay--open');
-      document.documentElement.classList.toggle('menu-open');
-      // @TODO sort out ie9 toggle
-      document.body.classList.toggle('block-scroll');
-      toggleScroll();
+        this.toggleMenu();
     });
-    setupResizeHandler();
-  }
-
-  toggleScroll() {
-    if(!menuOpen) {
-      blockScroll();
-    menuOpen = true;
-    } else {
-      unBlockScroll();
-    menuOpen = false;
-    }
-  }
-
-  blockScroll() {
-    document.body.addEventListener('touchmove', stopScroll);
-  }
-
-  unBlockScroll() {
-    document.body.removeEventListener('touchmove', stopScroll);
+    this.setupResizeHandler();
   }
 
   stopScroll(e) {
@@ -49,38 +33,57 @@ export default class Navigation {
   }
 
   setupResizeHandler() {
-    window.addEventListener('resize', checkModeForChange);
-    checkModeForChange();
+    window.addEventListener('resize', this.checkModeForChange);
+    this.checkModeForChange();
   }
 
   // set current state change on resize
   setMode(firstTime) {
     // determine width
-    let width = $(window).width();
+    let width = this.getBrowserWidth();
     // work out if we're in desktop/mobile navigation
-    if (width < 992){
-      currentMode = 'mobile';
+    if (width < this.desktopMobileBreakpoint){
+      this.currentMode = 'mobile';
       if (firstTime) {
-        startingMode = 'mobile';
+        this.startingMode = 'mobile';
       }
     } else {
-    currentMode = 'desktop';
+    this.currentMode = 'desktop';
       if (firstTime) {
-        startingMode = 'desktop';
+        this.startingMode = 'desktop';
       }
     }
   }
 
   // check for change and remove mobile nav if necessary
   checkModeForChange() {
-    console.log("resize");
-    setMode(false);
-    if (startingMode == 'mobile' && currentMode == 'desktop') {
-      // deactivate menu
-      toggle.classList.remove('active');
-      overlay.classList.remove('open');
-      document.documentElement.classList.remove('menu-open');
-      document.body.classList.remove('block-scroll');
+    this.setMode(false);
+    if (this.startingMode == 'mobile' && this.currentMode == 'desktop') {
+      closeMenu();
     }
+  }
+
+  toggleMenu(){
+    if(!this.menuOpen) {
+      this.openMenu();
+      this.menuOpen = true;
+    } else {
+      this.closeMenu();
+      this.menuOpen = false;
+    }
+  }
+
+  closeMenu(){
+    this.toggle.classList.add('nav__menu-button-slices');
+    this.toggle.classList.remove('nav__menu-button-slices--active');
+    this.overlay.classList.add('nav__overlay');
+    this.overlay.classList.remove('nav__overlay--active');
+  }
+
+  openMenu(){
+    this.toggle.classList.add('nav__menu-button-slices--active');
+    this.toggle.classList.remove('nav__menu-button-slices');
+    this.overlay.classList.add('nav__overlay--active');
+    this.overlay.classList.remove('nav__overlay');
   }
 }

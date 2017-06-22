@@ -10,9 +10,6 @@ export default () => (
             <p className="about__intro-paragraph">Maintained by a friendly and committed community and with many exciting projects on the horizon, here at MUE, we continue to innovate and build on our reputation to launch into the mainstream as the most trusted and exciting cryptocurrency project in the market.</p>
           </div>
         </div>
-        <div className="about__benefits-list">
-
-        </div>
     </section>
   </div>
 )

@@ -109,7 +109,7 @@ $button-width: 35px;
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    &--open {
+    &--active {
       @extend .nav__overlay;
       opacity: 1;
       visibility: visible;
