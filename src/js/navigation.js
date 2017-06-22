@@ -14,10 +14,12 @@ export default class Navigation {
     setMode(true);
     // handle class toggling for nav bar
     this.toggle.addEventListener('click', () => {
-      this.classList.toggle('active');
-      this.toggleoverlay.classList.toggle('open');
+      //  @TODO switch between nav__overlay to nav__overlay--open
+      //  @TODO switch between nav__menu-button-slices to nav__menu-button-slices--active
+      this.classList.toggle('nav__menu-button-slices--active');
+      this.toggleoverlay.classList.toggle('nav_overlay--open');
       document.documentElement.classList.toggle('menu-open');
-      //@TODO sort out ie9 toggle
+      // @TODO sort out ie9 toggle
       document.body.classList.toggle('block-scroll');
       toggleScroll();
     });

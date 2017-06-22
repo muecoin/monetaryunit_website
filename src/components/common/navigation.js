@@ -7,10 +7,10 @@ export default () => (
       <a className="nav__logo" id="logo-test" href="/">
         <img className="nav__logo-image" src="/assets/images/monetary-unit-white-logo.png" alt="Monetary Unit" />
       </a>
-      <div className="nav__button-container" id="toggle">
-        <span className="top"></span>
-        <span className="middle"></span>
-        <span className="bottom"></span>
+      <div className="nav__menu-button-slices" id="toggle">
+        <span className="nav__menu-button-slice--top"></span>
+        <span className="nav__menu-button-slice--middle"></span>
+        <span className="nav__menu-button-slice--bottom"></span>
       </div>
       <div className="nav__overlay" id="overlay-wrapper">
         <nav className="nav__overlay-menu" id="overlay">

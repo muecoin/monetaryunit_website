@@ -46,7 +46,7 @@ $button-width: 35px;
   .nav__logo-image {
     width: 55px;
   }
-  .nav__button-container {
+  .nav__menu-button-slices {
     position: relative;
     float: right;
     top: 12px;
@@ -58,21 +58,7 @@ $button-width: 35px;
     &:hover {
       opacity: .78;
     }
-    &.active {
-      .top {
-        transform: translateY(11px) translateX(0) rotate(45deg);
-        background: $color-active;
-      }
-      .middle {
-        opacity: 0;
-        background: $color-active;
-      }
-      .bottom {
-        transform: translateY(-11px) translateX(0) rotate(-45deg);
-        background: $color-active;
-      }
-    }
-    .top, .middle, .bottom {
+    .nav__menu-button-slice {
       background: $color-menu-btn;
       border: none;
       height: 4px;
@@ -82,11 +68,32 @@ $button-width: 35px;
       left: 0;
       transition:  all .35s ease;
       cursor: pointer;
-      &:nth-of-type(2) {
+      &--top {
+        @extend .nav__menu-button-slice;
+      }
+      &--middle {
+        @extend .nav__menu-button-slice;
         top: 11px;
       }
-      &:nth-of-type(3) {
+      &--bottom {
+        @extend .nav__menu-button-slice;
         top: 22px;
+      }
+    }
+
+    &--active {
+      @extend .nav__menu-button-slices;
+      .nav__menu-button-slice--top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: $color-active;
+      }
+      .nav__menu-button-slice--middle {
+        opacity: 0;
+        background: $color-active;
+      }
+      .nav__menu-button-slice--bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: $color-active;
       }
     }
   }
@@ -102,7 +109,8 @@ $button-width: 35px;
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    &.open {
+    &--open {
+      @extend .nav__overlay;
       opacity: 1;
       visibility: visible;
       height: 100%;
