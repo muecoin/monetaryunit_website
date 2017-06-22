@@ -1,6 +1,15 @@
 $button-1-font-size-small-small: 12px;
 $button-1-font-size-small-medium: 14px;
 
+$button-1-padding-small: 5px 12px;
+$button-1-padding-medium: 11px 12px;
+$button-1-padding-large: 17px 26px;
+
+$button-1-radius-small: 4px;
+$button-1-radius-medium: 7px;
+$button-1-radius-large: 9px;
+
+
 $button-1-font-size-medium-small: 16px;
 $button-1-font-size-medium-medium: 18px;
 
@@ -11,7 +20,7 @@ $button-1-font-size-large-medium: 21px;
 
 // SIZING
 %button-1-small {
-  padding: 5px 12px;
+  padding: $button-1-padding-small;
   @include font-size($button-1-font-size-small-small);
   @include respond-to(medium) {
     @include font-size($button-1-font-size-small-small);
@@ -19,7 +28,7 @@ $button-1-font-size-large-medium: 21px;
 }
 
 %button-1-medium {
-  padding: 11px 12px;
+  padding: $button-1-padding-medium;
   @include font-size($button-1-font-size-medium-small);
   @include respond-to(medium) {
     @include font-size($button-1-font-size-medium-medium);
@@ -27,7 +36,7 @@ $button-1-font-size-large-medium: 21px;
 }
 
 %button-1-large {
-  padding: 17px 26px;
+  padding: $button-1-padding-large;
   @include font-size($button-1-font-size-large-small);
   @include respond-to(medium) {
     @include font-size($button-1-font-size-large-medium);
@@ -37,13 +46,13 @@ $button-1-font-size-large-medium: 21px;
 // STYLING
 
 %button-rounded-small {
-  border-radius: 4px;
+  border-radius: $button-1-radius-small;
 }
 %button-rounded-medium {
-  border-radius: 7px;
+  border-radius: $button-1-radius-medium;
 }
 %button-rounded-large {
-  border-radius: 9px;
+  border-radius: $button-1-radius-large;
 }
 
 %button-white-bg {
