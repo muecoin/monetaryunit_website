@@ -7,6 +7,12 @@ export default class Navigation {
     this.toggle = document.querySelector("#toggle");
     this.overlay = document.querySelector("#overlay-wrapper");
     this.desktopMobileBreakpoint = 992;
+    this.bindHandlers();
+  }
+
+  bindHandlers() {
+    this.checkModeForChange = this.checkModeForChange.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   getBrowserWidth() {
@@ -22,9 +28,7 @@ export default class Navigation {
   start() {
     this.setMode(true);
     // handle class toggling for nav bar
-    this.toggle.addEventListener('click', () => {
-        this.toggleMenu();
-    });
+    this.toggle.addEventListener('click', this.toggleMenu);
     this.setupResizeHandler();
   }
 
@@ -59,11 +63,12 @@ export default class Navigation {
   checkModeForChange() {
     this.setMode(false);
     if (this.startingMode == 'mobile' && this.currentMode == 'desktop') {
-      closeMenu();
+      this.closeMenu();
     }
   }
 
-  toggleMenu(){
+  toggleMenu(e){
+    const toggle = e.target;
     if(!this.menuOpen) {
       this.openMenu();
       this.menuOpen = true;
