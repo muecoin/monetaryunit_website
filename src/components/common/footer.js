@@ -4,7 +4,7 @@ export default () => (
   <footer className="footer">
       <div className="footer__sitemap">
         <div className="footer__sitemap-column">
-          <h2 class="footer__sitemap-category">About</h2>
+          <h2 className="footer__sitemap-category">About</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="#">About MonetaryUnit</a>
@@ -13,7 +13,7 @@ export default () => (
         </div>
 
         <div className="footer__sitemap-column">
-          <h2 class="footer__sitemap-category">Why Choose MUE?</h2>
+          <h2 className="footer__sitemap-category">Why Choose MUE?</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="#" target="_blank">muex.io</a>
@@ -34,7 +34,7 @@ export default () => (
         </div>
 
         <div className="footer__sitemap-column">
-          <h2 class="footer__sitemap-category">Get Started</h2>
+          <h2 className="footer__sitemap-category">Get Started</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="#" target="_blank">For Investors</a>
@@ -52,7 +52,7 @@ export default () => (
         </div>
 
         <div className="footer__sitemap-column">
-          <h2 class="footer__sitemap-category">Community</h2>
+          <h2 className="footer__sitemap-category">Community</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="https://twitter.com/monetaryunit" target="_blank">Twitter</a>
@@ -76,7 +76,7 @@ export default () => (
         </div>
 
         <div className="footer__sitemap-column">
-          <h2 class="footer__sitemap-category">Other</h2>
+          <h2 className="footer__sitemap-category">Other</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="https://tree.taiga.io/project/monetaryunit-monetaryunit/kanban" target="_blank">Foundation</a>
@@ -91,6 +91,13 @@ export default () => (
               <a className="footer__sitemap-link" href="#" target="_blank">FAQ</a>
             </li>
           </ul>
+        </div>
+
+        <div className="footer__copyright">
+          <div className="footer__copyright-wrapper">
+            <img className="footer__logo" src="/assets/images/monetary-unit-white-logo.png" alt="Monetary Unit" />
+            <small className="footer__legal">Copyright (c) 2017 MonetaryUnit, All Rights Reserved.</small>
+          </div>
         </div>
       </div>
   </footer>

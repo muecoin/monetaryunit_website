@@ -14,13 +14,60 @@ export default () => (
 
         <div className="why-choose-mue__project-progress">
           <div className="why-choose-mue__project-progress-list">
-            <div className="why-choose-mue__block"></div>
+            <h2 className="why-choose-mue__sub-heading">www.muex.io</h2>
+            <div className="why-choose-mue__progress-bar-base">
+              <div className="why-choose-mue__progress-bar-fill">
+                <span className="why-choose-mue__progress-percent">80%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">MUE has shown consistent growth since launch in July 2014. Can you miss out on the opportunity for a sound and reliable investment?</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
-            <div className="why-choose-mue__block"></div>
+            <h2 className="why-choose-mue__sub-heading">www.muegs.com</h2>
+            <div className="why-choose-mue__progress-bar-base">
+              <div className="why-choose-mue__progress-bar-fill">
+                <span className="why-choose-mue__progress-percent">80%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">Bringing multi-player online gaming to the crypto world & crypto to the online gaming world.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
-            <div className="why-choose-mue__block"></div>
+            <h2 className="why-choose-mue__sub-heading">www.webwallets.io</h2>
+            <div className="why-choose-mue__progress-bar-base">
+              <div className="why-choose-mue__progress-bar-fill">
+                <span className="why-choose-mue__progress-percent">80%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">Multi-currency web wallets with staking facility, and option to sell direct for multiple fiat currencies.</p>
+          </div>
+        </div>
+        <div className="why-choose-mue__project-progress">
+          <div className="why-choose-mue__project-progress-list">
+            <h2 className="why-choose-mue__sub-heading">www.coinbuy.io</h2>
+            <div className="why-choose-mue__progress-bar-base">
+              <div className="why-choose-mue__progress-bar-fill">
+                <span className="why-choose-mue__progress-percent">80%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">Crypto accepting portal for Forex trading, web hosting, Domain names & physical goods listed at Amazon.</p>
+          </div>
+          <div className="why-choose-mue__project-progress-list">
+            <h2 className="why-choose-mue__sub-heading">www.cashchat.io</h2>
+            <div className="why-choose-mue__progress-bar-base">
+              <div className="why-choose-mue__progress-bar-fill">
+                <span className="why-choose-mue__progress-percent">80%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">Earn rewards for posting quality content and engaging in the CashChat community in a positive way.</p>
+          </div>
+          <div className="why-choose-mue__project-progress-list">
+            <h2 className="why-choose-mue__sub-heading">GS Points</h2>
+            <div className="why-choose-mue__progress-bar-base">
+              <div className="why-choose-mue__progress-bar-fill">
+                <span className="why-choose-mue__progress-percent">80%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">Earn "Go Shopping" reward points to spend throughout the MUE ecosystem & platform</p>
           </div>
         </div>
     </section>

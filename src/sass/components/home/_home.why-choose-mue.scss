@@ -1,3 +1,8 @@
+$progress-bar-uncomplete-color: #f0efee; //@todo - put into settings
+$progress-bar-border-color: $orange;
+$progress-bar-fill-color: $orange;
+$bar-rounding-radius: 16px;
+$progress-bar-bottom-spacing: $layout-spacing-xs1;
 .why-choose-mue {
   @extend %container-full;
   background-color: $white;
@@ -18,22 +23,54 @@
     @extend %heading-1-style-dark-center;
   }
   &__intro-paragraph {
-    @extend %paragraph-l-style-dark-center;
+    @extend %paragraph-s-style-dark-center;
   }
+
   &__intro-sub-heading {
     @extend %heading-2-style-dark-center;
   }
-
+  &__sub-heading {
+    @extend %heading-3-style-dark-center;
+  }
+  &__description {
+    @extend %paragraph-s-style-dark-center-300mw;
+  }
   &__project-progress {
     @extend %container-row;
   }
   &__project-progress-list {
     @extend %column;
   }
-  &__block {
-    height: 100px;
-    width: 100%;
-    background: red;
+
+  &__progress-bar-base,
+  &__progress-bar-fill {
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: $progress-bar-bottom-spacing;
+    height: 32px;
+    border-radius: $bar-rounding-radius;
   }
 
+  &__progress-bar-base {
+    position: relative;
+    background-color: $progress-bar-uncomplete-color;
+    width: 100%;
+    border: 4px solid $progress-bar-border-color;
+    margin-bottom: 10px;
+  }
+  &__progress-bar-fill {
+    width: 80%;
+    background: $progress-bar-fill-color;
+    border: 4px solid $progress-bar-border-color;
+    top: -($bar-rounding-radius / 4);
+    left: -($bar-rounding-radius / 4);
+    position: absolute;
+  }
+  &__progress-percent {
+    @extend %center-text;
+    display: block;
+    top: 4px;
+    position: relative;
+    color: $white;
+  }
 }

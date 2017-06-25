@@ -1,5 +1,17 @@
+$footer-logo-size: 60px;
+
+$sitemap-link-size-small: 12px;
+$sitemap-link-size-large: 16px;
+
+$sitemap-list-margin-bottom: 30px;
+$sitemap-list-item-margin-bottom: 12px;
+
+$legal-font-size: 10px;
+
+
 .footer {
   @extend %container-full;
+  @extend %module-top-padding-style;
   background-color: $medium-blue;
 
   &__container {
@@ -10,7 +22,49 @@
 	&__sitemap {
 		@extend %container-row;
 	}
+
+  &__sitemap-list {
+    margin-bottom: $sitemap-list-margin-bottom;
+  }
+
+  &__sitemap-item {
+    color: $light-grey;
+    margin-bottom: $sitemap-list-item-margin-bottom;
+  }
+
+  &__sitemap-link {
+    font-size: $sitemap-link-size-small;
+    @include respond-to(large){
+        font-size: $sitemap-link-size-large;
+    }
+  }
+
+  &__sitemap-category {
+    @extend %heading-2-footer-style-white;
+  }
 	&__sitemap-column {
 		@extend %column;
 	}
+
+  &__copyright {
+    @extend %container-row;
+  }
+  &__copyright-wrapper {
+    @extend %column;
+    @extend %column--center;
+  }
+  &__logo {
+    max-width: $footer-logo-size;
+    display: block;
+    @extend %center-element;
+  }
+  &__legal {
+    color: $white;
+    @include font-size($legal-font-size);
+    display: block;
+    @extend %center-text;
+    font-family: $paragraph-font-family;
+    margin-top: $layout-spacing-xxs;
+    margin-bottom: $layout-spacing-xxs;
+  }
 }

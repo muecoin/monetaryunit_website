@@ -41,6 +41,7 @@ $paragraph-hero-margin-bottom-small: 16px;
 $paragraph-hero-margin-bottom-medium: 30px;
 
 $hero-p-max-width: 480px;
+$small-column-max-width-1: 365px;
 
 // PARAGRAPH FONTS
 %paragraph-font-style {
@@ -222,10 +223,18 @@ $hero-p-max-width: 480px;
   @extend %paragraph-l-style-white;
 }
 
+// MAX WIDTH VARIATIONS
+
 %paragraph-hero-style-white-450mw {
   @extend %paragraph-hero-style-white;
   max-width: $hero-p-max-width;
 }
+
+%paragraph-s-style-dark-center-300mw {
+    @extend %paragraph-s-style-dark-center;
+    max-width: $small-column-max-width-1 !important;
+}
+
 
 
 

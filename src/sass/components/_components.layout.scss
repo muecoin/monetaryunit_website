@@ -1,4 +1,6 @@
 $layout-spacing-xxs: 10px;
+$layout-spacing-xs1: 20px;
+$layout-spacing-xs0: 30px;
 $layout-spacing-xs: 50px;
 $layout-spacing-m: 70px;
 $layout-spacing-m1: 80px;
@@ -28,6 +30,16 @@ html, body {
   @include respond-to(medium) {
     padding-top: $layout-spacing-fluid-m;
     padding-bottom: $layout-spacing-fluid-m1;
+  }
+}
+
+%module-top-padding-style {
+  padding-top: $layout-spacing-m;
+  @include respond-to(small) {
+    padding-top: $layout-spacing-m;
+  }
+  @include respond-to(medium) {
+    padding-top: $layout-spacing-fluid-m;
   }
 }
 
