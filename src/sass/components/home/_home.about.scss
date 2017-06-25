@@ -1,3 +1,12 @@
+$chart-icon-color: $orange;
+$benefit-item-color: $white;
+$icon-right-margin: $layout-spacing-xxs;
+$benefit-item-bottom-margin: $layout-spacing-xs;
+
+// BREAKPOINT
+$benefit-top-spacing-small: $layout-spacing-xs;
+$benefit-top-spacing-medium: $layout-spacing-xs;
+
 .about {
   @extend %container-full;
   background-image: url('/assets/images/about/about-portrait-small.jpg');
@@ -23,7 +32,69 @@
     @extend %paragraph-l-style-white-center;
   }
 
-  &__benefits-list{
-
+  &__benefits {
+    @include respond-to(medium) {
+      padding-top: $benefit-top-spacing-small;
+    }
+    @include respond-to(large) {
+      padding-top: $benefit-top-spacing-medium;
+    }
+    @extend %container;
+  }
+  &__benefits-row {
+    @extend %container-row;
+    @include respond-to(large) {
+      justify-content: center;
+    }
+  }
+  &__benefits-item {
+    @extend %column;
+    margin-bottom: $benefit-item-bottom-margin;
+    color: $benefit-item-color;
+    @include respond-to(large) {
+        flex: 0 38%;
+    }
+  }
+  &__benefits-description {
+    @extend %paragraph-m-style-white;
+  }
+  &__benefits-icon {
+    margin-top: 7px;
+    width: 70px;
+    font-size: 58px;
+    float: left;
+    margin-right: $icon-right-margin;
+    height: 100px;
+    color: $chart-icon-color;
+    text-align: center;
+    height: 100%;
+    &--rocket {
+      @extend .about__benefits-icon;
+      @extend %icon--rocket;
+    }
+    &--users {
+      @extend .about__benefits-icon;
+      @extend %icon--users;
+    }
+    &--balance {
+      @extend .about__benefits-icon;
+      @extend %icon--balance;
+      @include font-size(69px);
+      margin-top: 2px;
+    }
+    &--cycle {
+      @extend .about__benefits-icon;
+      @extend %icon--cycle;
+      @include font-size(63px);
+    }
+    &--chart {
+      @extend .about__benefits-icon;
+      @extend %icon--chart;
+    }
+    &--wallet {
+      @extend .about__benefits-icon;
+      @extend %icon--wallet;
+      @include font-size(67px);
+    }
   }
 }

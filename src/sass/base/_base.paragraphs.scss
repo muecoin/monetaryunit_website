@@ -1,4 +1,6 @@
-// paragraph-font-size-(l,m,s)-breakpoint
+// element-property-(size)-breakpoint
+
+// PARAGRAPH M
 $paragraph-font-size-l-small: 15px;
 $paragraph-font-size-l-medium: 18px;
 
@@ -7,6 +9,16 @@ $paragraph-line-height-l-medium: 38px;
 
 $paragraph-l-margin-bottom-small: 40px;
 $paragraph-l-margin-bottom-medium: 50px;
+
+// PARAGRAPH M
+$paragraph-font-size-m-small: 13px;
+$paragraph-font-size-m-medium: 16px;
+
+$paragraph-m-margin-bottom-small: 30px;
+$paragraph-m-margin-bottom-medium: 40px;
+
+$paragraph-line-height-m-small: 23px;
+$paragraph-line-height-m-medium: 30px;
 
 // HERO VARIANT
 $paragraph-font-size-hero-small: 15px;
@@ -42,6 +54,17 @@ $hero-p-max-width: 480px;
   }
 }
 
+%paragraph-size-m-style {
+  @include font-size($paragraph-font-size-m-small);
+  margin-bottom: $paragraph-m-margin-bottom-small;
+  line-height: $paragraph-line-height-m-small;
+  @include respond-to(medium) {
+    line-height: $paragraph-line-height-m-medium;
+    margin-bottom: $paragraph-m-margin-bottom-medium;
+    @include font-size($paragraph-font-size-m-medium);
+  }
+}
+
 // HERO VARIANT
 %paragraph-size-hero-style {
   @include font-size($paragraph-font-size-hero-small);
@@ -54,10 +77,15 @@ $hero-p-max-width: 480px;
   }
 }
 
-
+//LARGE SIZE P
 %paragraph-l-style {
   @extend %paragraph-font-style;
   @extend %paragraph-size-l-style;
+}
+// MEDIUM SIZE P
+%paragraph-m-style {
+  @extend %paragraph-font-style;
+  @extend %paragraph-size-m-style;
 }
 
 // HERO VARIATION
@@ -78,6 +106,18 @@ $hero-p-max-width: 480px;
   color: $white;
 }
 
+// DARK BLUE TEXT
+%paragraph-m-style-dark {
+  @extend %paragraph-m-style;
+  color: $dark-blue;
+}
+
+// WHITE COLOR
+%paragraph-m-style-white {
+  @extend %paragraph-m-style;
+  color: $white;
+}
+
 %paragraph-l-style-white-center {
   @extend %paragraph-l-style-white;
   @extend %center-max-width-text;
@@ -95,6 +135,26 @@ $hero-p-max-width: 480px;
   @extend %paragraph-l-style-dark;
   @extend %center-max-width-text;
 }
+
+%paragraph-m-style-dark-center {
+  @extend %paragraph-m-style-dark;
+  @extend %center-max-width-text;
+}
+%paragraph-m-style-dark-center {
+  @extend %paragraph-m-style-dark;
+  @extend %center-max-width-text;
+}
+
+%paragraph-m-style-dark-center {
+  @extend %paragraph-m-style-dark;
+  @extend %center-max-width-text;
+}
+%paragraph-m-style-dark-center {
+  @extend %paragraph-m-style-dark;
+  @extend %center-max-width-text;
+}
+
+
 
 // HERO VARIATION
 %paragraph-hero-style-white {
@@ -110,6 +170,8 @@ $hero-p-max-width: 480px;
   @extend %paragraph-hero-style-white;
   max-width: $hero-p-max-width;
 }
+
+
 
 
 

@@ -1,5 +1,8 @@
-.join-the-community {
+$social-icon-font-size-small: 40px;
+$social-icon-font-size-medium: 60px;
+$social-icon-font-size-large: 80px;
 
+.join-the-community {
   &__container {
     @extend %container-row;
     @extend %module-top-bottom-padding-style;
@@ -17,4 +20,44 @@
   &__intro-paragraph {
     @extend %paragraph-l-style-dark-center;
   }
+  &__social-links {
+  //  @extend %container-row;
+  width: 80%;
+  margin: auto;
+
+  }
+  &__social-link {
+    width: 16.6666666667%;
+    float: left;
+    color: $dark-blue;
+    @include font-size($social-icon-font-size-small);
+    text-align: center;
+    @include respond-to(medium) {
+      @include font-size($social-icon-font-size-medium);
+    }
+    @include respond-to(medium) {
+      @include font-size($social-icon-font-size-large);
+    }
+  }
 }
+
+.join-the-community__icon {
+    &--twitter {
+      @extend %icon--twitter;
+    }
+    &--facebook {
+      @extend %icon--facebook;
+    }
+    &--slack {
+      @extend %icon--slack;
+    }
+    &--github  {
+      @extend %icon--github;
+    }
+    &--btc {
+      @extend %icon--btc;
+    }
+    &--kanban {
+      @extend %icon--kanban;
+    }
+  }

@@ -60,7 +60,7 @@
   &__lead-container {
 
   }
-  &__actions-why-mue { //li
+  &__actions-why-mue {
     display: block;
     margin-bottom: 17px;
     @include respond-to(large) {
@@ -69,17 +69,21 @@
       margin-right: 35px;
     }
   }
-  &__actions-start-using { //li
+  &__actions-start-using {
     display: block;
     @include respond-to(large) {
       display: inline-block;
       max-width: 48%;
     }
   }
-  &__actions-btn-why-mue, &__actions-btn-start-usin {
+  &__actions-btn-why-mue, &__actions-btn-start-using {
     @extend %button-style-1-medium;
   }
   &__actions-btn-start-using {
     @extend %button-style-1-medium;
+  }
+  &__actions-btn-why-mue--play-icon {
+    @extend %icon--play;
+    margin-left: 3px;
   }
 }

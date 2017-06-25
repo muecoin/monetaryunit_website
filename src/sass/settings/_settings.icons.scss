@@ -1,0 +1,172 @@
+$icomoon-font-path: "../assets/fonts" !default;
+
+$icon--developers: "\e908";
+$icon--merchants: "\e909";
+$icon--investors: "\e90a";
+$icon--download: "\e907";
+$icon--kanban: "\e900";
+$icon--btc: "\e901";
+$icon--slack: "\e902";
+$icon--chart: "\e903";
+$icon--cycle: "\e904";
+$icon--balance: "\e905";
+$icon--wallet: "\e906";
+$icon--consumers: "\e90b";
+$icon--users: "\e972";
+$icon--rocket: "\e9a5";
+$icon--cancel-circle: "\ea0d";
+$icon--play: "\ea15";
+$icon--down-arrow: "\ea43";
+$icon--facebook: "\ea91";
+$icon--twitter: "\ea96";
+$icon--github: "\eab0";
+
+
+@font-face {
+  font-family: 'icons';
+  src:  url('#{$icomoon-font-path}/icons.eot?j9fy5i');
+  src:  url('#{$icomoon-font-path}/icons.eot?j9fy5i#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icons.ttf?j9fy5i') format('truetype'),
+    url('#{$icomoon-font-path}/icons.woff?j9fy5i') format('woff'),
+    url('#{$icomoon-font-path}/icons.svg?j9fy5i#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+
+  &--developers {
+    @extend %icon;
+    &:before {
+      content: $icon--developers;
+    }
+  }
+  &--merchants {
+    @extend %icon;
+    &:before {
+      content: $icon--merchants;
+    }
+  }
+  &--investors {
+    @extend %icon;
+    &:before {
+      content: $icon--investors;
+    }
+  }
+  &--consumers {
+    @extend %icon;
+    &:before {
+      content: $icon--consumers;
+    }
+  }
+  &--download {
+    @extend %icon;
+    &:before {
+      content: $icon--download;
+    }
+  }
+  &--kanban {
+    @extend %icon;
+    &:before {
+      content: $icon--kanban;
+    }
+  }
+  &--btc {
+    @extend %icon;
+    &:before {
+      content: $icon--btc;
+    }
+  }
+  &--slack {
+    @extend %icon;
+    &:before {
+      content: $icon--slack;
+    }
+  }
+  &--chart {
+    @extend %icon;
+    &:before {
+      content: $icon--chart;
+    }
+  }
+  &--cycle {
+    @extend %icon;
+    &:before {
+      content: $icon--cycle;
+    }
+  }
+  &--balance {
+    @extend %icon;
+    &:before {
+      content: $icon--balance;
+    }
+  }
+  &--wallet {
+    @extend %icon;
+    &:before {
+      content: $icon--wallet;
+    }
+  }
+  &--users {
+    @extend %icon;
+    &:before {
+      content: $icon--users;
+    }
+  }
+  &--rocket {
+    @extend %icon;
+    &:before {
+      content: $icon--rocket;
+    }
+  }
+  &--cancel-circle {
+    @extend %icon;
+    &:before {
+      content: $icon--cancel-circle;
+    }
+  }
+  &--play {
+    @extend %icon;
+    &:before {
+      content: $icon--play;
+    }
+  }
+  &--down-arrow {
+    @extend %icon;
+    &:before {
+      content: $icon--down-arrow;
+    }
+  }
+  &--facebook {
+    @extend %icon;
+    &:before {
+      content: $icon--facebook;
+    }
+  }
+  &--twitter {
+    @extend %icon;
+    &:before {
+      content: $icon--twitter;
+    }
+  }
+  &--github {
+    @extend %icon;
+    &:before {
+      content: $icon--github;
+    }
+  }
+}
