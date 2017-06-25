@@ -20,6 +20,16 @@ $paragraph-m-margin-bottom-medium: 40px;
 $paragraph-line-height-m-small: 23px;
 $paragraph-line-height-m-medium: 30px;
 
+// PARAGRAPH S
+$paragraph-font-size-s-small: 13px;
+$paragraph-font-size-s-medium: 16px;
+
+$paragraph-s-margin-bottom-small: 26px;
+$paragraph-s-margin-bottom-medium: 40px;
+
+$paragraph-line-height-s-small: 23px;
+$paragraph-line-height-s-medium: 30px;
+
 // HERO VARIANT
 $paragraph-font-size-hero-small: 15px;
 $paragraph-font-size-hero-medium: 18px;
@@ -65,6 +75,17 @@ $hero-p-max-width: 480px;
   }
 }
 
+%paragraph-size-s-style {
+  @include font-size($paragraph-font-size-s-small);
+  margin-bottom: $paragraph-s-margin-bottom-small;
+  line-height: $paragraph-line-height-s-small;
+  @include respond-to(medium) {
+    line-height: $paragraph-line-height-s-medium;
+    margin-bottom: $paragraph-s-margin-bottom-medium;
+    @include font-size($paragraph-font-size-s-medium);
+  }
+}
+
 // HERO VARIANT
 %paragraph-size-hero-style {
   @include font-size($paragraph-font-size-hero-small);
@@ -86,6 +107,11 @@ $hero-p-max-width: 480px;
 %paragraph-m-style {
   @extend %paragraph-font-style;
   @extend %paragraph-size-m-style;
+}
+// SMALL SIZE P
+%paragraph-s-style {
+  @extend %paragraph-font-style;
+  @extend %paragraph-size-s-style;
 }
 
 // HERO VARIATION
@@ -118,6 +144,18 @@ $hero-p-max-width: 480px;
   color: $white;
 }
 
+// DARK BLUE TEXT
+%paragraph-s-style-dark {
+  @extend %paragraph-s-style;
+  color: $dark-blue;
+}
+
+// WHITE COLOR
+%paragraph-s-style-white {
+  @extend %paragraph-s-style;
+  color: $white;
+}
+
 %paragraph-l-style-white-center {
   @extend %paragraph-l-style-white;
   @extend %center-max-width-text;
@@ -136,21 +174,39 @@ $hero-p-max-width: 480px;
   @extend %center-max-width-text;
 }
 
-%paragraph-m-style-dark-center {
-  @extend %paragraph-m-style-dark;
+%paragraph-m-style-white-center {
+  @extend %paragraph-m-style-white;
   @extend %center-max-width-text;
 }
-%paragraph-m-style-dark-center {
-  @extend %paragraph-m-style-dark;
+%paragraph-m-style-white-center {
+  @extend %paragraph-m-style-white;
   @extend %center-max-width-text;
 }
 
 %paragraph-m-style-dark-center {
-  @extend %paragraph-m-style-dark;
+  @extend %paragraph-s-style-dark;
   @extend %center-max-width-text;
 }
 %paragraph-m-style-dark-center {
-  @extend %paragraph-m-style-dark;
+  @extend %paragraph-s-style-dark;
+  @extend %center-max-width-text;
+}
+
+%paragraph-s-style-white-center {
+  @extend %paragraph-s-style-white;
+  @extend %center-max-width-text;
+}
+%paragraph-s-style-white-center {
+  @extend %paragraph-s-style-white;
+  @extend %center-max-width-text;
+}
+
+%paragraph-s-style-dark-center {
+  @extend %paragraph-s-style-dark;
+  @extend %center-max-width-text;
+}
+%paragraph-s-style-dark-center {
+  @extend %paragraph-s-style-dark;
   @extend %center-max-width-text;
 }
 

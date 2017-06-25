@@ -10,3 +10,8 @@
 %paragraph-max-width {
   max-width: 910px;
 }
+
+%short-summary-max-width {
+  max-width: 300px;
+  @extend %center-element;
+}

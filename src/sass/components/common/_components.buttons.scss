@@ -1,20 +1,19 @@
-$button-1-font-size-small-small: 12px;
-$button-1-font-size-small-medium: 14px;
-
-$button-1-padding-small: 5px 12px;
-$button-1-padding-medium: 11px 12px;
-$button-1-padding-large: 17px 26px;
-
-$button-1-radius-small: 4px;
-$button-1-radius-medium: 7px;
-$button-1-radius-large: 9px;
-
+$button-1-font-size-small-small: 14px;
+$button-1-font-size-small-medium: 17px;
 
 $button-1-font-size-medium-small: 16px;
 $button-1-font-size-medium-medium: 18px;
 
 $button-1-font-size-large-small: 19px;
 $button-1-font-size-large-medium: 21px;
+
+$button-1-padding-small: 8px 21px;;
+$button-1-padding-medium: 11px 12px;
+$button-1-padding-large: 17px 26px;
+
+$button-1-radius-small: 6px;
+$button-1-radius-medium: 7px;
+$button-1-radius-large: 9px;
 
 
 
@@ -66,6 +65,7 @@ $button-1-font-size-large-medium: 21px;
 %btn-reset {
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 %bold-btn-font {

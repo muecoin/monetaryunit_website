@@ -1,6 +1,11 @@
+$benefit-icon-color: $white;
+$get-started-text-color: $white;
+$icon-size-small: 65px;
+
 .get-started {
   @extend %container-full;
   background-color: $yellow;
+  color: $get-started-text-color;
   &__container {
     @extend %container-row;
     @extend %module-top-bottom-padding-style;
@@ -15,15 +20,58 @@
     @extend %column;
   }
   &__guide {
-    background: grey;
-    color: #fff;
+    max-width: 300px;
+    margin: 0 auto 40px auto;
     text-align: center;
   }
 
+  &__guide-icon {
+    font-size: $icon-size-small;
+    color: $benefit-icon-color;
+    text-align: center;
+    @extend %icon-bottom-padding-1;
+
+    &--investors {
+      @extend .get-started__guide-icon;
+      @extend %icon--investors;
+    }
+    &--consumers {
+      @extend .get-started__guide-icon;
+      @extend %icon--consumers;
+    }
+    &--merchants {
+      @extend .get-started__guide-icon;
+      @extend %icon--merchants;
+    }
+    &--developers {
+      @extend .get-started__guide-icon;
+      @extend %icon--developers;
+    }
+  }
+
+  &__sub-heading {
+    @extend %heading-3-style-white-center;
+  }
+  &__description {
+    @extend %paragraph-s-style-white-center;
+  }
+  &__find-out-more-btn {
+    @extend %button-style-1-small;
+    margin-bottom: 25px;
+  }
+
   &__wallet-cta-container {
-    @extend %button-style-1-large;
+    text-align: center;
+    margin-top: $layout-spacing-m;
+    width: 100%;
   }
   &__wallet-download {
-    @extend %center-text;
+    @extend %button-style-1-large;
+  }
+  &__download-icon {
+    &--download {
+      @extend %icon--download;
+      margin-left: $icon-large-btn-left-margin;
+    }
   }
 }

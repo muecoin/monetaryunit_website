@@ -47,8 +47,7 @@ $icon--github: "\eab0";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
-
+  // ICONS
   &--developers {
     @extend %icon;
     &:before {

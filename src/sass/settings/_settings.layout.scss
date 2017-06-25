@@ -1,16 +1,18 @@
-$gutter: 15px !default;
+$gutter: 25px !default;
 
 $breakpoints: (
   'smallest': '320px',
   'very-small': '600px',
-  'small': '639px',
+  'small': '700px',
   'medium': '992px',
+  'medium-large': '1170px',
   'large': '1450px'
 ) !default;
 
 $containers: (
-  'small': (620px + $gutter),
+  'small': (650px + $gutter),
   'medium': (940px + $gutter),
+  'medium-large': (1140px + $gutter),
   'large': (1350px + $gutter)
 ) !default;
 

@@ -1,0 +1,12 @@
+$icon-large-btn-left-margin: 15px;
+
+%icon-bottom-padding-1 {
+  @extend %icon;
+  margin-bottom: 20px;
+  @include respond-to(medium){
+    margin-bottom: 30px;
+  }
+  @include respond-to(large){
+    margin-bottom: 45px;
+  }
+}

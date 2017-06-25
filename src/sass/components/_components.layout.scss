@@ -19,7 +19,7 @@ html, body {
 
 // classes for consistent module spacing
 %module-top-bottom-padding-style {
-  padding-top: 50px;
+  padding-top: $layout-spacing-m;
   padding-bottom: $layout-spacing-l;
   @include respond-to(small) {
     padding-top: $layout-spacing-m;
