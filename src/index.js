@@ -9,11 +9,15 @@ import WhyChooseMue from './components/home/why-choose-mue';
 import GetStarted from './components/home/get-started';
 import JoinTheCommunity from './components/home/join-the-community';
 
+import WalletModal from './components/common/wallet-modal';
+import VideoModal from './components/common/video-modal';
 import Footer from './components/common/footer';
 
 export default () => {
   return renderComponent(
     <Layout className="layout">
+        <WalletModal />
+        <VideoModal />
         <Hero />
         <About />
         <WhyChooseMue />

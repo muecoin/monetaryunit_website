@@ -1,0 +1,106 @@
+$wallet-download-max-width: 930px;
+$icon-apple-mac-color: $orange;
+$icon-apple-ios-color: $apple-grey;
+$icon-android-color: $android-green;
+$icon-windows-color: $windows-blue;
+
+.wallet-download-modal {
+  @extend %modal-overlay;
+  &--hidden {
+    @extend .modal-overlay--hidden;
+    @extend .wallet-download-modal;
+    display: none;
+  }
+  &__modal {
+    @extend %modal;
+    max-width: $wallet-download-max-width;
+    padding: 45px 5px;
+    @include respond-to(medium){
+      padding: 50px 70px;
+    }
+  }
+  &__close {
+    @extend %button-close;
+    @extend %icon--cancel-circle;
+  }
+  &__heading {
+    @extend %heading-2-style-dark-center;
+    margin-bottom: 10px;
+  }
+
+  &__download-item {
+    width: 50%;
+    text-align: center;
+    float: left;
+    @include respond-to(small){
+      width: 25%;
+      float: left;
+    }
+  }
+
+  &__platform-icon-wrapper {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  &__platform-icon {
+    @include font-size(50px);
+    @include respond-to(medium){
+      @include font-size(90px);
+    }
+    &--windows {
+      @extend .wallet-download-modal__platform-icon;
+      @extend %icon--windows;
+      color: $icon-windows-color;
+    }
+    &--mac {
+      @extend .wallet-download-modal__platform-icon;
+      @extend %icon--apple;
+      color: $icon-apple-mac-color;
+    }
+    &--android {
+      @extend .wallet-download-modal__platform-icon;
+      @extend %icon--android;
+      color: $icon-android-color;
+    }
+    &--ios {
+      @extend .wallet-download-modal__platform-icon;
+      @extend %icon--apple;
+      color: $icon-apple-ios-color;
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    display: block;
+    @extend %button-style-1-medium;
+    font-size: 11px;
+
+    &--windows {
+      @extend .wallet-download-modal__btn;
+      color: $icon-windows-color;
+    }
+    &--mac {
+      @extend .wallet-download-modal__btn;
+      color: $icon-apple-mac-color;
+    }
+    &--android {
+      @extend .wallet-download-modal__btn;
+      color: $icon-android-color;
+    }
+    &--ios {
+      @extend .wallet-download-modal__btn;
+      color: $icon-apple-ios-color;
+    }
+  }
+
+  &__btn-icon {
+        margin-left: 4px;
+    &--download {
+      @extend .wallet-download-modal__btn-icon;
+      @extend %icon--download;
+    }
+  }
+}

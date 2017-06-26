@@ -1,0 +1,17 @@
+$video-max-width: 930px;
+
+.wallet-download-modal {
+  @extend %modal-overlay;
+  &--hidden {
+    @extend .wallet-download-modal;
+    display: none;
+  }
+  &__modal {
+    @extend %modal;
+    max-width: $video-max-width;
+  }
+  &__close {
+    @extend %button-close;
+    @extend %icon--cancel-circle;
+  }
+}

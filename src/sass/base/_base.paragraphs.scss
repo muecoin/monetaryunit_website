@@ -40,6 +40,9 @@ $paragraph-line-height-hero-medium: 30px;
 $paragraph-hero-margin-bottom-small: 16px;
 $paragraph-hero-margin-bottom-medium: 30px;
 
+$paragraph-hero-line-height-small: 27px;
+$paragraph-hero-line-height-medium: 30px;
+
 $hero-p-max-width: 480px;
 $small-column-max-width-1: 365px;
 
@@ -91,9 +94,9 @@ $small-column-max-width-1: 365px;
 %paragraph-size-hero-style {
   @include font-size($paragraph-font-size-hero-small);
   margin-bottom: $paragraph-hero-margin-bottom-small;
-  line-height: 20px;
+  line-height: $paragraph-hero-line-height-small;
   @include respond-to(medium) {
-    line-height: 30px;
+    line-height: $paragraph-hero-line-height-medium;
     margin-bottom: $paragraph-hero-margin-bottom-medium;
     @include font-size($paragraph-font-size-hero-medium);
   }

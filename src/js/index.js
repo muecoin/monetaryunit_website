@@ -1,15 +1,30 @@
 import '../sass/index.scss';
-import $ from 'jquery';
 
 import Navigation from './navigation';
+import Modal from './modal';
 
 const init = () => {
   const nav = new Navigation();
   nav.start();
+  const walletModal = new Modal(document.querySelector('.wallet-download-modal--hidden'), 'wallet-download-modal');
+  const videoModal = new Modal(document.querySelector('.video-modal--hidden'), 'wallet-video-modal');
+  window.openWalletModal = walletModal.open.bind(walletModal);
+  window.videoModal = videoModal.open.bind(videoModal);
+  initHome();
 }
 
 const initHome = () => {
-  // modal initialised
+  const openButton = document.querySelector('.get-started__wallet-download');
+  openButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.openWalletModal();
+  });
+
+  const openVideoButton = document.querySelector('.get-started__wallet-download');
+  openVideoButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.openVideoModal();
+  });
 }
 
 const contentHome = () => {

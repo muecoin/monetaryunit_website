@@ -1,5 +1,8 @@
 $icomoon-font-path: "../assets/fonts" !default;
 
+$icon--apple: "\e90c";
+$icon--android: "\e90d";
+$icon--windows: "\e90e";
 $icon--developers: "\e908";
 $icon--merchants: "\e909";
 $icon--investors: "\e90a";
@@ -48,6 +51,24 @@ $icon--github: "\eab0";
   -moz-osx-font-smoothing: grayscale;
 
   // ICONS
+  &--apple {
+    @extend %icon;
+    &:before {
+      content: $icon--apple;
+    }
+  }
+  &--android {
+    @extend %icon;
+    &:before {
+      content: $icon--android;
+    }
+  }
+  &--windows {
+    @extend %icon;
+    &:before {
+      content: $icon--windows;
+    }
+  }
   &--developers {
     @extend %icon;
     &:before {
