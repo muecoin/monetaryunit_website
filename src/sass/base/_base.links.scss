@@ -1,6 +1,19 @@
 a {
   @extend %reset-link-styling;
+  &:hover, &:active, &:focus {
+    @extend %transition-1;
+
+  }
 }
+
+%transition-1 {
+  opacity: .6;
+  transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+}
+
 
 %reset-link-styling {
   color: inherit;

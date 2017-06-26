@@ -13,7 +13,7 @@ $button-width: 35px;
 .nav {
   @extend %container;
 	margin-bottom: 1%;
-	overflow: auto;
+	overflow: hidden;
 
   &__list {
     margin: 0;

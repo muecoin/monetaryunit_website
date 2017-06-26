@@ -1,8 +1,35 @@
-$progress-bar-uncomplete-color: #f0efee; //@todo - put into settings
+$project-1-progress: 80%;
+$project-2-progress: 30%;
+$project-3-progress: 22%;
+$project-4-progress: 80%;
+$project-5-progress: 59%;
+$project-6-progress: 96%;
+
+$progress-bar-uncomplete-color: $lighest-grey;
 $progress-bar-border-color: $orange;
 $progress-bar-fill-color: $orange;
-$bar-rounding-radius: 16px;
+$percentage-text-color: $white;
+
+$bar-rounding-radius-small: 16px;
+$bar-rounding-radius-medium: 16px;
+$progress-bar-max-width: 340px;
 $progress-bar-bottom-spacing: $layout-spacing-xs1;
+$progress-bar-width-small: 85%;
+$progress-bar-border-size-small: 4px;
+$progress-bar-margin-bottom-small: $layout-spacing-xxs;
+$progress-bar-margin-bottom-medium: $layout-spacing-xs0;
+
+$description-margin-bottom-medium: 40px;
+
+$progress-percentage-top-spacing-small: 3px;
+$progress-percentage-top-spacing-medium: 2px;
+
+$bar-fill-top-offset-medium: -4px;
+$bar-height-medium: 30px;
+$bar-rounding-radius-small: 26px;
+$bar-rounding-radius-medium: 34px;
+$bar-fill-top-offset-small: -4px;
+
 .why-choose-mue {
   @extend %container-full;
   background-color: $white;
@@ -34,6 +61,10 @@ $progress-bar-bottom-spacing: $layout-spacing-xs1;
   }
   &__description {
     @extend %paragraph-s-style-dark-center-300mw;
+    @include respond-to(medium){
+      margin: 0 auto $description-margin-bottom-medium auto;
+    }
+
   }
   &__project-progress {
     @extend %container-row;
@@ -42,35 +73,76 @@ $progress-bar-bottom-spacing: $layout-spacing-xs1;
     @extend %column;
   }
 
-  &__progress-bar-base,
+  &__progress-bar,
   &__progress-bar-fill {
-    max-width: 340px;
+    max-width: $progress-bar-max-width;
     margin: 0 auto;
     margin-bottom: $progress-bar-bottom-spacing;
-    height: 32px;
-    border-radius: $bar-rounding-radius;
+    border-radius: $bar-rounding-radius-small;
+    height: $bar-rounding-radius-small;
+    @include respond-to(medium){
+      height: $bar-height-medium;
+    }
   }
 
-  &__progress-bar-base {
+  &__progress-bar {
     position: relative;
     background-color: $progress-bar-uncomplete-color;
-    width: 100%;
-    border: 4px solid $progress-bar-border-color;
-    margin-bottom: 10px;
+    width: $progress-bar-width-small;
+    border: $progress-bar-border-size-small solid $progress-bar-border-color;
+    margin-bottom: $progress-bar-margin-bottom-small;
+    @include respond-to(medium){
+      margin-bottom: 30px;
+    }
+
   }
   &__progress-bar-fill {
+    @include font-size(12px);
     width: 80%;
     background: $progress-bar-fill-color;
     border: 4px solid $progress-bar-border-color;
-    top: -($bar-rounding-radius / 4);
-    left: -($bar-rounding-radius / 4);
+    top: $bar-fill-top-offset-small;
     position: absolute;
+    font-family: $heading-font-family;
+
+    @include respond-to(medium){
+      @include font-size(15px);
+      top: $bar-fill-top-offset-medium;
+    }
+    
+    &--project-1 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-1-progress;
+    }
+    &--project-2 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-2-progress;
+    }
+    &--project-3 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-3-progress;
+    }
+    &--project-4 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-4-progress;
+    }
+    &--project-5 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-5-progress;
+    }
+    &--project-6 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-6-progress;
+    }
   }
   &__progress-percent {
     @extend %center-text;
     display: block;
-    top: 4px;
+    top: $progress-percentage-top-spacing-small;
     position: relative;
-    color: $white;
+    color: $percentage-text-color;
+    @include respond-to(medium){
+      top: $progress-percentage-top-spacing-medium;
+    }
   }
 }
