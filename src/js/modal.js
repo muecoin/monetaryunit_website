@@ -1,8 +1,10 @@
 export default class Modal {
 
   constructor(overlay, selector) {
+    this.selector = selector;
     this.overlay = overlay;
-    const closeButton = overlay.querySelector(selector + '__close');
+    const closeButton = overlay.querySelector('.' + this.selector + '__close');
+
     closeButton.addEventListener('click', this.close.bind(this));
     overlay.addEventListener('click', e => {
       if (e.srcElement.id === this.overlay.id) {
@@ -12,12 +14,14 @@ export default class Modal {
   }
 
   open() {
-    this.overlay.classList.add(selector);
-    this.overlay.classList.remove(selector + '--hidden');
+    console.log('open');
+    this.overlay.classList.add(this.selector);
+    this.overlay.classList.remove(this.selector + '--hidden');
   }
 
   close() {
-    this.overlay.classList.add(selector + '--hidden');
-    this.overlay.classList.remove(selector);
+    console.log('close');
+    this.overlay.classList.add(this.selector + '--hidden');
+    this.overlay.classList.remove(this.selector);
   }
 }

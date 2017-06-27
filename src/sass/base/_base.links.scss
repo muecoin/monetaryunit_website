@@ -1,6 +1,6 @@
 a {
   @extend %reset-link-styling;
-  &:hover, &:active, &:focus {
+  &:hover, &:active {
     @extend %transition-1;
 
   }

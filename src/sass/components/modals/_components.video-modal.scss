@@ -1,17 +1,38 @@
 $video-max-width: 930px;
+$video-close-btn-color: $white;
+$video-modal-bg-color:'transparent';
 
-.wallet-download-modal {
+.video-modal {
   @extend %modal-overlay;
+
   &--hidden {
-    @extend .wallet-download-modal;
+    @extend .video-modal;
     display: none;
   }
+
   &__modal {
     @extend %modal;
     max-width: $video-max-width;
+    padding: 47px 0;
+    background: transparent;
+    @include respond-to(medium) {
+      padding: 48px 35px;
+    }
   }
+
   &__close {
     @extend %button-close;
     @extend %icon--cancel-circle;
+    color: $video-close-btn-color;
+  }
+
+  &__embed-container {
+    @extend %embed-container;
+  }
+
+  &__embed-container-iframe {
+    @extend %embed-container-iframe;
+    border: 0;
+    border-radius: 20px;
   }
 }
