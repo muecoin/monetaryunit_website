@@ -1,0 +1,28 @@
+.hero {
+  @extend %container-full;
+  @extend %sunset-orange-gradient;
+
+  &__container {
+    @extend %container-row;
+    @extend %common-hero-padding-style;
+  }
+
+  &__lead {
+    @extend %column;
+    @extend %column--center;
+    padding-left: 2.5%;
+  }
+  &__lead-heading {
+    @extend %heading-1-hero-style-white-center;
+  }
+  &__lead-subheading {
+    @extend %heading-2-hero-style-white-center;
+  }
+  &__lead-intro {
+    @extend %paragraph-hero-common-style-center-white;
+  }
+  &__feedback-link {
+    font-family: $bold-font-family;
+    text-decoration: underline;
+  }
+}

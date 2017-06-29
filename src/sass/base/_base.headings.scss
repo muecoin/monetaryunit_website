@@ -195,6 +195,15 @@ $heading-s-margin-bottom-medium: 34px;
   @extend %center-text;
 }
 
+%heading-1-hero-style-white-center {
+  @extend %heading-1-hero-style-white;
+  @extend %center-text;
+}
+%heading-2-hero-style-white-center {
+  @extend %heading-2-hero-style-white;
+  @extend %center-text;
+}
+
 // DEFUALT ELEMENT STYLES
 h1 {
   @extend %heading-1-style-dark;

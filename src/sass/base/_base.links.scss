@@ -2,7 +2,6 @@ a {
   @extend %reset-link-styling;
   &:hover, &:active {
     @extend %transition-1;
-
   }
 }
 
@@ -14,6 +13,10 @@ a {
   -o-transition: opacity .3s ease-out;
 }
 
+%text-link-style-1 {
+  font-family: $bold-font-family;
+  text-decoration: underline;
+}
 
 %reset-link-styling {
   color: inherit;
