@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-<div className="video-modal--hidden">
+<div className="video-modal--hidden" data-modal data-btn-type="video">
   <div className="video-modal__modal">
     <span className="video-modal__close"></span>
     <div className="video-modal__embed-container">

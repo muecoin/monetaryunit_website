@@ -1,29 +1,21 @@
-// .container {
-//   max-width: 960px;
-//   margin: 0 auto;
-//   padding: 2em 0 2em 0;
-// }
-
 %accordion {
-  position:relative;
-  background-color:#eee;
+  position: relative;
+  background-color: #eee;
 
   &__dt,
   &__list {
-    //border-bottom:1px solid #d9d5d5;
     &:after {
       content: "";
-      display:block;
+      display: block;
       height: 0;
       width:100%;
-      //background-color:darken(#d9d5d5, 10%);
     }
   }
 
   &__dd {
-     background-color:#eee;
-     font-size:1em;
-     line-height:1.5em;
+     background-color: #eee;
+     font-size: 1em;
+     line-height: 1.5em;
   }
 
   &__paragraph {
@@ -37,20 +29,23 @@
     background-color: $white;
     margin-bottom: 0;
     padding: 0.8em;
-    display:block;
-    text-decoration:none;
+    display: block;
+    text-decoration: none;
     color: $dark-blue;
-    transition:background-color 0.5s ease-in-out;
-    border-bottom:1px solid #d9d5d5;
+    transition: background-color 0.5s ease-in-out;
+    border-bottom: 1px solid #d9d5d5;
+
     &:before {
        content: "+";
-       font-size:1.5em;
-       line-height:0.5em;
+       font-size: 1.5em;
+       line-height: 0.5em;
        margin-right: 0.6em;
-       float:left;
+       float: left;
        color: $orange;
        transition: transform 0.3s ease-in-out;
+       height: 0.74em;
     }
+
     &:hover {
       opacity: 1;
     }
@@ -58,7 +53,6 @@
 
   &__title--active {
     @extend %accordion__title;
-    //background-color:darken(#38cc70, 10%);
      &:before {
        transform:rotate(-225deg);
      }
@@ -68,7 +62,7 @@
     background: $ebony-clay;
     height: auto;
     overflow: hidden;
-    //SHAME: magic number to allow the accordion to animate
+    //magic number to allow the accordion to animate
     max-height: 50em;
     transition: max-height 1s;
 
@@ -85,91 +79,38 @@
 
 }
 
-// %accordion__dl,
-// %accordion__list {
-//   border:1px solid #ddd;
-//   &:after {
-//     content: "";
-//     display:block;
-//     height:1em;
-//     width:100%;
-//     background-color:darken(#38cc70, 10%);
-//   }
-// }
-
-
-
-
-// .accordion dl,
-// .accordion-list {
-//   &:after {
-//     content: "";
-//     display:block;
-//     height:1em;
-//     width:100%;
-//     background-color:darken(#38cc70, 10%);
-//   }
-// }
-
-
-// .accordion {
-//   padding:1em 2em 1em 2em;
-// }
-
-// .accordion {
-//     position:relative;
-//     background-color:#eee;
-// }
-
-
-// .accordionTitleActive,
-// .accordionTitle.is-expanded {
-//    background-color:darken(#38cc70, 10%);
-//     &:before {
-//       transform:rotate(-225deg);
-//     }
-// }
-// .accordionItem {
-//     height:auto;
-//     overflow:hidden;
-//     //SHAME: magic number to allow the accordion to animate
-//     max-height:50em;
-//     transition:max-height 1s;
-//
-//     @media screen and (min-width:48em) {
-//          max-height:15em;
-//         transition:max-height 0.5s
-//     }
-// }
 
 .no-js .accordionItem.is-collapsed {
   max-height: auto;
 }
+
 .animateIn {
      animation: accordionIn 0.45s normal ease-in-out both 1;
 }
+
 .animateOut {
      animation: accordionOut 0.45s alternate ease-in-out both 1;
 }
+
 @keyframes accordionIn {
   0% {
     opacity: 0;
-    transform:scale(0.9) rotateX(-60deg);
-    transform-origin: 50% 0;
+    //transform:scale(0.98) rotateX(-60deg);
+    //transform-origin: 50% 0;
   }
   100% {
     opacity:1;
-    transform:scale(1);
+    //transform:scale(1);
   }
 }
 
 @keyframes accordionOut {
     0% {
        opacity: 1;
-       transform:scale(1);
+       //transform:scale(1);
      }
-     100% {
-          opacity:0;
-           transform:scale(0.9) rotateX(-60deg);
-       }
+    100% {
+      opacity:0;
+      //transform:scale(0.98) rotateX(-60deg);
+    }
 }

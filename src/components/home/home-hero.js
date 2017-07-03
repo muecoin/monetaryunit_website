@@ -18,7 +18,7 @@ export default () => (
             <p className="home-hero__lead-intro">We aim to break away from the mould that cryptocurrency is only for tech-savvy people.</p>
             <ul className="home-hero__actions">
               <li className="home-hero__actions-why-mue">
-                <a className="home-hero__actions-btn-why-mue" href="">Why choose MonetaryUnit? <span className="home-hero__actions-btn-why-mue--play-icon"></span></a>
+                <a className="home-hero__actions-btn-why-mue" data-component="video-modal" href="">Why choose MonetaryUnit? <span className="home-hero__actions-btn-why-mue--play-icon"></span></a>
               </li>
               <li className="home-hero__actions-start-using">
                 <a className="home-hero__actions-btn-start-using" href="">Start using MonetaryUnit today</a>

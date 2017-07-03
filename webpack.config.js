@@ -30,7 +30,7 @@ module.exports = [
       historyApiFallback: true
     },
     entry: {
-      'index': './src/js/index.js',
+      'index': './src/js/index.js'
     },
     output: {
       path: path.resolve(__dirname, 'dist'),

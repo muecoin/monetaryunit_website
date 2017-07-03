@@ -7,6 +7,11 @@
     @extend %common-hero-padding-style;
   }
 
+  &__container--overlap-content {
+    @extend %container-row;
+    @extend %common-hero-padding--content-overlap;
+  }
+
   &__lead {
     @extend %column;
     @extend %column--center;

@@ -54,7 +54,7 @@ export default () => (
       </div>
 
       <div className="get-started__wallet-cta-container">
-        <a className="get-started__wallet-download" href="">Download wallet now<span className="get-started__download-icon--download"></span></a>
+        <a className="get-started__wallet-download" data-component="wallet-modal" href="">Download wallet now<span className="get-started__download-icon--download"></span></a>
       </div>
     </section>
   </div>

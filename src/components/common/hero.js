@@ -4,7 +4,7 @@ import Navigation from '../common/navigation';
 export default () => (
   <div className="hero">
     <Navigation />
-    <section className="hero__container">
+    <section className="hero__container--overlap-content">
         <div className="hero__lead">
           <div className="hero__lead-container">
             <h1 className="hero__lead-heading">Monetary Unit</h1>
