@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-<div className="wallet-download-modal--hidden" data-modal data-btn-type="wallet">
+<div className="wallet-download-modal--hidden" data-modal data-modal-id="wallet-download">
   <div className="wallet-download-modal__modal">
     <span className="wallet-download-modal__close"></span>
     <h1 className="wallet-download-modal__heading">Download Your Wallet</h1>

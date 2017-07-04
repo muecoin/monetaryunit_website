@@ -19,22 +19,22 @@ export default () => (
               <a className="nav__link link--active" href="/">Home</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="#">About</a>
+              <a className="nav__link" href="/" data-jump-to=".about">About</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="#">Why MUE?</a>
+              <a className="nav__link" href="/" data-jump-to=".why-choose-mue">Why MUE?</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="#">Get Started</a>
+              <a className="nav__link" href="/" data-jump-to=".get-started">Get Started</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="#">Community</a>
+              <a className="nav__link" href="/" data-jump-to=".join-the-community">Community</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="#">Foundation</a>
+              <a className="nav__link" href="https://monetaryunitfoundation.org/" target="_blank">Foundation</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="#">Shop</a>
+              <a className="nav__link" href="https://www.zazzle.co.uk/monetaryunit/products" target="_blank">Shop</a>
             </li>
           </ul>
         </nav>
