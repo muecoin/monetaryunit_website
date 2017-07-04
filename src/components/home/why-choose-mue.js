@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div className="why-choose-mue" id="why-choose-mue">
+  <div className="why-choose-mue" data-hash-target="why-choose-mue">
     <section className="why-choose-mue__container">
         <div className="why-choose-mue__intro">
           <div className="why-choose-mue__intro-text-container">
@@ -20,7 +20,7 @@ export default () => (
                 <span className="why-choose-mue__progress-percent">80%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">MUE has shown consistent growth since launch in July 2014. Can you miss out on the opportunity for a sound and reliable investment?</p>
+            <p className="why-choose-mue__description">Crypto accepting portal for Forex trading, web hosting, Domain names & physical goods listed at Amazon.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
             <h2 className="why-choose-mue__sub-heading">www.muegs.com</h2>
@@ -49,7 +49,7 @@ export default () => (
                 <span className="why-choose-mue__progress-percent">80%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">Crypto accepting portal for Forex trading, web hosting, Domain names & physical goods listed at Amazon.</p>
+            <p className="why-choose-mue__description">CBuy & sell dozens of cryptocurrencies in a P2P marketplace for multiple fiat currencies.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
             <h2 className="why-choose-mue__sub-heading">www.cashchat.io</h2>

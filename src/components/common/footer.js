@@ -7,7 +7,7 @@ export default () => (
           <h2 className="footer__sitemap-category">About</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#">About MonetaryUnit</a>
+              <a className="footer__sitemap-link" href="/#about" data-jump-to=".about">About MonetaryUnit</a>
             </li>
           </ul>
         </div>
@@ -16,19 +16,19 @@ export default () => (
           <h2 className="footer__sitemap-category">Why Choose MUE?</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">muex.io</a>
+              <a className="footer__sitemap-link" href="/#why-choose-mue" data-jump-to=".why-choose-mue" target="_self">muex.io</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">webwallets.io</a>
+              <a className="footer__sitemap-link" href="/#why-choose-mue" data-jump-to=".why-choose-mue" target="_self">webwallets.io</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">coinbuy.io</a>
+              <a className="footer__sitemap-link" href="/#why-choose-mue" data-jump-to=".why-choose-mue" target="_self">coinbuy.io</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">cashchat.io</a>
+              <a className="footer__sitemap-link" href="/#why-choose-mue" data-jump-to=".why-choose-mue" target="_self">cashchat.io</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">GS Points</a>
+              <a className="footer__sitemap-link" href="/#why-choose-mue" data-jump-to=".why-choose-mue" target="_self">GS Points</a>
             </li>
           </ul>
         </div>
@@ -37,16 +37,16 @@ export default () => (
           <h2 className="footer__sitemap-category">Get Started</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">For Investors</a>
+              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Investors</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">For Developers</a>
+              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Developers</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">For Consumers</a>
+              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Consumers</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">For Merchants</a>
+              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Merchants</a>
             </li>
           </ul>
         </div>
@@ -88,7 +88,7 @@ export default () => (
               <a className="footer__sitemap-link" href="https://www.zazzle.com/monetaryunit/products" target="_blank">US Shop</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="#" target="_blank">FAQ</a>
+              <a className="footer__sitemap-link" href="/frequently-asked-questions.html" target="_self">FAQ</a>
             </li>
           </ul>
         </div>

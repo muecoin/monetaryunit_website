@@ -14,7 +14,9 @@ export default () => {
   return renderComponent(
     <Layout className="layout">
         <WalletModal />
-        <Hero />
+        <Hero title="Monetary Units" subheading="Frequently Asked Questions">
+          <p className="hero__lead-intro">If you can’t find what you’re looking for let us know <a className="hero__feedback-link" href="#">here</a>.</p>
+        </Hero>
         <FaqAccordianMenu />
         <GetStarted />
         <Footer />

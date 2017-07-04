@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div className="join-the-community" id="join-the-community">
+  <div className="join-the-community" data-hash-target="join-the-community">
     <section className="join-the-community__container">
         <div className="join-the-community__intro">
           <div className="join-the-community__intro-text-container">

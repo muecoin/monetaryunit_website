@@ -17,6 +17,9 @@ const init = () => {
   ScrollingManager.initScrolling();
 }
 
+// prevent page from automatically jumping on load when hash present and add smooth scrolling
+ScrollingManager.hijackPageLoadHashJump();
+
 document.addEventListener("DOMContentLoaded", function(event) {
   init();
 });

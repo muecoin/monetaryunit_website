@@ -7,12 +7,15 @@ export default class Navigation {
     this.toggle = document.querySelector("#toggle");
     this.overlay = document.querySelector("#overlay-wrapper");
     this.desktopMobileBreakpoint = 992;
+    this.navigationLinks;
+    this.setupMobileEvents();
     this.bindHandlers();
   }
 
   bindHandlers() {
     this.checkModeForChange = this.checkModeForChange.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.mobileLinkClicked = this.mobileLinkClicked.bind(this);
   }
 
   getBrowserWidth() {
@@ -30,6 +33,20 @@ export default class Navigation {
     // handle class toggling for nav bar
     this.toggle.addEventListener('click', this.toggleMenu);
     this.setupResizeHandler();
+  }
+
+  setupMobileEvents(){
+    this.navigationLinks = document.querySelectorAll('.nav__link');
+    this.navigationLinks.forEach((link, index) => {
+      link.addEventListener('click', this.mobileLinkClicked);
+    });
+  }
+
+  mobileLinkClicked(e){
+    console.log(this.menuOpen)
+    if (this.menuOpen === true) {
+      this.closeMenu();
+    }
   }
 
   stopScroll(e) {
@@ -71,6 +88,7 @@ export default class Navigation {
     const toggle = e.target;
     if(!this.menuOpen) {
       this.openMenu();
+      console.log("open")
       this.menuOpen = true;
     } else {
       this.closeMenu();

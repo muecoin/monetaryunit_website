@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div className="about" id="about">
+  <div className="about" data-hash-target="about">
     <section className="about__container">
         <div className="about__intro">
           <div className="about__intro-text-container">

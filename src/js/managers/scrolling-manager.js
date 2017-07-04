@@ -10,7 +10,18 @@ export default class ScrollingManager {
    }
 
    scrollButtons.forEach((button) => {
-     new Scroller(button);
+     new Scroller(button, false);
    });
+  }
+
+  static hijackPageLoadHashJump() {
+    let target = window.location.hash;
+    const isHashPresent = (target.length > 1) ? true : false;
+
+    if (isHashPresent){
+      target = target.replace('#', '');
+      const targetScrollElement = document.querySelector('[data-hash-target="' + target + '"]');
+      new Scroller(targetScrollElement, true);
+    }
   }
 }

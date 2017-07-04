@@ -19,16 +19,16 @@ export default () => (
               <a className="nav__link link--active" href="/">Home</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="/" data-jump-to=".about">About</a>
+              <a className="nav__link" href="/#about" data-jump-to=".about">About</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="/" data-jump-to=".why-choose-mue">Why MUE?</a>
+              <a className="nav__link" href="/#why-choose-mue" data-jump-to=".why-choose-mue">Why MUE?</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="/" data-jump-to=".get-started">Get Started</a>
+              <a className="nav__link" href="/#get-started" data-jump-to=".get-started">Get Started</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="/" data-jump-to=".join-the-community">Community</a>
+              <a className="nav__link" href="/#join-the-community" data-jump-to=".join-the-community">Community</a>
             </li>
             <li className="nav__list-item">
               <a className="nav__link" href="https://monetaryunitfoundation.org/" target="_blank">Foundation</a>

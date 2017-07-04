@@ -1,15 +1,15 @@
 import React from 'react';
 import Navigation from '../common/navigation';
 
-export default () => (
+export default ({title, subheading, children }) => (
   <div className="hero">
     <Navigation />
     <section className="hero__container--overlap-content">
         <div className="hero__lead">
           <div className="hero__lead-container">
-            <h1 className="hero__lead-heading">Monetary Unit</h1>
-            <h2 className="hero__lead-subheading">Frequently Asked Questions</h2>
-            <p className="hero__lead-intro">If you can’t find what you’re looking for let us know <a className="hero__feedback-link" href="#">here</a>.</p>
+            <h1 className="hero__lead-heading">{title}</h1>
+            <h2 className="hero__lead-subheading">{subheading}</h2>
+            {children}
           </div>
         </div>
     </section>
