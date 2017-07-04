@@ -96,3 +96,8 @@ $button-1-radius-large: 9px;
   @extend %btn-style-1;
   @extend %button-1-large;
 }
+
+%button-style-2-large-tab {
+  @extend %button-style-1-medium;
+  width: 100%;
+}

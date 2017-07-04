@@ -1,0 +1,35 @@
+.guide-selection-tabs {
+  overflow: auto;
+  margin: 2em 0;
+  width: 100%;
+  @include respond-to(small){
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+  }
+
+  &__tab-container {
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include respond-to(small){
+      width: 25%;
+      padding: 1%;
+    }
+
+  }
+
+  &__tab {
+    @extend %button-style-2-large-tab;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

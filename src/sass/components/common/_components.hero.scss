@@ -5,11 +5,19 @@
   &__container {
     @extend %container-row;
     @extend %common-hero-padding-style;
+    position: relative;
   }
 
   &__container--overlap-content {
     @extend %container-row;
     @extend %common-hero-padding--content-overlap;
+    position: relative;
+  }
+
+  &__container--tab-nav {
+    @extend %container-row;
+    @extend %common-hero-padding--tab-nav;
+    position: relative;
   }
 
   &__lead {
