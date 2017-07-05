@@ -14,8 +14,8 @@ export default () => {
   return renderComponent(
     <Layout className="layout">
         <WalletModal />
-        <Hero title="Monetary Unit" subheading="Getting Started Guides">
-          <p className="hero__lead-intro">A series of short guides to help you get the most out of our digitial currency.<br/>If you can’t find what you’re looking for let us know <a className="hero__feedback-link" href="#">here</a>.</p>
+        <Hero title="Monetary Unit" subheading="Getting Started Guides" containerClassName="hero__container--tab-nav">
+          <p className="hero__lead-intro">A series of short guides to help you get the most out of our digital currency.</p>
           <GuideSelectionTabs />
         </Hero>
         <GetStarted />

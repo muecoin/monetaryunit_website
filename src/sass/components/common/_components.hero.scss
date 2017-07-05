@@ -1,6 +1,7 @@
 .hero {
   @extend %container-full;
   @extend %sunset-orange-gradient;
+  position: relative;
 
   &__container {
     @extend %container-row;
@@ -11,13 +12,11 @@
   &__container--overlap-content {
     @extend %container-row;
     @extend %common-hero-padding--content-overlap;
-    position: relative;
   }
 
   &__container--tab-nav {
     @extend %container-row;
     @extend %common-hero-padding--tab-nav;
-    position: relative;
   }
 
   &__lead {

@@ -1,35 +1,83 @@
+$tabs-inactive-color: $orange-cream;
+
 .guide-selection-tabs {
   overflow: auto;
-  margin: 2em 0;
+  position: absolute;
   width: 100%;
-  @include respond-to(small){
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      left: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
   }
 
   &__tab-container {
-    width: 100%;
-    float: left;
-    margin-bottom: 1em;
-    &:last-child {
-      margin-bottom: 0;
+    display: inline-block;
+    @include respond-to-mw(small){
+      width: 50%;
+      float: left;
+      &:nth-of-type(odd) a { border-right: 1px solid $orange; }
     }
     @include respond-to(small){
       width: 25%;
-      padding: 1%;
     }
+  }
 
+  &__tab-container--developers {
+    @extend .guide-selection-tabs__tab-container;
+    .guide-selection-tabs__tab {
+      border-right: 0;
+    }
   }
 
   &__tab {
-    @extend %button-style-2-large-tab;
-    text-align: center;
     cursor: pointer;
-    margin-bottom: 1em;
-    &:last-child {
-      margin: 0;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: $orange;
+    opacity: 1 !important;
+    background: $tabs-inactive-color;
+
+    @include respond-to-mw(small){
+      padding: 8px 0px;
+      display: block;
+      border-bottom: 1px solid $orange;
+    }
+
+    @include respond-to(small){
+      padding: 26px 20px;
+      border-right: 1px solid $orange;
+      border-bottom: 1px solid $orange;
+    }
+
+    &:hover, &--active {
+      @extend .guide-selection-tabs__tab;
+      background: $white !important;
+      //border-bottom: none;
+    }
+
+    @include respond-to(medium){
+      @include font-size(20px);
     }
   }
 }
+
+// .nav { width: 100%; }
+//.nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+//.nav ul li { display: inline-block; }
+//.nav ul li a { display: block; padding: 10px 20px; text-decoration: none; color: #444; }
+//  .nav ul li a:hover { background-color: #888; color: #fff; }
+
+// @media (max-width:48.000em){
+// 	.example-header .container { width: 100%; }
+//   	.nav ul { width: 100%; font-weight: normal; }
+//   	.nav ul li { width: 50%; float: left; }
+//   	.nav ul li:nth-of-type(odd) a { border-right: 1px solid #ccc; }
+//   	.nav ul li a { padding: 8px 0px; border-bottom: 1px solid #ccc; display: block; }
+// }

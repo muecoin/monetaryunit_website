@@ -14,7 +14,7 @@ export default () => {
   return renderComponent(
     <Layout className="layout">
         <WalletModal />
-        <Hero title="Monetary Unit" subheading="Frequently Asked Questions">
+        <Hero title="Monetary Unit" subheading="Frequently Asked Questions" containerClassName="hero__container--overlap-content">
           <p className="hero__lead-intro">If you can’t find what you’re looking for let us know <a className="hero__feedback-link" href="#">here</a>.</p>
         </Hero>
         <FaqAccordianMenu />

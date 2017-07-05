@@ -1,10 +1,10 @@
 import React from 'react';
 import Navigation from '../common/navigation';
 
-export default ({title, subheading, children }) => (
+export default ({title, subheading, containerClassName = 'hero__container', children }) => (
   <div className="hero">
     <Navigation />
-    <section className="hero__container--tab-nav">
+    <section className={containerClassName}>
         <div className="hero__lead">
           <div className="hero__lead-container">
             <h1 className="hero__lead-heading">{title}</h1>
