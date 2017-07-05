@@ -1,0 +1,27 @@
+.guide-intro {
+
+  &__container {
+    @extend %module-top-bottom-padding-style;
+  }
+
+  &__text-container {
+    @extend %center-element;
+    @extend %paragraph-max-width;
+  }
+
+  &__paragraph-link {
+    @extend %text-link-style-2;
+  }
+
+  &__intro {
+    @extend %column;
+  }
+
+  &__heading {
+    @extend %heading-1-style-dark-center;
+  }
+
+  &__paragraph {
+    @extend %paragraph-l-style-dark-center;
+  }
+}
