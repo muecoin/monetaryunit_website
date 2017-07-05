@@ -28,10 +28,17 @@ $heading-l-footer-font-size-large: 24px;
 
 // H3
 $heading-font-size-s-small: 20px;
-$heading-font-size-s-medium: 24px;
+$heading-font-size-s-medium: 23px;
 
 $heading-s-margin-bottom-small: 25px;
-$heading-s-margin-bottom-medium: 34px;
+$heading-s-margin-bottom-medium: 24px;
+
+// H4
+$heading-font-size-xs-small: 13px;
+$heading-font-size-xs-medium: 16px;
+
+$heading-xs-margin-bottom-small: 25px;
+$heading-xs-margin-bottom-medium: 34px;
 
 // FONT
 %heading-font-style {
@@ -61,6 +68,14 @@ $heading-s-margin-bottom-medium: 34px;
   @include respond-to(medium) {
     margin-bottom: $heading-s-margin-bottom-medium;
     @include font-size($heading-font-size-s-medium);
+  }
+}
+%heading-xs-size-style {
+  @include font-size($heading-font-size-xs-small);
+  margin-bottom: $heading-xs-margin-bottom-small;
+  @include respond-to(medium) {
+    margin-bottom: $heading-xs-margin-bottom-medium;
+    @include font-size($heading-font-size-xs-medium);
   }
 }
 
@@ -105,6 +120,10 @@ $heading-s-margin-bottom-medium: 34px;
 %heading-3-style {
   @extend %heading-font-style;
   @extend %heading-s-size-style;
+}
+%heading-4-style {
+  @extend %heading-font-style;
+  @extend %heading-xs-size-style;
 }
 
 // HERO VARIATION
@@ -151,6 +170,10 @@ $heading-s-margin-bottom-medium: 34px;
   @extend %heading-3-style;
   color: $white;
 }
+%heading-4-style-white {
+  @extend %heading-4-style;
+  color: $white;
+}
 
 // HERO VARIATION
 %heading-1-hero-style-white {
@@ -181,6 +204,10 @@ $heading-s-margin-bottom-medium: 34px;
   @extend %heading-3-style-white;
   @extend %center-text;
 }
+%heading-4-style-white-center {
+  @extend %heading-4-style-white;
+  @extend %center-text;
+}
 
 %heading-1-style-dark-center {
   @extend %heading-1-style-dark;
@@ -202,6 +229,12 @@ $heading-s-margin-bottom-medium: 34px;
 %heading-2-hero-style-white-center {
   @extend %heading-2-hero-style-white;
   @extend %center-text;
+}
+
+%heading-4-step-style-white-center {
+  @extend %heading-4-style-white-center;
+  margin-bottom: 0;
+
 }
 
 // DEFUALT ELEMENT STYLES

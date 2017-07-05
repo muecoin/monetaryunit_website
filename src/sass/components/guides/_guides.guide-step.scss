@@ -1,0 +1,200 @@
+$step-1-left-bg-color: #30323d;
+$step-1-right-bg-color: #242525;
+$step-2-left-bg-color: #1d4c64;
+$step-2-right-bg-color: #233944;
+$step-3-left-bg-color: #0e7c7b;
+$step-3-right-bg-color: #196261;
+$step-4-left-bg-color: #1a936f;
+$step-4-right-bg-color: #217b60;
+
+$guide-step-max-container-width: 1400px;
+
+%two-tone-horizonal-background {
+  @include respond-to(small){
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+
+.guide-step {
+  @extend %container-full;
+  position: relative;
+
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-equal-style;
+    @include respond-to(small) {
+      width: 100%;
+      max-width: $guide-step-max-container-width;
+    }
+  }
+
+  &__step-instruction,
+  &__step-aside {
+    @extend %column;
+    @include respond-to(small) {
+      // add extra responsive padding
+      padding: 0 3%;
+    }
+    @include respond-to(medium) {
+      // add extra responsive padding
+      padding: 0 5%;
+    }
+  }
+
+  &__heading-row {
+    width: 100%;
+  }
+
+  &__heading {
+    @extend %heading-2-hero-style-white;
+    margin-left: 2.8em;
+    line-height: 1.5;
+
+    @include respond-to(medium){
+      margin-left: 2em;
+    }
+
+    &:before {
+      display: block;
+      position: absolute;
+      //font-size: 1.85rem;
+      text-align: center;
+      color: #fff;
+      margin-left: -64px;
+      margin-top: -7px;
+      width: 50px;
+      height: 50px;
+      border: 2px solid $orange;
+      border-radius: 999px;
+      line-height: 1.95;
+
+      @include respond-to(medium){
+        margin-left: -71px;
+        margin-top: 2px;
+        width: 55px;
+        height: 55px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &__heading--1 {
+    @extend .guide-step__heading;
+    &:before {
+      content: '1';
+    }
+  }
+  &__heading--2 {
+    @extend .guide-step__heading;
+    &:before {
+      content: '2';
+    }
+  }
+  &__heading--3 {
+    @extend .guide-step__heading;
+    &:before {
+      content: '3';
+    }
+  }
+  &__heading--4 {
+    @extend .guide-step__heading;
+    &:before {
+      content: '4';
+    }
+  }
+
+  &__step-aside {
+    @include respond-to-mw(small) {
+      display: none;
+    }
+    @extend %column--center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__tip-top,
+  &__tip-bottom {
+    @extend %heading-4-style-white-center;
+    max-width: 69%;
+    margin: 2% auto;
+    line-height: 1.4;
+  }
+
+  &__tip-top {
+  }
+  &__tip-bottom {
+  }
+
+
+  &__paragraph {
+    @extend %paragraph-m-style-white;
+  }
+
+  &__paragraph-link {
+    @extend %text-link-style-2;
+  }
+
+  &__step-aside-image-container {
+
+  }
+
+  &__step-aside-image {
+    @include respond-to-mw(small) {
+      max-width: 90%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__wallet-download {
+    @extend %button-style-1-large;
+  }
+
+
+}
+
+// STEP COLOUR SCHEME
+
+.guide-step--1 {
+  @extend .guide-step;
+  background-color: $step-1-left-bg-color;
+
+  &:after {
+    background-color: $step-1-right-bg-color;
+    @extend %two-tone-horizonal-background;
+  }
+}
+.guide-step--2 {
+  @extend .guide-step;
+  background-color: $step-2-left-bg-color;
+
+  &:after {
+    background-color: $step-2-right-bg-color;
+    @extend %two-tone-horizonal-background;
+  }
+}
+.guide-step--3 {
+  @extend .guide-step;
+  background-color: $step-3-left-bg-color;
+
+  &:after {
+    background-color: $step-3-right-bg-color;
+    @extend %two-tone-horizonal-background;
+  }
+}
+.guide-step--4 {
+  @extend .guide-step;
+  background-color: $step-4-left-bg-color;
+
+  &:after {
+    background-color: $step-4-right-bg-color;
+    @extend %two-tone-horizonal-background;
+  }
+}

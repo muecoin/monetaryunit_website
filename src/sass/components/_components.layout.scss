@@ -50,6 +50,19 @@ html, body {
   }
 }
 
+%module-top-bottom-padding-equal-style {
+  padding-top: $layout-spacing-m;
+  padding-bottom: $layout-spacing-m;
+  @include respond-to(small) {
+    padding-top: $layout-spacing-m;
+    padding-bottom: $layout-spacing-m;
+  }
+  @include respond-to(medium) {
+    padding-top: $layout-spacing-fluid-m;
+    padding-bottom: $layout-spacing-fluid-m;
+  }
+}
+
 %module-top-padding-style {
   padding-top: $layout-spacing-m;
   @include respond-to(small) {
