@@ -5,8 +5,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
-
 const getHtmlPlugins = () => {
   var plugins = [];
   var htmlFiles = glob.sync('./src/*.js');

@@ -3,6 +3,7 @@ var path = require('path');
 var glob = require("glob");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const getHtmlPlugins = () => {
   var plugins = [];
@@ -64,6 +65,9 @@ module.exports = [
     },
     plugins: [
       new ExtractTextPlugin('assets/css/[name].min.css'),
+      new CopyWebpackPlugin([
+        { from: './src/assets/images', to: 'assets/images' },
+      ]),
       new webpack.optimize.UglifyJsPlugin,
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': '"production"',
