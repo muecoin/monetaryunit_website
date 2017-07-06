@@ -21,7 +21,7 @@ html, body {
   @extend %full-height-margin-0;
 }
 
-*{
+* {
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -ms-box-sizing:border-box;
@@ -73,6 +73,13 @@ html, body {
   }
 }
 
+%module-top-padding-style-footer {
+  @extend %module-top-padding-style;
+  @include respond-to(medium) {
+    padding-top: $layout-spacing-m1;
+  }
+}
+
 %module-bottom-padding-style {
   padding-bottom: $layout-spacing-m1;
   @include respond-to(small) {
@@ -102,8 +109,6 @@ html, body {
     padding-bottom: 7em;
   }
 }
-
-
 
 %common-hero-padding-style {
   @extend %hero-padding-style-1;

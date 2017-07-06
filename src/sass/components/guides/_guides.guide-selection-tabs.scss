@@ -60,7 +60,9 @@ $tabs-inactive-color: $orange-cream;
     &:hover, &--active {
       @extend .guide-selection-tabs__tab;
       background: $white !important;
-      border-bottom: none;
+      @include respond-to(small){
+        border-bottom: none;
+      }
     }
 
     @include respond-to(medium){

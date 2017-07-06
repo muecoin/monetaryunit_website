@@ -11,7 +11,7 @@ $legal-font-size: 10px;
 
 .footer {
   @extend %container-full;
-  @extend %module-top-padding-style;
+  @extend %module-top-padding-style-footer;
   background-color: $medium-blue;
 
   &__container {
@@ -21,6 +21,11 @@ $legal-font-size: 10px;
 
 	&__sitemap {
 		@extend %container-row;
+    display: flex;
+    justify-content: space-between;
+    @include respond-to(medium){
+      padding: 0 6rem;
+    }
 	}
 
   &__sitemap-list {
@@ -44,6 +49,7 @@ $legal-font-size: 10px;
   }
 	&__sitemap-column {
 		@extend %column;
+    flex: 0 0 auto;
 	}
 
   &__copyright {
@@ -64,7 +70,7 @@ $legal-font-size: 10px;
     display: block;
     @extend %center-text;
     font-family: $paragraph-font-family;
-    margin-top: $layout-spacing-xxs;
-    margin-bottom: $layout-spacing-xxs;
+    margin-top: $layout-spacing-xs1;
+    margin-bottom: $layout-spacing-xs1;
   }
 }
