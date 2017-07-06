@@ -46,6 +46,11 @@ $benefit-top-spacing-medium: $layout-spacing-xs;
     @include respond-to(large) {
       justify-content: center;
     }
+    &:last-child {
+      .about__benefits-item:last-child {
+          margin-bottom: 0;
+      }
+    }
   }
   &__benefits-item {
     @extend %column;
