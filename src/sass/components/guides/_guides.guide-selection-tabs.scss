@@ -1,6 +1,7 @@
 $tabs-inactive-color: $orange-cream;
 
 .guide-selection-tabs {
+  background-color: $white;
   overflow: auto;
   position: absolute;
   width: 100%;
@@ -59,7 +60,7 @@ $tabs-inactive-color: $orange-cream;
     &:hover, &--active {
       @extend .guide-selection-tabs__tab;
       background: $white !important;
-      //border-bottom: none;
+      border-bottom: none;
     }
 
     @include respond-to(medium){

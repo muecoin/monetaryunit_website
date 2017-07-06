@@ -67,9 +67,9 @@ export default () => {
         <GuideStep
           step="4"
           title="Order your MUE"
-          tipOne=""
-          tipTwo=""
-          imageUrl="assets/images/guides/investors/buying-mue/step-1.png">
+          tipOne="Always double check your address has been copied correctly into Bittylicious!"
+          tipTwo="You’ll be notified of the progress of the transaction and should receive your payment within minutes."
+          imageUrl="assets/images/guides/investors/buying-mue/step-4.png">
             <p className="guide-step__paragraph">Go to the Bittylicious homepage and make you’re logged in and verified.</p>
             <p className="guide-step__paragraph">Select ‘buy’, enter your amount and most importantly ensure you choose Monetary Unit from the currency dropdown.</p>
             <p className="guide-step__paragraph">When ready, select ‘get some coins’ and enter your payment details. Job done!</p>
