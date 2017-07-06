@@ -1,3 +1,5 @@
+import preventScroll from 'prevent-scroll';
+
 export default class Navigation {
   constructor(){
     this.currentMode = null;
@@ -97,6 +99,7 @@ export default class Navigation {
   }
 
   closeMenu(){
+    preventScroll.off();
     this.toggle.classList.add('nav__menu-button-slices');
     this.toggle.classList.remove('nav__menu-button-slices--active');
     this.overlay.classList.add('nav__overlay');
@@ -104,6 +107,7 @@ export default class Navigation {
   }
 
   openMenu(){
+    preventScroll.on();
     this.toggle.classList.add('nav__menu-button-slices--active');
     this.toggle.classList.remove('nav__menu-button-slices');
     this.overlay.classList.add('nav__overlay--active');

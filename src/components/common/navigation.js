@@ -5,7 +5,7 @@ export default () => (
   <header className="nav">
     <div className="nav__wrapper">
       <a className="nav__logo" id="logo-test" href="/">
-        <img className="nav__logo-image" src="/assets/images/monetary-unit-white-logo.png" alt="Monetary Unit" />
+        <img className="nav__logo-image" src="/assets/images/monetary-unit-logo.svg" alt="Monetary Unit" />
       </a>
       <div className="nav__menu-button-slices" id="toggle">
         <span className="nav__menu-button-slice--top"></span>
@@ -35,6 +35,9 @@ export default () => (
             </li>
             <li className="nav__list-item">
               <a className="nav__link" href="https://www.zazzle.co.uk/monetaryunit/products" target="_blank">Shop</a>
+            </li>
+            <li className="nav__list-item">
+              <a className="nav__link" href="/frequently-asked-questions.html">FAQ</a>
             </li>
           </ul>
         </nav>
