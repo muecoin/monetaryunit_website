@@ -63,7 +63,12 @@ module.exports = [
         {
           test: /\.woff(2)?$|\.eot$|\.ttf$|\.svg$/,
           exclude: /(node_modules)/,
-          use: ['file-loader?name=/assets/fonts/[name].[ext]']
+          use: {
+            loader: 'file-loader',
+            options: {
+              name: '/assets/fonts/[name].[ext]'
+            }
+          }
         },
       ]
     },

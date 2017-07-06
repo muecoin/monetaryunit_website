@@ -50,6 +50,16 @@ module.exports = [
           exclude: /(node_modules)/,
           use: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader?minimize!sass-loader' })
         },
+        {
+          test: /\.woff(2)?$|\.eot$|\.ttf$|\.svg$/,
+          exclude: /(node_modules)/,
+          use: {
+            loader: 'file-loader',
+            options: {
+              name: '/assets/fonts/[name].[ext]'
+            }
+          }
+        },
       ]
     },
     plugins: [
