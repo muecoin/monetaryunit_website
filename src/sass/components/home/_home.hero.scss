@@ -19,6 +19,10 @@ $full-screen-min-height-1: 800px;
     background-image: url('/assets/images/home/hero-landscape-large.jpg');
   }
 
+  &__nav-row {
+    width: 100%;
+    min-height: 73px;
+  }
 
   &__container {
     @extend %container-row;

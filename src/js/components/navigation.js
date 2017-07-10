@@ -11,6 +11,7 @@ export default class Navigation {
     this.menuOpen = false;
     this.nav = document.querySelector(".nav");
     this.toggle = document.querySelector("#toggle");
+    this.fixedToggle = document.querySelector("#fixed-toggle");
     this.overlay = document.querySelector("#overlay-wrapper");
     this.desktopMobileBreakpoint = 992;
     this.navigationLinks;
@@ -31,10 +32,8 @@ export default class Navigation {
     this.setMode(true);
     // handle class toggling for nav bar
     this.toggle.addEventListener(click, this.toggleMenu);
+    this.fixedToggle.addEventListener(click, this.toggleMenu);
     this.setupResizeHandler();
-    // @TODO fixed header
-    // make '.nav' stick to top 100px
-    //stickyHeader(this.nav, 0);
   }
 
   setupMobileEvents(){

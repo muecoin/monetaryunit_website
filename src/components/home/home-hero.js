@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../common/navigation';
 
 export default () => (
-  <div className="home-hero">
+  <div className="home-hero" data-fixed-nav-target>
     <Navigation />
     <section className="home-hero__container">
         <div className="home-hero__aside">

@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../common/navigation';
 
 export default ({title, subheading, containerClassName = 'hero__container', children }) => (
-  <div className="hero">
+  <div className="hero" data-fixed-nav-target>
     <Navigation />
     <section className={containerClassName}>
         <div className="hero__lead">
