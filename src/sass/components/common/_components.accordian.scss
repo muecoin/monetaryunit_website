@@ -21,7 +21,7 @@
   &__paragraph {
     @extend %paragraph-s-style-white;
     margin-bottom: 0;
-    padding:1em 2em 1em 2em;
+    padding: 1em 2em 1em 2em;
   }
 
   &__title {
@@ -62,7 +62,7 @@
     background: $ebony-clay;
     height: auto;
     overflow: hidden;
-    //magic number to allow the accordion to animate
+    // unfortunately a magic number required to allow the accordion to animate
     max-height: 50em;
     transition: max-height 1s;
 
@@ -76,9 +76,7 @@
     @extend %accordion__item;
       max-height: 0;
   }
-
 }
-
 
 .no-js .accordionItem.is-collapsed {
   max-height: auto;
@@ -95,22 +93,17 @@
 @keyframes accordionIn {
   0% {
     opacity: 0;
-    //transform:scale(0.98) rotateX(-60deg);
-    //transform-origin: 50% 0;
   }
   100% {
-    opacity:1;
-    //transform:scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes accordionOut {
-    0% {
-       opacity: 1;
-       //transform:scale(1);
-     }
-    100% {
-      opacity:0;
-      //transform:scale(0.98) rotateX(-60deg);
-    }
+  0% {
+     opacity: 1;
+   }
+  100% {
+    opacity: 0;
+  }
 }

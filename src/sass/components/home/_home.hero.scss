@@ -1,3 +1,13 @@
+$full-screen-min-width-1: 980px;
+$full-screen-min-height-1: 800px;
+
+// Full Height Container
+.home-hero, .home-hero__container {
+  @media all and (min-width: $full-screen-min-width-1) and (min-height: $full-screen-min-height-1) {
+    height: 100%;
+  }
+}
+
 .home-hero {
   @extend %container-full;
   background-image: url('/assets/images/home/hero-portrait-small.jpg');
@@ -8,6 +18,7 @@
   @include respond-to(large) {
     background-image: url('/assets/images/home/hero-landscape-large.jpg');
   }
+
 
   &__container {
     @extend %container-row;
@@ -56,9 +67,6 @@
   }
   &__lead-intro {
     @extend %paragraph-hero-style-white-450mw;
-  }
-  &__lead-container {
-
   }
   &__actions-why-mue {
     display: block;

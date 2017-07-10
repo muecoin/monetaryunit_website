@@ -2,6 +2,7 @@ import jump from 'jump.js'
 
 export default class Scroller {
   constructor(element, immediatelyScroll){
+    this.click = 'ontouchstart' in window ? 'touchstart' : 'click';
     if (!immediatelyScroll) {
       this.button = element;
       this.scrollTarget = this.button.getAttribute('data-jump-to');
@@ -13,10 +14,10 @@ export default class Scroller {
   }
 
   addScrollEvent() {
-      this.button.addEventListener('click', this.buttonScroll.bind(this));
+      this.button.addEventListener(this.click, this.buttonScroll);
   }
 
-  buttonScroll(e) {
+  buttonScroll = (e) => {
     // check if link element is on this page
     const isTargetPresentOnPage = document.querySelector(this.scrollTarget);
     // if present then prevent link and scroll

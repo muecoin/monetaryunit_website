@@ -1,4 +1,7 @@
 import preventScroll from 'prevent-scroll';
+import stickyHeader from 'sticky-header';
+
+const click = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 export default class Navigation {
   constructor(){
@@ -6,18 +9,12 @@ export default class Navigation {
     this.startingMode;
     this.firstTime = true;
     this.menuOpen = false;
+    this.nav = document.querySelector(".nav");
     this.toggle = document.querySelector("#toggle");
     this.overlay = document.querySelector("#overlay-wrapper");
     this.desktopMobileBreakpoint = 992;
     this.navigationLinks;
     this.setupMobileEvents();
-    this.bindHandlers();
-  }
-
-  bindHandlers() {
-    this.checkModeForChange = this.checkModeForChange.bind(this);
-    this.toggleMenu = this.toggleMenu.bind(this);
-    this.mobileLinkClicked = this.mobileLinkClicked.bind(this);
   }
 
   getBrowserWidth() {
@@ -33,22 +30,22 @@ export default class Navigation {
   start() {
     this.setMode(true);
     // handle class toggling for nav bar
-    this.toggle.addEventListener('click', this.toggleMenu);
+    this.toggle.addEventListener(click, this.toggleMenu);
     this.setupResizeHandler();
+    // @TODO fixed header
+    // make '.nav' stick to top 100px
+    //stickyHeader(this.nav, 0);
   }
 
   setupMobileEvents(){
     this.navigationLinks = document.querySelectorAll('.nav__link');
     this.navigationLinks.forEach((link, index) => {
-      link.addEventListener('click', this.mobileLinkClicked);
+      link.addEventListener(click, this.mobileLinkClicked);
     });
   }
 
-  mobileLinkClicked(e){
-    console.log(this.menuOpen)
-    if (this.menuOpen === true) {
-      this.closeMenu();
-    }
+  mobileLinkClicked = (e) => {
+    this.closeMenu();
   }
 
   stopScroll(e) {
@@ -79,14 +76,14 @@ export default class Navigation {
   }
 
   // check for change and remove mobile nav if necessary
-  checkModeForChange() {
+  checkModeForChange = () => {
     this.setMode(false);
     if (this.startingMode == 'mobile' && this.currentMode == 'desktop') {
       this.closeMenu();
     }
   }
 
-  toggleMenu(e){
+  toggleMenu = (e) => {
     const toggle = e.target;
     if(!this.menuOpen) {
       this.openMenu();
@@ -99,6 +96,7 @@ export default class Navigation {
   }
 
   closeMenu(){
+    this.menuOpen = false;
     preventScroll.off();
     this.toggle.classList.add('nav__menu-button-slices');
     this.toggle.classList.remove('nav__menu-button-slices--active');

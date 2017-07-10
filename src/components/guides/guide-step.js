@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default ({title, children, step, tipOne, tipTwo, imageUrl }) => (
-
   <div className={`guide-step--${step}`}>
     <section className="guide-step__container">
         <div className="guide-step__step-instruction">

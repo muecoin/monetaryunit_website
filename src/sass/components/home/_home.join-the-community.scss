@@ -21,10 +21,8 @@ $social-icon-font-size-large: 80px;
     @extend %paragraph-l-style-dark-center;
   }
   &__social-links {
-  //  @extend %container-row;
-  width: 80%;
-  margin: auto;
-
+    width: 80%;
+    margin: auto;
   }
   &__social-link {
     width: 16.6666666667%;
@@ -42,22 +40,22 @@ $social-icon-font-size-large: 80px;
 }
 
 .join-the-community__icon {
-    &--twitter {
-      @extend %icon--twitter;
-    }
-    &--facebook {
-      @extend %icon--facebook;
-    }
-    &--slack {
-      @extend %icon--slack;
-    }
-    &--github  {
-      @extend %icon--github;
-    }
-    &--btc {
-      @extend %icon--btc;
-    }
-    &--kanban {
-      @extend %icon--kanban;
-    }
+  &--twitter {
+    @extend %icon--twitter;
   }
+  &--facebook {
+    @extend %icon--facebook;
+  }
+  &--slack {
+    @extend %icon--slack;
+  }
+  &--github  {
+    @extend %icon--github;
+  }
+  &--btc {
+    @extend %icon--btc;
+  }
+  &--kanban {
+    @extend %icon--kanban;
+  }
+}

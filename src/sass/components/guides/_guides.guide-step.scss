@@ -127,12 +127,6 @@ $guide-step-max-container-width: 1400px;
     line-height: 1.4;
   }
 
-  &__tip-top {
-  }
-  &__tip-bottom {
-  }
-
-
   &__paragraph {
     @extend %paragraph-m-style-white;
   }
@@ -156,12 +150,9 @@ $guide-step-max-container-width: 1400px;
   &__wallet-download {
     @extend %button-style-1-large;
   }
-
-
 }
 
 // STEP COLOUR SCHEME
-
 .guide-step--1 {
   @extend .guide-step;
   background-color: $step-1-left-bg-color;
