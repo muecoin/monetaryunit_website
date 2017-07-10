@@ -1,39 +1,21 @@
 // FIXED NAVIGATION STYLES
 .fixed-nav {
+  @extend %container-full;
   position: fixed;
-  @extend %sunset-orange-gradient;
+  //@extend %sunset-orange-gradient;
+  background: $orange;
   @extend %box-shadow-1;
-  top: 0;
+  top: -100px;
   height: 80px;
   width: 100%;
   z-index: 999999;
-  opacity: 0;
 
   // FOLDING ANIMATION
-  -webkit-transition-property: all;
-  -webkit-transition-duration: .5s;
-  -webkit-transform: rotateX(-90deg);
-  -webkit-transform-origin: top;
-  -moz-transition-property: all;
-  -moz-transition-duration: .5s;
-  -moz-transform: rotateX(-90deg);
-  -moz-transform-origin: top;
-  -o-transition-property: all;
-  -o-transition-duration: .5s;
-  -o-transform: rotateX(-90deg);
-  -o-transform-origin: top;
-  transition-property: all;
-  transition-duration: .5s;
-  transform: rotateX(-90deg);
-  transform-origin: top;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 
   &--active {
     @extend .fixed-nav;
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    opacity: 1;
+    top: 0;
   }
 
   @include respond-to(large) {
@@ -41,10 +23,7 @@
   }
 
   &__wrapper {
-      padding: 0 1.4em;
-      @include respond-to(large) {
-        padding: 0 2%;
-      }
+    @extend %container;
   }
 
   &__logo {

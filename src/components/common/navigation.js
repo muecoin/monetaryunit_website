@@ -34,9 +34,6 @@ export default () => (
               <a className="nav__link" href="https://monetaryunitfoundation.org/" target="_blank">Foundation</a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__link" href="https://www.zazzle.co.uk/monetaryunit/products" target="_blank">Shop</a>
-            </li>
-            <li className="nav__list-item">
               <a className="nav__link" href="/frequently-asked-questions.html">FAQ</a>
             </li>
           </ul>

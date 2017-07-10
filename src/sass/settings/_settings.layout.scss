@@ -10,7 +10,7 @@ $breakpoints: (
 ) !default;
 
 $containers: (
-  'small': (650px + $gutter),
+  'small': 100%,
   'medium': (940px + $gutter),
   'medium-large': (1105px + $gutter),
   'large': (1350px + $gutter)
