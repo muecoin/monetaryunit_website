@@ -37,16 +37,16 @@ export default () => (
           <h2 className="footer__sitemap-category">Get Started</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Investors</a>
+              <a className="footer__sitemap-link" href="/investors-guide.html" target="_self">For Investors</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Consumers</a>
+              <a className="footer__sitemap-link" href="/consumers-guide.html" target="_self">For Consumers</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Merchants</a>
+              <a className="footer__sitemap-link" href="/merchants-guide.html" target="_self">For Merchants</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Developers</a>
+              <a className="footer__sitemap-link" href="/developers-guide.html" target="_self">For Developers</a>
             </li>
           </ul>
         </div>

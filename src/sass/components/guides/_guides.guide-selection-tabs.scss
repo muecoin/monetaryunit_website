@@ -52,7 +52,11 @@ $tabs-inactive-color: $orange-cream;
     text-decoration: none;
     color: $orange;
     opacity: 1 !important;
-    background: $tabs-inactive-color;
+    background-color: $tabs-inactive-color;
+    transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -webkit-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
 
     @include respond-to-mw(small){
       padding: 8px 0px;
@@ -67,8 +71,9 @@ $tabs-inactive-color: $orange-cream;
     }
 
     &:hover, &--active {
+
       @extend .guide-selection-tabs__tab;
-      background: $white !important;
+      background-color: $white;
       @include respond-to(small){
         border-bottom: none;
       }

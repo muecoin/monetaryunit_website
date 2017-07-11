@@ -38,12 +38,14 @@
     &:before {
        content: "+";
        font-size: 1.5em;
-       line-height: 0.5em;
+       line-height: 0.4em;
        margin-right: 0.6em;
        float: left;
        color: $orange;
        transition: transform 0.3s ease-in-out;
-       height: 0.74em;
+       height: 0.54em;
+       position: relative;
+       top: 0.1em;
     }
 
     &:hover {

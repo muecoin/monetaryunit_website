@@ -25,7 +25,7 @@ export default () => {
         </Hero>
 
         <GuideIntro title="Buying your first MUE">
-          <p className="guide-intro__paragraph">If you’re new to digital currencies or don’t own any yet, the easiest route to buying MUE is through an exchange website such as Bittylicious. Their website allows to you purchase digital currencies with pounds. Once you have your wallet setup and have verified your account with them, it’s a fast and simple process.</p>
+          <p className="guide-intro__paragraph">If you're new to digital currencies or don't own any yet, the easiest route to buying MUE is through an exchange website such as Bittylicious. Their website allows to you purchase digital currencies with pounds. Once you have your wallet setup and have verified your account with them, it's a fast and simple process.</p>
           <p className="guide-intro__paragraph">We currently recommend <a className="guide-intro__paragraph-link" href="http://www.bittylicious.com" target="_blank">Bittylicious</a> for their excellent feedback on <a className="guide-intro__paragraph-link" href="https://uk.trustpilot.com/review/www.bittylicious.com" target="_blank">Trustpilot</a>.</p>
         </GuideIntro>
 
@@ -36,7 +36,7 @@ export default () => {
           tipTwo="Your could also use our secure online wallet webwallets.io"
           imageUrl="assets/images/guides/investors/buying-mue/step-1.png">
             <p className="guide-step__paragraph">Wallets store your digital currencies. Just install them on your preferred device and wait for them to sync up with the network. You could also choose to use one of our secure online at <a className="guide-intro__paragraph-link" href="http://www.webwallets.io/" target="_blank">webwallets.io</a></p>
-            <p className="guide-step__paragraph">If you haven’t already set up your wallet, use the button below to crack on.</p>
+            <p className="guide-step__paragraph">If you haven't already set up your wallet, use the button below to crack on.</p>
             <a className="guide-step__wallet-download" data-modal-target="wallet-download" href="">Download wallet now<span className="get-started__download-icon--download"></span></a>
         </GuideStep>
 
@@ -71,8 +71,8 @@ export default () => {
           tipTwo="You’ll be notified of the progress of the transaction and should receive your payment within minutes."
           imageUrl="assets/images/guides/investors/buying-mue/step-4.png">
             <p className="guide-step__paragraph">Go to the Bittylicious homepage and make you’re logged in and verified.</p>
-            <p className="guide-step__paragraph">Select ‘buy’, enter your amount and most importantly ensure you choose Monetary Unit from the currency dropdown.</p>
-            <p className="guide-step__paragraph">When ready, select ‘get some coins’ and enter your payment details. Job done!</p>
+            <p className="guide-step__paragraph">Select 'buy', enter your amount and most importantly ensure you choose Monetary Unit from the currency dropdown.</p>
+            <p className="guide-step__paragraph">When ready, select 'get some coins' and enter your payment details. Job done!</p>
         </GuideStep>
 
         <JoinTheCommunity title="Was this guide helpful?" description="If this guide needs improving or you would like assistance with something else, let us know. Keep in touch with all the news and chat to the team via our social channels, communication tools and open source developer networks." />

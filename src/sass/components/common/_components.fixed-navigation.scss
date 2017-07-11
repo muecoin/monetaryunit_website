@@ -4,20 +4,17 @@ $header-bg-color: $black-1;
 .fixed-nav {
   @extend %container-full;
   position: fixed;
-  //@extend %sunset-orange-gradient;
   background: $header-bg-color;
   @extend %box-shadow-1;
   top: -100px;
   height: 80px;
   width: 100%;
   z-index: 999999;
-
-  // FOLDING ANIMATION
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 
-  &--active {
+  &--pinned {
     @extend .fixed-nav;
-    top: 0;
+    top: 0; 
   }
 
   @include respond-to(large) {
