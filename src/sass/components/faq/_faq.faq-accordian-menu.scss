@@ -17,6 +17,10 @@
     @extend %accordion;
   }
 
+  &__define-list {
+    background: $white;
+  }
+
   &__define-term {
     @extend %accordion__dt;
   }

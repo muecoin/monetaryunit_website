@@ -14,14 +14,4 @@ export default class ScrollingManager {
    });
   }
 
-  static hijackPageLoadHashJump() {
-    let target = window.location.hash;
-    const isHashPresent = (target.length > 1) ? true : false;
-
-    if (isHashPresent){
-      target = target.replace('#', '');
-      const targetScrollElement = document.querySelector('[data-hash-target="' + target + '"]');
-      new Scroller(targetScrollElement, true);
-    }
-  }
 }

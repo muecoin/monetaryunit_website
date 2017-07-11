@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <div className="faq-accordian-menu" data-accordion>
     <section className="faq-accordion-menu__container">
-        <dl>
+        <dl className="faq-accordion-menu__define-list">
           <dt className="faq-accordion-menu__define-term">
             <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" data-accordion-trigger className="faq-accordion-menu__title">First Accordion heading</a>
           </dt>
