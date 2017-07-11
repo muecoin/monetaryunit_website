@@ -16,7 +16,7 @@ export default () => (
         <nav className="nav__overlay-menu" id="overlay">
           <ul className="nav__list">
             <li className="nav__list-item">
-              <a className="nav__link link--active" href="/">Home</a>
+              <a className="nav__link link--active" href="/" data-jump-to=".home-hero">Home</a>
             </li>
             <li className="nav__list-item">
               <a className="nav__link" href="/#about" data-jump-to=".about">About</a>

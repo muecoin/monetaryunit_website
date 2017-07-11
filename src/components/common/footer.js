@@ -40,13 +40,13 @@ export default () => (
               <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Investors</a>
             </li>
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Developers</a>
-            </li>
-            <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Consumers</a>
             </li>
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Merchants</a>
+            </li>
+            <li className="footer__sitemap-item">
+              <a className="footer__sitemap-link" href="/#get-started" data-jump-to=".get-started" target="_self">For Developers</a>
             </li>
           </ul>
         </div>

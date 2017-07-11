@@ -1,3 +1,5 @@
+import preventScroll from 'prevent-scroll';
+
 export default class Modal {
 
   constructor(modal, index) {
@@ -34,12 +36,14 @@ export default class Modal {
   open(e) {
     e.preventDefault();
     console.log('open');
+    preventScroll.on();
     this.overlay.classList.add(this.selector);
     this.overlay.classList.remove(this.selector + '--hidden');
   }
 
   close() {
     console.log('close');
+    preventScroll.off();
     this.overlay.classList.add(this.selector + '--hidden');
     this.overlay.classList.remove(this.selector);
   }

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default ({title = "Join the Community", description = "At MUE we pride ourselves on being honest and transparent in everything we do. Keep in touch with all the news and chat to the team via our social channels, communication tools and open source developer networks." }) => (
 
-  <div className="join-the-community" data-hash-target="join-the-community">
+  <div className="join-the-community" id="join-the-community">
     <section className="join-the-community__container">
         <div className="join-the-community__intro">
           <div className="join-the-community__intro-text-container">

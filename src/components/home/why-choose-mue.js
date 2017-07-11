@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div className="why-choose-mue" data-hash-target="why-choose-mue">
+  <div className="why-choose-mue" id="why-choose-mue">
     <section className="why-choose-mue__container">
         <div className="why-choose-mue__intro">
           <div className="why-choose-mue__intro-text-container">

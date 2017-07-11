@@ -1,7 +1,7 @@
 $tabs-inactive-color: $orange-cream;
 
 .guide-selection-tabs {
-  background-color: $white;
+
   overflow: auto;
   position: absolute;
   width: 100%;
@@ -15,6 +15,15 @@ $tabs-inactive-color: $orange-cream;
     margin: 0px;
     font-weight: bold;
     text-align: center;
+
+    @extend %container-row;
+    margin: 0 auto;
+    background-color: $white;
+
+    @include respond-to-mw(medium){
+      display: block;
+      flex-wrap: initial;
+    }
   }
 
   &__tab-container {

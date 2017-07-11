@@ -15,7 +15,7 @@ export default () => (
         <nav className="fixed-nav__overlay-menu">
           <ul className="fixed-nav__list">
             <li className="fixed-nav__list-item">
-              <a className="fixed-nav__link link--active" href="/">Home</a>
+              <a className="fixed-nav__link link--active" href="/" data-jump-to=".layout">Home</a>
             </li>
             <li className="fixed-nav__list-item">
               <a className="fixed-nav__link" href="/#about" data-jump-to=".about">About</a>

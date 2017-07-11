@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({title = "Get Started"}) => (
-  <div className="get-started" data-hash-target="get-started">
+  <div className="get-started" id="get-started">
     <section className="get-started__container">
       <h1 className="get-started__heading">{title}</h1>
 

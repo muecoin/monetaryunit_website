@@ -33,6 +33,5 @@ $video-modal-bg-color:'transparent';
   &__embed-container-iframe {
     @extend %embed-container-iframe;
     border: 0;
-    border-radius: 20px;
   }
 }

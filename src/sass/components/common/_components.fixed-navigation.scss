@@ -1,9 +1,11 @@
+$header-bg-color: $black-1;
+
 // FIXED NAVIGATION STYLES
 .fixed-nav {
   @extend %container-full;
   position: fixed;
   //@extend %sunset-orange-gradient;
-  background: $orange;
+  background: $header-bg-color;
   @extend %box-shadow-1;
   top: -100px;
   height: 80px;
