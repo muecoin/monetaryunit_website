@@ -2,8 +2,8 @@ import React from 'react';
 
 export default () => (
 <div className="wallet-download-modal--hidden" data-modal data-modal-id="wallet-download">
+  <span className="wallet-download-modal__close"></span>
   <div className="wallet-download-modal__modal">
-    <span className="wallet-download-modal__close"></span>
     <h1 className="wallet-download-modal__heading">Download Your Wallet</h1>
     <div className="wallet-download-modal__wallet-container">
       <div className="wallet-download-modal__download-item">
@@ -15,7 +15,7 @@ export default () => (
           <span className="wallet-download-modal__btn-icon--download"></span>
         </a>
       </div>
-      <div className="wallet-download-modal__download-item">
+      {/* <div className="wallet-download-modal__download-item">
         <a className="wallet-download-modal__btn--mac" href="">
           <div className="wallet-download-modal__platform-icon-wrapper">
             <span className="wallet-download-modal__platform-icon--mac"></span>
@@ -41,7 +41,7 @@ export default () => (
           iOS X11 Wallet
           <span className="wallet-download-modal__btn-icon--download"></span>
         </a>
-      </div>
+      </div> */}
     </div>
   </div>
 </div>

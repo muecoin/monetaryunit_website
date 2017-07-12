@@ -1,39 +1,49 @@
-import Headroom from 'headroom.js'
-
 export default class FixedHeader {
-  constructor(fixedHeader){
-    this.header = fixedHeader;
-    this.headroom;
+  constructor(element, fixedHeader){
+    this.target = element;
+    this.fixedHeader = fixedHeader;
+    this.headerClassName = this.fixedHeader.classList[0];
+    this.headerClassNameActive = this.headerClassName + '--active';
+    this.currentScrollDistance = 0;
+    this.targetScrollDistance = 0;
+    this.targetOffset = 100;
+    this.fixedHeaderEnabled = false;
     this.initialise();
   }
 
-  test(){
-    this.header.classList.remove('fixed-nav--active');
+  initialise() {
+    this.calculateTargetScrollDistance();
+    this.addScrollEvent();
   }
 
-  initialise() {
-    this.headroom = new Headroom(this.header, {
-      offset: 500,
+  addScrollEvent() {
+    window.addEventListener( 'scroll', this.checkScrollPosition, false);
+  }
 
-      classes : {
-        // when element is initialised
-        initial : "fixed-nav",
-        // when scrolling up
-        pinned : "fixed-nav--active",
-        // when scrolling down
-        unpinned : "fixed-nav--unpinned",
-        // when above offset
-        top : "fixed-nav--top",
-        // when below offset
-        notTop : "fixed-nav--not-top",
-        // when at bottom of scoll area
-        bottom : "fixed-nav--bottom",
-        // when not at bottom of scroll area
-        notBottom : "fixed-nav--not-bottom"
-      }
-      // callback when below offset, `this` is headroom object
-    });
-    console.log(this.headroom);
-    this.headroom.init();
+  checkScrollPosition = (e) => {
+    this.currentScrollDistance = window.scrollY;
+    console.log(this.currentScrollDistance);
+    if (this.currentScrollDistance > this.targetScrollDistance && this.fixedHeaderEnabled === false) {
+        this.showFixedHeader();
+    }
+    if (this.currentScrollDistance < this.targetScrollDistance && this.fixedHeaderEnabled === true) {
+        this.hideFixedHeader();
+    }
+  }
+
+  calculateTargetScrollDistance() {
+    this.targetScrollDistance = this.target.scrollHeight;
+  }
+
+  showFixedHeader(){
+    this.fixedHeader.classList.add(this.headerClassNameActive);
+    this.fixedHeader.classList.remove(this.headerClassName);
+    this.fixedHeaderEnabled = true;
+  }
+
+  hideFixedHeader(){
+    this.fixedHeader.classList.add(this.headerClassName);
+    this.fixedHeader.classList.remove(this.headerClassNameActive);
+    this.fixedHeaderEnabled = false;
   }
 }

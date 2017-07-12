@@ -90,6 +90,12 @@ $full-screen-min-height-1: 800px;
   }
   &__actions-btn-why-mue, &__actions-btn-start-using {
     @extend %button-style-1-medium;
+    min-width: 280px;
+    text-align: center;
+    @include respond-to(medium) {
+      min-width: 296px;
+      text-align: center;
+    }
   }
   &__actions-btn-start-using {
     @extend %button-style-1-medium;

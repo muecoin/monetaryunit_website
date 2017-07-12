@@ -15,6 +15,11 @@ $icon-windows-color: $windows-blue;
     @extend %modal;
     max-width: $wallet-download-max-width;
     padding: 45px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @include respond-to(medium){
       padding: 50px 70px;
     }
@@ -22,6 +27,7 @@ $icon-windows-color: $windows-blue;
   &__close {
     @extend %button-close;
     @extend %icon--cancel-circle;
+    color: $white;
   }
   &__heading {
     @extend %heading-2-style-dark-center;
@@ -29,12 +35,13 @@ $icon-windows-color: $windows-blue;
   }
 
   &__download-item {
-    width: 50%;
+    //width: 50%;
     text-align: center;
     float: left;
+    width: 100%;
     @include respond-to(small){
-      width: 25%;
-      float: left;
+      //width: 25%;
+      //float: left;
     }
   }
 
@@ -77,6 +84,7 @@ $icon-windows-color: $windows-blue;
     display: block;
     @extend %button-style-1-medium;
     font-size: 11px;
+    width:100%;
 
     &--windows {
       @extend .wallet-download-modal__btn;
