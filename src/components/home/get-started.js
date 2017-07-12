@@ -50,11 +50,10 @@ export default ({title = "Get Started"}) => (
             <p className="get-started__description">For the tech savvy amongst you to start making your own MUE we can show you the coin specs and get you going.</p>
           </div>
         </div>
-
       </div>
 
       <div className="get-started__wallet-cta-container">
-        <a className="get-started__wallet-download disableClick" data-modal-target="wallet-download" href="">Download wallet now<span className="get-started__download-icon--download"></span></a>
+        <a className="get-started__wallet-download" data-modal-target="wallet-download" href="#">Download wallet now<span className="get-started__download-icon--download"></span></a>
       </div>
     </section>
   </div>

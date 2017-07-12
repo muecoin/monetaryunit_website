@@ -1,49 +1,91 @@
 export default class FixedHeader {
-  constructor(element, fixedHeader){
+  constructor(fixedHeader, element){
     this.target = element;
     this.fixedHeader = fixedHeader;
     this.headerClassName = this.fixedHeader.classList[0];
     this.headerClassNameActive = this.headerClassName + '--active';
-    this.currentScrollDistance = 0;
-    this.targetScrollDistance = 0;
-    this.targetOffset = 100;
+
+    this.positiveOffset = 0;
+    this.negativeOffset = 0;
+    this.lastPosition = 0;
+    this.currentOffset = '';
+
+    this.positiveOffsetTrigger = 100;
+    this.negativeOffsetTrigger = 50;
+
     this.fixedHeaderEnabled = false;
+
     this.initialise();
   }
 
   initialise() {
-    this.calculateTargetScrollDistance();
     this.addScrollEvent();
   }
 
   addScrollEvent() {
-    window.addEventListener( 'scroll', this.checkScrollPosition, false);
+    window.addEventListener( 'scroll', this.scrollPositionHandler, false);
   }
 
-  checkScrollPosition = (e) => {
+  scrollPositionHandler = (e) => {
     this.currentScrollDistance = window.scrollY;
-    console.log(this.currentScrollDistance);
-    if (this.currentScrollDistance > this.targetScrollDistance && this.fixedHeaderEnabled === false) {
-        this.showFixedHeader();
-    }
-    if (this.currentScrollDistance < this.targetScrollDistance && this.fixedHeaderEnabled === true) {
-        this.hideFixedHeader();
+
+    if (this.outOfHeaderZone()) {
+      // if past the min scroll distance then begin calculating
+      if (this.currentScrollDistance > this.lastPosition) {
+        const offsetAmount = this.currentScrollDistance - this.lastPosition;
+        // select positive as current direction
+        this.currentOffset = 'positive';
+        // reset negative counter
+        this.negativeOffset = 0;
+        // when scroll down add to positive counter
+        this.positiveOffset = this.positiveOffset + offsetAmount;
+        // show menu
+        if (this.positiveOffset > this.positiveOffsetTrigger) {
+          this.hideFixedHeader();
+        }
+      }
+
+      // when move up add to negative counter
+      if (this.currentScrollDistance < this.lastPosition) {
+        const offsetAmount = this.lastPosition - this.currentScrollDistance;
+        // select negative as current direction
+        this.currentOffset = 'negative';
+        // reset positive counter
+        this.positiveOffset = 0;
+        // when scroll down add to negative counter
+        this.negativeOffset = this.negativeOffset + offsetAmount;
+        if (this.negativeOffset > this.negativeOffsetTrigger) {
+          this.showFixedHeader();
+        }
+      }
+      this.lastPosition = window.scrollY;
+    } else {
+      this.hideFixedHeader();
     }
   }
 
-  calculateTargetScrollDistance() {
-    this.targetScrollDistance = this.target.scrollHeight;
+  outOfHeaderZone() {
+    if (window.scrollY > this.target.offsetHeight) {
+      return true;
+    }
+    return false;
   }
 
   showFixedHeader(){
-    this.fixedHeader.classList.add(this.headerClassNameActive);
-    this.fixedHeader.classList.remove(this.headerClassName);
-    this.fixedHeaderEnabled = true;
+    if (!this.fixedHeaderEnabled) {
+      this.fixedHeader.classList.add(this.headerClassNameActive);
+      this.fixedHeader.classList.remove(this.headerClassName);
+      this.fixedHeaderEnabled = true;
+      console.log('show')
+    }
   }
 
   hideFixedHeader(){
-    this.fixedHeader.classList.add(this.headerClassName);
-    this.fixedHeader.classList.remove(this.headerClassNameActive);
-    this.fixedHeaderEnabled = false;
+    if (this.fixedHeaderEnabled) {
+      this.fixedHeader.classList.add(this.headerClassName);
+      this.fixedHeader.classList.remove(this.headerClassNameActive);
+      this.fixedHeaderEnabled = false;
+      console.log('hide')
+    }
   }
 }
