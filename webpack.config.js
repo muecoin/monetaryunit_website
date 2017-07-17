@@ -56,7 +56,7 @@ module.exports = [
         {
           test: /\.scss$/,
           exclude: /(node_modules)/,
-          use: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' })
+          use: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader!postcss-loader' })
         },
         {
           test: /\.woff(2)?$|\.eot$|\.ttf$|\.svg$/,
