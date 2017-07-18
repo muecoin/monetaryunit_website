@@ -1,21 +1,27 @@
 import preventScroll from 'prevent-scroll';
 import stickyHeader from 'sticky-header';
+import FixedHeader from './fixed-header';
 
 const click = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 export default class Navigation {
-  constructor(){
+  constructor(element, index){
     this.currentMode = null;
     this.startingMode;
     this.firstTime = true;
     this.menuOpen = false;
-    this.nav = document.querySelector(".nav");
-    this.toggle = document.querySelector("#toggle");
-    this.fixedToggle = document.querySelector("#fixed-toggle");
-    this.overlay = document.querySelector("#overlay-wrapper");
+
+    this.nav = element;
+    this.toggle = element.querySelector('[data-toggle]');
+    this.overlay = element.querySelector('[data-overlay-wrapper]');
+    this.navigationLinks = element.querySelectorAll('.nav__link, .fixed-nav__link');
+    this.isFixedNav = element.getAttribute("data-fixed-nav") === "true";
+    this.block = this.isFixedNav ? 'fixed-nav' : 'nav';
+
     this.desktopMobileBreakpoint = 992;
-    this.navigationLinks;
     this.setupMobileEvents();
+
+    this.initialise();
   }
 
   getBrowserWidth() {
@@ -28,16 +34,18 @@ export default class Navigation {
     );
   }
 
-  start() {
+  initialise() {
     this.setMode(true);
     // handle class toggling for nav bar
     this.toggle.addEventListener(click, this.toggleMenu);
-    this.fixedToggle.addEventListener(click, this.toggleMenu);
     this.setupResizeHandler();
+
+    if (this.isFixedNav) {
+      new FixedHeader(this.nav, this.overlay, document.querySelector('[data-fixed-nav-target]'));
+    }
   }
 
   setupMobileEvents(){
-    this.navigationLinks = document.querySelectorAll('.nav__link');
     this.navigationLinks.forEach((link, index) => {
       link.addEventListener(click, this.mobileLinkClicked);
     });
@@ -83,10 +91,8 @@ export default class Navigation {
   }
 
   toggleMenu = (e) => {
-    const toggle = e.target;
     if(!this.menuOpen) {
       this.openMenu();
-      console.log("open")
       this.menuOpen = true;
     } else {
       this.closeMenu();
@@ -97,17 +103,13 @@ export default class Navigation {
   closeMenu(){
     this.menuOpen = false;
     preventScroll.off();
-    this.toggle.classList.add('nav__menu-button-slices');
-    this.toggle.classList.remove('nav__menu-button-slices--active');
-    this.overlay.classList.add('nav__overlay');
-    this.overlay.classList.remove('nav__overlay--active');
+    this.toggle.classList.remove(`${this.block}__menu-button-slices--active`);
+    this.overlay.classList.remove(`${this.block}__overlay--active`);
   }
 
   openMenu(){
     preventScroll.on();
-    this.toggle.classList.add('nav__menu-button-slices--active');
-    this.toggle.classList.remove('nav__menu-button-slices');
-    this.overlay.classList.add('nav__overlay--active');
-    this.overlay.classList.remove('nav__overlay');
+    this.toggle.classList.add(`${this.block}__menu-button-slices--active`);
+    this.overlay.classList.add(`${this.block}__overlay--active`);
   }
 }

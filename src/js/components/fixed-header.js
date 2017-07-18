@@ -1,7 +1,9 @@
 export default class FixedHeader {
-  constructor(fixedHeader, element){
+  constructor(fixedHeader, overlay, element){
     this.target = element;
     this.fixedHeader = fixedHeader;
+    this.overlay = overlay;
+
     this.headerClassName = this.fixedHeader.classList[0];
     this.headerClassNameActive = this.headerClassName + '--active';
 
@@ -60,12 +62,16 @@ export default class FixedHeader {
       }
       this.lastPosition = window.scrollY;
     } else {
+      if(this.overlay && this.overlay.classList.contains('fixed-nav__overlay--active')) {
+        return;
+      }
+
       this.hideFixedHeader();
     }
   }
 
   outOfHeaderZone() {
-    if (window.scrollY > this.target.offsetHeight) {
+    if (window.scrollY > this.target.offsetHeight - 80) {
       return true;
     }
     return false;
@@ -76,7 +82,6 @@ export default class FixedHeader {
       this.fixedHeader.classList.add(this.headerClassNameActive);
       this.fixedHeader.classList.remove(this.headerClassName);
       this.fixedHeaderEnabled = true;
-      console.log('show')
     }
   }
 
@@ -85,7 +90,6 @@ export default class FixedHeader {
       this.fixedHeader.classList.add(this.headerClassName);
       this.fixedHeader.classList.remove(this.headerClassNameActive);
       this.fixedHeaderEnabled = false;
-      console.log('hide')
     }
   }
 }

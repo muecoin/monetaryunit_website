@@ -55,7 +55,6 @@ $header-bg-color: $black-1;
   }
 
   &__overlay {
-    display: none;
     @include respond-to(medium) {
       display: block;
     }
@@ -85,266 +84,169 @@ $header-bg-color: $black-1;
   }
 }
 
+@media screen and (max-width: $bp-desktop-nav - 1){
+  .fixed-nav {
 
+    &__menu-button-slices {
+      position: relative;
+      float: right;
+      top: 27px;
+      height: $button-height;
+      width: $button-width;
+      cursor: pointer;
+      z-index: 1002;
+      transition: opacity .25s ease;
+      &:hover {
+        opacity: .78;
+      }
+    }
 
+    // BEHAVIOUR
+    &__menu-button-slices--active {
+      @extend .nav__menu-button-slices;
+      .nav__menu-button-slice--top {
+        @extend .nav__menu-button-slice--top-active;
+      }
+      .nav__menu-button-slice--middle {
+        @extend .nav__menu-button-slice--middle-active;
+      }
+      .nav__menu-button-slice--bottom {
+        @extend .nav__menu-button-slice--bottom-active;
+      }
+    }
 
+    &__menu-button-slice {
+      background: $color-menu-btn;
+      border: none;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition:  all .35s ease;
+      cursor: pointer;
+      &--top {
+        @extend .nav__menu-button-slice;
+      }
+      &--middle {
+        @extend .nav__menu-button-slice;
+        top: 11px;
+      }
+      &--bottom {
+        @extend .nav__menu-button-slice;
+        top: 22px;
+      }
+      &--top-active {
+        @extend .nav__menu-button-slice;
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: $color-active;
+      }
+      &--middle-active {
+        @extend .nav__menu-button-slice;
+        opacity: 0;
+        background: $color-active;
+      }
+      &--bottom-active {
+        @extend .nav__menu-button-slice;
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: $color-active;
+      }
+    }
 
+    &__overlay {
+      position: fixed;
+      background: $color-main;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+      &--active {
+        @extend .nav__overlay;
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 1000;
+      }
+    }
 
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%;
+    }
 
+    &__list-item {
+      display: block;
+      height: 25%;
+      height: calc(100% / 6);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+    }
 
-//
-// .nav {
-//   @extend %container;
-// 	margin-bottom: 1%;
-// 	overflow: hidden;
-//   // @TODO Fixed Header
-//   // position: fixed;
-//   // left: 0;
-//   // width: 100vw;
-//   // background: #f19533;
-//   // width: 100%;
-//   // height: 80px;
-//
-//   &__list {
-//     margin: 0;
-//     padding-top: 18px;
-//     @include respond-to(medium) {
-//       padding-top: 33px;
-//     }
-//   }
-//   &__list-item {
-//     list-style-type: none;
-//   }
-//   &__link {
-//     transition:  all .35s ease;
-//     font-family: 'HouseSansBold';
-//     text-decoration: none;
-//     font-size: 21px;
-//     display: block;
-//     color: $white;
-//   }
-// }
-//
-// // MOBILE/TABLET ONLY
-// @media screen and (max-width: $bp-desktop-nav - 1){
-//   .nav {
-//     &__logo {
-//       display: block;
-//       float: left;
-//     }
-//     &__wrapper {
-//       padding-top: 0.9em;
-//     }
-//     &__logo-image {
-//       width: 55px;
-//     }
-//     &__menu-button-slices {
-//       position: relative;
-//       float: right;
-//       top: 12px;
-//       height: $button-height;
-//       width: $button-width;
-//       cursor: pointer;
-//       z-index: 1002;
-//       transition: opacity .25s ease;
-//       &:hover {
-//         opacity: .78;
-//       }
-//     }
-//
-//     // BEHAVIOUR
-//     &__menu-button-slices--active {
-//       @extend .nav__menu-button-slices;
-//       .nav__menu-button-slice--top {
-//         @extend .nav__menu-button-slice--top-active;
-//       }
-//       .nav__menu-button-slice--middle {
-//         @extend .nav__menu-button-slice--middle-active;
-//       }
-//       .nav__menu-button-slice--bottom {
-//         @extend .nav__menu-button-slice--bottom-active;
-//       }
-//     }
-//
-//     &__menu-button-slice {
-//       background: $color-menu-btn;
-//       border: none;
-//       height: 4px;
-//       width: 100%;
-//       position: absolute;
-//       left: 0;
-//       transition:  all .35s ease;
-//       cursor: pointer;
-//       &--top {
-//         @extend .nav__menu-button-slice;
-//       }
-//       &--middle {
-//         @extend .nav__menu-button-slice;
-//         top: 11px;
-//       }
-//       &--bottom {
-//         @extend .nav__menu-button-slice;
-//         top: 22px;
-//       }
-//       &--top-active {
-//         @extend .nav__menu-button-slice;
-//         transform: translateY(11px) translateX(0) rotate(45deg);
-//         background: $color-active;
-//       }
-//       &--middle-active {
-//         @extend .nav__menu-button-slice;
-//         opacity: 0;
-//         background: $color-active;
-//       }
-//       &--bottom-active {
-//         @extend .nav__menu-button-slice;
-//         transform: translateY(-11px) translateX(0) rotate(-45deg);
-//         background: $color-active;
-//       }
-//     }
-//
-//     &__overlay {
-//       position: fixed;
-//       background: $color-main;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 0%;
-//       opacity: 0;
-//       visibility: hidden;
-//       transition: opacity .35s, visibility .35s, height .35s;
-//       overflow: hidden;
-//       &--active {
-//         @extend .nav__overlay;
-//         opacity: 1;
-//         visibility: visible;
-//         height: 100%;
-//         z-index: 1000;
-//       }
-//     }
-//
-//     &__list {
-//       list-style: none;
-//       padding: 0;
-//       margin: 0 auto;
-//       display: inline-block;
-//       position: relative;
-//       height: 100%;
-//     }
-//
-//     &__list-item {
-//       display: block;
-//       height: 25%;
-//       height: calc(100% / 6);
-//       min-height: 50px;
-//       position: relative;
-//       opacity: 0;
-//     }
-//
-//     &__link {
-//       display: block;
-//       position: relative;
-//       color: $color-link;
-//       text-decoration: none;
-//       overflow: hidden;
-//       &:hover:after,
-//       &:focus:after,
-//       &:active:after {
-//         width: 100%;
-//       }
-//       &:after {
-//         content: '';
-//         position: absolute;
-//         bottom: 0;
-//         left: 50%;
-//         width: 0%;
-//         transform: translateX(-50%);
-//         height: 3px;
-//         background: $color-active;
-//         transition: .35s;
-//       }
-//     }
-//
-//     &__list-item {
-//       animation: fadeInRight .5s ease forwards;
-//       animation-delay: .35s;
-//       &:nth-of-type(2) {
-//         animation-delay: .4s;
-//       }
-//       &:nth-of-type(3) {
-//         animation-delay: .45s;
-//       }
-//       &:nth-of-type(4) {
-//         animation-delay: .50s;
-//       }
-//     }
-//
-//     &__overlay-menu {
-//       position: relative;
-//       height: 50%;
-//       top: 46%;
-//       transform: translateY(-50%);
-//       font-size: 50px;
-//       font-weight: 400;
-//       text-align: center;
-//     }
-//
-//     @keyframes fadeInRight {
-//       0% {
-//         opacity: 0;
-//         left: 20%;
-//       }
-//       100% {
-//         opacity: 1;
-//         left: 0;
-//       }
-//     }
-//   }
-// }
-//
-// // Desktop Nav
-// @include respond-to(medium) {
-//   .nav {
-//     &__wrapper {
-//       overflow: auto;
-//     }
-//     &__logo {
-//       display: block;
-//       position: absolute;
-//       top: 2em;
-//     }
-//     &__logo-image {
-//       width: 62px;
-//     }
-//     &__list {
-//       margin: 0;
-//       overflow: auto;
-//       padding-left: 5.5em;
-//     }
-//     &__list-item {
-//       list-style-type: none;
-//     }
-//     &__link {
-//       padding: 1.1em;
-//       font-size: 18px;
-//       display: block;
-//       float: left;
-//       text-decoration: none;
-//       color: $white;
-//   	}
-//   }
-// }
-//
-// @include respond-to(large) {
-//   .nav {
-//     &__link {
-//       font-size: 21px;
-//     }
-//     &__logo-image {
-//       width: 75px;
-//     }
-//     &__list {
-//       padding-left: 7.5em;
-//     }
-//   }
-// }
+    &__link {
+      display: block;
+      position: relative;
+      color: $color-link;
+      text-decoration: none;
+      overflow: hidden;
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        width: 100%;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        transform: translateX(-50%);
+        height: 3px;
+        background: $color-active;
+        transition: .35s;
+      }
+    }
+
+    &__list-item {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+
+    &__overlay-menu {
+      position: relative;
+      height: 50%;
+      top: 46%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        left: 20%;
+      }
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
+  }
+}

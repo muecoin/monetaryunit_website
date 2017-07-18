@@ -1,8 +1,8 @@
 import React from 'react';
-import FixedNavigation from './common/fixed-navigation';
+import Navigation from './common/navigation';
 export default ({ children, className = 'layout' }) => (
   <div className={className}>
-    <FixedNavigation />
+    <Navigation block={"fixed-nav"} fixed />
     {children}
   </div>
 )
