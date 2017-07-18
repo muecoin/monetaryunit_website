@@ -47,7 +47,7 @@ export default class Navigation {
 
   setupMobileEvents(){
     this.navigationLinks.forEach((link, index) => {
-      link.addEventListener(click, this.mobileLinkClicked);
+      link.addEventListener('click', this.mobileLinkClicked);
     });
   }
 
