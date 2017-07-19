@@ -96,7 +96,7 @@ export default () => (
         <div className="footer__copyright">
           <div className="footer__copyright-wrapper">
             <img className="footer__logo" src="/assets/images/monetary-unit-white-logo.png" alt="Monetary Unit" />
-            <small className="footer__legal">Copyright {'\u00A9'} {new Date().getFullYear()} Monetary Unit, All Rights Reserved.</small>
+            <small className="footer__legal">Copyright {new Date().getFullYear()} Monetary Unit, All Rights Reserved.</small>
           </div>
         </div>
       </div>
