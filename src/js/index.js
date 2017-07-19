@@ -1,4 +1,6 @@
 import '../sass/index.scss';
+import 'babel-polyfill';
+
 // import managers
 import NavigationManager from './managers/navigation-manager';
 import AccordionManager from './managers/accordion-manager';
