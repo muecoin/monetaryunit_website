@@ -1,3 +1,5 @@
+import { forEach } from 'lodash';
+
 export default class Accordion {
   constructor(accordionElement, index){
     this.accordionElement = accordionElement;
@@ -15,7 +17,7 @@ export default class Accordion {
   }
 
   initialise() {
-    this.accordionToggles.forEach((toggles, i) => {
+    forEach(this.accordionToggles, (toggles, i) => {
       console.log(toggles, i)
       if (this.touchSupported) {
         this.accordionToggles[i].addEventListener('touchstart', this.skipClickDelay, false);

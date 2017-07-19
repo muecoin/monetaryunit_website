@@ -1,3 +1,4 @@
+import { forEach } from 'lodash';
 import Scroller from '../components/scroller';
 
 export default class ScrollingManager {
@@ -9,7 +10,7 @@ export default class ScrollingManager {
      return undefined;
    }
 
-   scrollButtons.forEach((button) => {
+   forEach(scrollButtons, (button) => {
      new Scroller(button, false);
    });
   }

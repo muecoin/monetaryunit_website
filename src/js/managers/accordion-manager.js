@@ -1,3 +1,4 @@
+import { forEach } from 'lodash';
 import Accordion from '../components/accordion';
 
 export default class AccordionManager {
@@ -9,7 +10,7 @@ export default class AccordionManager {
      return undefined;
    }
 
-   accordions.forEach((accordion, index) => {
+   forEach(accordions, (accordion, index) => {
      new Accordion(accordion, index);
    });
   }

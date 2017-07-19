@@ -1,3 +1,4 @@
+import { forEach } from 'lodash';
 import Modal from '../components/modal';
 
 export default class ModalManager {
@@ -9,7 +10,7 @@ export default class ModalManager {
       return undefined;
     }
 
-    modals.forEach((modal, index) => {
+    forEach(modals, (modal, index) => {
       new Modal(modal, index);
     });
    }

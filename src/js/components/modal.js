@@ -1,3 +1,4 @@
+import { forEach } from 'lodash';
 import preventScroll from 'prevent-scroll';
 
 export default class Modal {
@@ -28,7 +29,7 @@ export default class Modal {
   }
 
   addButtonEvents(){
-    this.buttons.forEach((button, index) => {
+    forEach(this.buttons, (button, index) => {
       button.addEventListener('click', this.open.bind(this));
     });
   }

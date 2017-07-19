@@ -1,3 +1,4 @@
+import { forEach } from 'lodash';
 import preventScroll from 'prevent-scroll';
 import stickyHeader from 'sticky-header';
 import FixedHeader from './fixed-header';
@@ -46,7 +47,7 @@ export default class Navigation {
   }
 
   setupMobileEvents(){
-    this.navigationLinks.forEach((link, index) => {
+    forEach(this.navigationLinks, (link, index) => {
       link.addEventListener('click', this.mobileLinkClicked);
     });
   }

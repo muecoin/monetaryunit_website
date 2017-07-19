@@ -29,24 +29,6 @@
   }
 }
 
-%container-row-medium {
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 auto;
-
-    @each $key, $value in $breakpoints {
-      @if map-has-key($containers, $key) {
-        @media (min-width: #{$value}) {
-          width: #{map-get($containers, $key)};
-          flex-direction: row;
-        }
-      }
-    }
-}
-
 %container-full {
   padding-right: ($gutter/2);
   padding-left: ($gutter/2);
