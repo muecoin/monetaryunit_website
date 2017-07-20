@@ -1,6 +1,6 @@
 $chart-icon-color: $orange;
 $benefit-item-color: $white;
-$icon-right-margin: $layout-spacing-xxs;
+$icon-right-margin: $layout-spacing-xxs + 5;
 $benefit-item-bottom-margin: $layout-spacing-xs;
 
 // BREAKPOINT
@@ -54,6 +54,7 @@ $benefit-top-spacing-medium: $layout-spacing-xs;
   }
   &__benefits-item {
     @extend %column;
+    display: flex;
     margin-bottom: $benefit-item-bottom-margin;
     color: $benefit-item-color;
     @include respond-to(large) {
