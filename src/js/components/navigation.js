@@ -56,16 +56,8 @@ export default class Navigation {
     e.stopPropagation();
     e.preventDefault();
 
-    const { target, href } = e.target;
-
     this.closeMenu();
-
-    if(target !== "") {
-      window.open(href, target);
-      return;
-    }
-
-    window.location.href = href;
+    window.location.href = e.target.href;
   }
 
   setupResizeHandler() {
