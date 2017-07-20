@@ -22,6 +22,7 @@ export default class FixedHeader {
 
   initialise() {
     this.addScrollEvent();
+    this.hideFixedHeader();
   }
 
   addScrollEvent() {
