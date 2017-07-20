@@ -16,7 +16,7 @@ const init = () => {
   // Initialise Accordians
   AccordionManager.initAccordions();
   // Initialise Scrolling
-  ScrollingManager.initScrolling();
+  //ScrollingManager.initScrolling();
   // Initialise Fixed Header
 }
 

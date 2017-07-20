@@ -17,8 +17,7 @@ export default class Accordion {
   }
 
   initialise() {
-    forEach(this.accordionToggles, (toggles, i) => {
-      console.log(toggles, i)
+    forEach(this.accordionToggles, (toggles, i) => {      
       if (this.touchSupported) {
         this.accordionToggles[i].addEventListener('touchstart', this.skipClickDelay, false);
       }
