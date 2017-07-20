@@ -7,7 +7,6 @@ export default class Accordion {
     this.accordionToggles = accordionElement.querySelectorAll('[data-accordion-trigger]'),
     this.switchAccordion,
     this.touchSupported = ('ontouchstart' in window),
-    this.pointerSupported = ('pointerdown' in window);
     this.bindHandlers();
     this.initialise();
   }
@@ -17,13 +16,10 @@ export default class Accordion {
   }
 
   initialise() {
-    forEach(this.accordionToggles, (toggles, i) => {      
+    forEach(this.accordionToggles, (toggles, i) => {
       if (this.touchSupported) {
         this.accordionToggles[i].addEventListener('touchstart', this.skipClickDelay, false);
-      }
-      if (this.pointerSupported) {
-        this.accordionToggles[i].addEventListener('pointerdown', this.skipClickDelay, false);
-      }
+      }      
       this.accordionToggles[i].addEventListener('click', this.switchAccordion, false);
     });
   }
