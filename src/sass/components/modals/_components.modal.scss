@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
+  z-index: 99999;
 }
 
 %modal-overlay-blurred {
@@ -43,7 +43,7 @@
   position: relative;
   margin: 100px auto 0;
   background: #fff;
-  z-index: 9999;
+  z-index: 99999;
   border-radius: 13px;
 
   @include respond-to(medium){
