@@ -33,8 +33,11 @@ $full-screen-min-height-1: 800px;
     @extend %column;
     @extend %column--center;
     // flip the hero's columns at the small breakpoint so image is on the right
+    flex: 0 0 auto;
+
     @include respond-to(small) {
       order: 12;
+      flex: 1 0 0%;
     }
   }
   &__aside-image-container {
