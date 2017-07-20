@@ -53,11 +53,17 @@ export default class Navigation {
   }
 
   mobileLinkClicked = (e) => {
+    const { target, href } = e.target;
+
+    if(target !== "") {
+      return;
+    }
+
     e.stopPropagation();
     e.preventDefault();
 
     this.closeMenu();
-    window.location.href = e.target.href;
+    window.location.href = href;
   }
 
   setupResizeHandler() {
