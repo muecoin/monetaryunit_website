@@ -3,7 +3,7 @@ import preventScroll from 'prevent-scroll';
 import stickyHeader from 'sticky-header';
 import FixedHeader from './fixed-header';
 
-const click = 'ontouchstart' in window ? 'touchstart' : 'click';
+const click = 'ontouchstart' in window ? 'touchend' : 'click';
 
 export default class Navigation {
   constructor(element, index){
@@ -48,7 +48,7 @@ export default class Navigation {
 
   setupMobileEvents(){
     forEach(this.navigationLinks, (link, index) => {
-      link.addEventListener('click', this.mobileLinkClicked);
+      link.addEventListener(click, this.mobileLinkClicked);
     });
   }
 
