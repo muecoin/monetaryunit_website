@@ -39,7 +39,7 @@ export default class Navigation {
     this.setMode(true);
     // handle class toggling for nav bar
     this.toggle.addEventListener(click, this.toggleMenu);
-    this.setupResizeHandler();
+    //this.setupResizeHandler();
 
     if (this.isFixedNav) {
       new FixedHeader(this.nav, this.overlay, document.querySelector('[data-fixed-nav-target]'));
@@ -53,11 +53,19 @@ export default class Navigation {
   }
 
   mobileLinkClicked = (e) => {
-    this.closeMenu();
-  }
-
-  stopScroll(e) {
+    e.stopPropagation();
     e.preventDefault();
+
+    const { target, href } = e.target;
+
+    this.closeMenu();
+
+    if(target !== "") {
+      window.open(href, target);
+      return;
+    }
+
+    window.location.href = href;
   }
 
   setupResizeHandler() {
@@ -93,6 +101,8 @@ export default class Navigation {
 
   toggleMenu = (e) => {
     e.preventDefault();
+    e.stopPropagation();
+
     if(!this.menuOpen) {
       this.openMenu();
       this.menuOpen = true;

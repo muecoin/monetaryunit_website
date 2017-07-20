@@ -23,11 +23,6 @@ export default class Accordion {
     });
   }
 
-  skipClickDelay(e){
-    e.preventDefault();
-    e.target.click();
-  }
-
   setAriaAttr(el, ariaType, newProperty){
     el.setAttribute(ariaType, newProperty);
   }
