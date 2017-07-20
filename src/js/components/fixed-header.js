@@ -30,7 +30,7 @@ export default class FixedHeader {
   }
 
   scrollPositionHandler = (e) => {
-    this.currentScrollDistance = window.scrollY;
+    this.currentScrollDistance = window.pageYOffset;
 
     if (this.outOfHeaderZone()) {
       // if past the min scroll distance then begin calculating
@@ -61,7 +61,7 @@ export default class FixedHeader {
           this.showFixedHeader();
         }
       }
-      this.lastPosition = window.scrollY;
+      this.lastPosition = window.pageYOffset;
     } else {
       if(this.overlay && this.overlay.classList.contains('fixed-nav__overlay--active')) {
         return;
@@ -72,7 +72,7 @@ export default class FixedHeader {
   }
 
   outOfHeaderZone() {
-    if (window.scrollY > this.target.offsetHeight - 80) {
+    if (window.pageYOffset > this.target.offsetHeight - 80) {
       return true;
     }
     return false;
