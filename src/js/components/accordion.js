@@ -1,6 +1,6 @@
 import { forEach } from 'lodash';
 
-const click = 'ontouchstart' in window ? 'touchend' : 'click';
+const click = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 export default class Accordion {
   constructor(accordionElement, index){
@@ -19,7 +19,7 @@ export default class Accordion {
 
   initialise() {
     forEach(this.accordionToggles, (toggle) => {
-      toggle.addEventListener(click, this.switchAccordion, false);      
+      toggle.addEventListener(click, this.switchAccordion, false);
     });
   }
 

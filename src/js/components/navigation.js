@@ -3,7 +3,7 @@ import preventScroll from 'prevent-scroll';
 import stickyHeader from 'sticky-header';
 import FixedHeader from './fixed-header';
 
-const click = 'ontouchstart' in window ? 'touchend' : 'click';
+const click = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 export default class Navigation {
   constructor(element, index){
@@ -92,6 +92,7 @@ export default class Navigation {
   }
 
   toggleMenu = (e) => {
+    e.preventDefault();
     if(!this.menuOpen) {
       this.openMenu();
       this.menuOpen = true;
