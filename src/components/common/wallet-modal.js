@@ -7,7 +7,7 @@ export default () => (
     <h1 className="wallet-download-modal__heading">Download Your Wallet</h1>
     <div className="wallet-download-modal__wallet-container">
       <div className="wallet-download-modal__download-item">
-        <a className="wallet-download-modal__btn--windows" href="">
+        <a className="wallet-download-modal__btn--windows" href="https://github.com/muecoin/MUECore/releases" target="_blank">
           <div className="wallet-download-modal__platform-icon-wrapper">
             <span className="wallet-download-modal__platform-icon--windows"></span>
           </div>

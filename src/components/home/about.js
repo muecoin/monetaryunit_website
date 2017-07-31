@@ -7,6 +7,7 @@ export default () => (
           <div className="about__intro-text-container">
             <h1 className="about__intro-heading">About</h1>
             <p className="about__intro-paragraph">Launched in July 2014 Monetary Unit is a decentralised, self-sustainable and self-governed cryptocurrency project with long term goals. Our focus has always been to create a cryptocurrency that is accessible to all and breaks away from the stigma of being understood not only by the tech industry but be an attractive offering for developers, investors and the general public alike.</p>
+            <p className="about__intro-paragraph">If privacy is a concern for you, use our PrivateSend {'function'} that uses multiple layers of obfuscation to hide from the recipient the source of the funds</p>
             <p className="about__intro-paragraph">Maintained by a friendly and committed community and with many exciting projects on the horizon, here at MUE, we continue to innovate and build on our reputation to launch into the mainstream as the most trusted and exciting cryptocurrency project in the market.</p>
           </div>
         </div>
@@ -16,13 +17,13 @@ export default () => (
             <div className="about__benefits-item">
               <span className="about__benefits-icon--rocket"></span>
               <p className="about__benefits-description">
-                <b>Near Instant Transactions:</b> For urgent transactions a payment can be instantly received and confirmed by the recipient via the Instantsend function.
+                <b>Instant Transactions:</b> For urgent transactions a payment can be instantly received and confirmed by the recipient via the Instantsend {'function'}.
               </p>
             </div>
             <div className="about__benefits-item">
               <span className="about__benefits-icon--users"></span>
               <p className="about__benefits-description">
-                <b>Community & Foundation:</b> Helpful community and Foundation Team always on hand to assist with questions and educate.
+                <b>Community & Foundation:</b> Helpful community and Foundation Team always on hand to assist with questions and to help educate.
               </p>
             </div>
           </div>
@@ -30,7 +31,7 @@ export default () => (
             <div className="about__benefits-item">
               <span className="about__benefits-icon--balance"></span>
               <p className="about__benefits-description">
-                <b>MasterNodes:</b> Our unique business infrastructure ensures stability within the community and constant maintenance.
+                <b>MasterNodes:</b> Our unique business model ensures stability within the community with inbuilt governance and voting systems.
               </p>
             </div>
             <div className="about__benefits-item">
@@ -50,7 +51,7 @@ export default () => (
             <div className="about__benefits-item">
               <span className="about__benefits-icon--wallet"></span>
               <p className="about__benefits-description">
-                <b>Long Term Low Inflation Rate:</b> Inflation is going to be about 3% per year, which promotes the use and distribution of MUE. 40 MUE every 40 seconds from now for at least the next 130 years.
+                <b>Long Term Low Inflation Rate:</b> With a long term inflation rate of 3% per year, this promotes the use and distribution of MUE. 40 MUE every 40 seconds from now for at least the next 130 years.
               </p>
             </div>
           </div>

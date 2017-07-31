@@ -1,9 +1,24 @@
-$project-1-progress: 80%;
-$project-2-progress: 30%;
-$project-3-progress: 22%;
-$project-4-progress: 80%;
-$project-5-progress: 59%;
-$project-6-progress: 96%;
+$project-0-progress: 0%;
+$project-5-progress: 5%;
+$project-10-progress: 10%;
+$project-15-progress: 15%;
+$project-20-progress: 20%;
+$project-25-progress: 25%;
+$project-30-progress: 30%;
+$project-35-progress: 35%;
+$project-40-progress: 40%;
+$project-45-progress: 45%;
+$project-50-progress: 50%;
+$project-55-progress: 55%;
+$project-60-progress: 60%;
+$project-65-progress: 65%;
+$project-70-progress: 70%;
+$project-75-progress: 75%;
+$project-80-progress: 80%;
+$project-85-progress: 85%;
+$project-90-progress: 90%;
+$project-95-progress: 95%;
+$project-100-progress: 100%;
 
 $progress-bar-uncomplete-color: $lighest-grey;
 $progress-bar-border-color: $orange;
@@ -19,6 +34,7 @@ $progress-bar-border-size-small: 4px;
 $progress-bar-margin-bottom-small: $layout-spacing-xxs;
 $progress-bar-margin-bottom-medium: $layout-spacing-xs0;
 
+$description-margin-bottom-small: 26px;
 $description-margin-bottom-medium: 40px;
 
 $progress-percentage-top-spacing-small: 3px;
@@ -61,16 +77,19 @@ $bar-fill-top-offset-small: -4px;
   }
   &__description {
     @extend %paragraph-s-style-dark-center-300mw;
+    text-align: center;
+    margin: 0 auto $description-margin-bottom-small;
     @include respond-to(medium){
       margin: 0 auto $description-margin-bottom-medium auto;
     }
-
   }
   &__project-progress {
     @extend %container-row;
+    @extend %row--justify;
   }
   &__project-progress-list {
     @extend %column;
+    @extend %column--1of3;
   }
 
   &__progress-bar,
@@ -109,30 +128,38 @@ $bar-fill-top-offset-small: -4px;
       @include font-size(15px);
       top: $bar-fill-top-offset-medium;
     }
-    
+
     &--project-1 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-1-progress;
+      width: $project-80-progress;
     }
     &--project-2 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-2-progress;
+      width: $project-95-progress;
     }
     &--project-3 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-3-progress;
+      width: $project-100-progress;
     }
     &--project-4 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-4-progress;
+      width: $project-35-progress;
     }
     &--project-5 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-5-progress;
+      width: $project-25-progress;
     }
     &--project-6 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-6-progress;
+      width: $project-35-progress;
+    }
+    &--project-7 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-15-progress;
+    }
+    &--project-8 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-10-progress;
     }
   }
   &__progress-percent {

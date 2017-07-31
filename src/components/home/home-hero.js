@@ -21,7 +21,7 @@ export default () => (
                 <a className="home-hero__actions-btn-why-mue" data-modal-target="why-buy-mue-video" href="">Why choose MonetaryUnit? <span className="home-hero__actions-btn-why-mue--play-icon"></span></a>
               </li>
               <li className="home-hero__actions-start-using">
-                <a className="home-hero__actions-btn-start-using" href="" data-jump-to=".get-started">Start using MonetaryUnit today</a>
+                <a className="home-hero__actions-btn-start-using" href="#get-started" data-jump-to=".get-started">Start using MonetaryUnit today</a>
               </li>
             </ul>
           </div>
