@@ -78,6 +78,7 @@ $bar-fill-top-offset-small: -4px;
   &__description {
     @extend %paragraph-s-style-dark-center-300mw;
     text-align: center;
+    padding: 0 5%;
     margin: 0 auto $description-margin-bottom-small;
     @include respond-to(medium){
       margin: 0 auto $description-margin-bottom-medium auto;

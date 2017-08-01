@@ -77,7 +77,7 @@ export default () => (
                 <span className="why-choose-mue__progress-percent">15%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">Multi-coin data portal</p>
+            <p className="why-choose-mue__description">Now you can just visit ONE site to get your crypto marketcap, mining difficulty, charts & graphs.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
             <h2 className="why-choose-mue__sub-heading">www.startmy.io</h2>
@@ -86,7 +86,7 @@ export default () => (
                 <span className="why-choose-mue__progress-percent">10%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">Crypto only kickstarter style site</p>
+            <p className="why-choose-mue__description">Let StartMy help start your; website, app, service, project. Seed funding from the crypto community</p>
           </div>
         </div>
     </section>
