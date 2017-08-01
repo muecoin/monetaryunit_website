@@ -40,6 +40,14 @@
     @extend %accordion__paragraph;
   }
 
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__bullet-list {
+    @extend %accordion__ul;
+  }
+
   &__item {
     @extend %accordion__item;
   }

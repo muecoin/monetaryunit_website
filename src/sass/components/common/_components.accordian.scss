@@ -18,6 +18,13 @@
      line-height: 1.5em;
   }
 
+  &__ul {
+    @extend %paragraph-s-style-white;    
+    list-style: initial;
+    margin-bottom: 0;
+    padding: 0 2em 1em 3em;
+  }
+
   &__paragraph {
     @extend %paragraph-s-style-white;
     margin-bottom: 0;
