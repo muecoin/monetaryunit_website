@@ -26,7 +26,7 @@ export default () => {
 
         <GuideIntro title="Buying your first MUE">
           <p className="guide-intro__paragraph">If you're new to digital currencies or don't own any yet, the easiest route to buying MUE is through an exchange website such as Bittylicious. Their website allows to you purchase digital currencies with pounds. Once you have your wallet setup and have verified your account with them, it's a fast and simple process.</p>
-          <p className="guide-intro__paragraph">We currently recommend <a className="guide-intro__paragraph-link" href="http://www.bittylicious.com" target="_blank">Bittylicious</a> for their excellent feedback on <a className="guide-intro__paragraph-link" href="https://uk.trustpilot.com/review/www.bittylicious.com" target="_blank">Trustpilot</a>.</p>
+          <p className="guide-intro__paragraph">We currently recommend <a className="guide-intro__paragraph-link" href="http://www.bittylicious.com" target="_blank">Bittylicious</a> for their excellent feedback on <a className="guide-intro__paragraph-link" href="https://uk.trustpilot.com/review/www.bittylicious.com" target="_blank"><img className="guide-intro__paragraph-img" src="/assets/images/trustpilot.png" /></a>.</p>
         </GuideIntro>
 
         <GuideStep
