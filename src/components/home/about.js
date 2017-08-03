@@ -7,7 +7,6 @@ export default () => (
           <div className="about__intro-text-container">
             <h1 className="about__intro-heading">About</h1>
             <p className="about__intro-paragraph">Launched in July 2014 Monetary Unit is a decentralised, self-sustainable and self-governed cryptocurrency project with long term goals. Our focus has always been to create a cryptocurrency that is accessible to all and breaks away from the stigma of being understood not only by the tech industry but be an attractive offering for developers, investors and the general public alike.</p>
-            <p className="about__intro-paragraph">If privacy is a concern for you, use our PrivateSend {'function'} that uses multiple layers of obfuscation to hide from the recipient the source of the funds</p>
             <p className="about__intro-paragraph">Maintained by a friendly and committed community and with many exciting projects on the horizon, here at MUE, we continue to innovate and build on our reputation to launch into the mainstream as the most trusted and exciting cryptocurrency project in the market.</p>
           </div>
         </div>
@@ -18,6 +17,7 @@ export default () => (
               <span className="about__benefits-icon--rocket"></span>
               <p className="about__benefits-description">
                 <b>Instant Transactions:</b> For urgent transactions a payment can be instantly received and confirmed by the recipient via the Instantsend {'function'}.
+                  If privacy is a concern, use our PrivateSend {'function'} that uses multiple layers of obfuscation to hide from the recipient the source of the funds.
               </p>
             </div>
             <div className="about__benefits-item">

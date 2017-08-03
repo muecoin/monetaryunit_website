@@ -31,7 +31,7 @@ export default () => (
             <p className="why-choose-mue__description">Bringing multi-player online gaming to the crypto world & crypto to the online gaming world.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
-            <h2 className="why-choose-mue__sub-heading">www.webwallets.io</h2>
+            <h2 className="why-choose-mue__sub-heading"><a href="http://www.webwallets.io" target="_blank">www.webwallets.io</a></h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-3">
                 <span className="why-choose-mue__progress-percent">100%</span>
