@@ -31,10 +31,10 @@ export default () => (
             <p className="why-choose-mue__description">Bringing multi-player online gaming to the crypto world & crypto to the online gaming world.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
-            <h2 className="why-choose-mue__sub-heading"><a href="http://www.webwallets.io" target="_blank">www.webwallets.io</a></h2>
+            <h2 className="why-choose-mue__sub-heading">www.webwallets.io</h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-3">
-                <span className="why-choose-mue__progress-percent">100%</span>
+                <span className="why-choose-mue__progress-percent">75%</span>
               </div>
             </div>
             <p className="why-choose-mue__description">Multi-currency web wallets with staking facility and option to sell direct for multiple fiat currencies.</p>
@@ -66,7 +66,7 @@ export default () => (
                 <span className="why-choose-mue__progress-percent">35%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">Earn "Go Shopping" reward points to spend throughout the MUE ecosystem & platform</p>
+            <p className="why-choose-mue__description">Earn "Go Shopping" reward points to spend throughout the MUE ecosystem & platform.</p>
           </div>
         </div>
         <div className="why-choose-mue__project-progress">
@@ -86,7 +86,16 @@ export default () => (
                 <span className="why-choose-mue__progress-percent">10%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">Let StartMy help start your; website, app, service, project. Seed funding from the crypto community</p>
+            <p className="why-choose-mue__description">Let StartMy help start your; website, app, service, project. Seed funding from the crypto community.</p>
+          </div>
+          <div className="why-choose-mue__project-progress-list">
+            <h2 className="why-choose-mue__sub-heading"><a href="https://www.microsoft.com/en-gb/store/p/goldfinger-bank/9nblggh43vmj?rtc=1#" target="_blank">The Goldfinger Poloniex Lending Bot</a></h2>
+            <div className="why-choose-mue__progress-bar">
+              <div className="why-choose-mue__progress-bar-fill--project-9">
+                <span className="why-choose-mue__progress-percent">100%</span>
+              </div>
+            </div>
+            <p className="why-choose-mue__description">This automated lending bot is exclusive to MUE & will generate you income on autopilot.</p>
           </div>
         </div>
     </section>

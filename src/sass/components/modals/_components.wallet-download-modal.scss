@@ -3,6 +3,8 @@ $icon-apple-mac-color: $orange;
 $icon-apple-ios-color: $apple-grey;
 $icon-android-color: $android-green;
 $icon-windows-color: $windows-blue;
+$icon-ubuntu-color: $ubuntu-red;
+$icon-source-color: $dark-blue;
 
 .wallet-download-modal {
   @extend %modal-overlay;
@@ -16,9 +18,9 @@ $icon-windows-color: $windows-blue;
     max-width: $wallet-download-max-width;
     padding: 45px 5px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 
     @include respond-to(medium){
       padding: 50px 70px;
@@ -35,13 +37,12 @@ $icon-windows-color: $windows-blue;
   }
 
   &__download-item {
-    //width: 50%;
+    width: 50%;
     text-align: center;
     float: left;
-    width: 100%;
     @include respond-to(small){
-      //width: 25%;
-      //float: left;
+      width: 25%;
+      float: left;
     }
   }
 
@@ -77,6 +78,16 @@ $icon-windows-color: $windows-blue;
       @extend %icon--apple;
       color: $icon-apple-ios-color;
     }
+    &--ubuntu {
+      @extend .wallet-download-modal__platform-icon;
+      @extend %icon--ubuntu;
+      color: $icon-ubuntu-color;
+    }
+    &--source {
+      @extend .wallet-download-modal__platform-icon;
+      @extend %icon--developers;
+      color: $icon-source-color;
+    }
   }
 
   &__btn {
@@ -84,7 +95,11 @@ $icon-windows-color: $windows-blue;
     display: block;
     @extend %button-style-1-medium;
     font-size: 11px;
-    width:100%;
+    width: 100%;
+
+    @include respond-to(small){
+      font-size: 15px;
+    }
 
     &--windows {
       @extend .wallet-download-modal__btn;
@@ -101,6 +116,14 @@ $icon-windows-color: $windows-blue;
     &--ios {
       @extend .wallet-download-modal__btn;
       color: $icon-apple-ios-color;
+    }
+    &--ubuntu {
+      @extend .wallet-download-modal__btn;
+      color: $icon-ubuntu-color;
+    }
+    &--source {
+      @extend .wallet-download-modal__btn;
+      color: $icon-source-color;
     }
   }
 

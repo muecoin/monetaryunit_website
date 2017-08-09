@@ -1,5 +1,6 @@
 $icomoon-font-path: "../assets/fonts" !default;
 
+$icon--ubuntu: "\e90f";
 $icon--apple: "\e90c";
 $icon--android: "\e90d";
 $icon--windows: "\e90e";
@@ -51,6 +52,12 @@ $icon--github: "\eab0";
   -moz-osx-font-smoothing: grayscale;
 
   // ICONS
+  &--ubuntu {
+    @extend %icon;
+    &:before {
+      content: $icon--ubuntu;
+    }
+  }
   &--apple {
     @extend %icon;
     &:before {

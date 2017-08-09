@@ -15,8 +15,8 @@ export default () => (
           <span className="wallet-download-modal__btn-icon--download"></span>
         </a>
       </div>
-      {/* <div className="wallet-download-modal__download-item">
-        <a className="wallet-download-modal__btn--mac" href="">
+      <div className="wallet-download-modal__download-item">
+        <a className="wallet-download-modal__btn--mac" href="https://github.com/muecoin/MUECore/releases" target="_blank">
           <div className="wallet-download-modal__platform-icon-wrapper">
             <span className="wallet-download-modal__platform-icon--mac"></span>
           </div>
@@ -25,6 +25,24 @@ export default () => (
         </a>
       </div>
       <div className="wallet-download-modal__download-item">
+        <a className="wallet-download-modal__btn--ubuntu" href="https://github.com/muecoin/MUECore/releases" target="_blank">
+          <div className="wallet-download-modal__platform-icon-wrapper">
+            <span className="wallet-download-modal__platform-icon--ubuntu"></span>
+          </div>
+          Ubuntu X11 Wallet
+          <span className="wallet-download-modal__btn-icon--download"></span>
+        </a>
+      </div>
+      <div className="wallet-download-modal__download-item">
+        <a className="wallet-download-modal__btn--source" href="https://github.com/muecoin/MUECore/releases" target="_blank">
+          <div className="wallet-download-modal__platform-icon-wrapper">
+            <span className="wallet-download-modal__platform-icon--source"></span>
+          </div>
+          Source Code
+          <span className="wallet-download-modal__btn-icon--download"></span>
+        </a>
+      </div>
+      {/* <div className="wallet-download-modal__download-item">
         <a className="wallet-download-modal__btn--android" href="">
           <div className="wallet-download-modal__platform-icon-wrapper">
             <span className="wallet-download-modal__platform-icon--android"></span>

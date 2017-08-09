@@ -140,7 +140,7 @@ $bar-fill-top-offset-small: -4px;
     }
     &--project-3 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-100-progress;
+      width: $project-75-progress;
     }
     &--project-4 {
       @extend .why-choose-mue__progress-bar-fill;
@@ -161,6 +161,10 @@ $bar-fill-top-offset-small: -4px;
     &--project-8 {
       @extend .why-choose-mue__progress-bar-fill;
       width: $project-10-progress;
+    }
+    &--project-9 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-100-progress;
     }
   }
   &__progress-percent {

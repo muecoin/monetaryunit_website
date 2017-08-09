@@ -5,7 +5,7 @@ export default () => (
   <span className="video-modal__close"></span>
   <div className="video-modal__modal">
     <div className="video-modal__embed-container">
-      <iframe className="video-modal__embed-container-iframe" src="https://www.youtube.com/embed/4nw62tqWMgw" frameborder="0" allowfullscreen></iframe>
+      <iframe className="video-modal__embed-container-iframe" src="https://www.youtube.com/embed/nwPw0xn2qHI?ecver=1&rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
