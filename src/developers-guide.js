@@ -23,9 +23,8 @@ export default () => {
           <GuideSelectionTabs developers="--active"/>
         </Hero>
 
-        <GuideIntro title="Coming soon">
-          <p className="guide-intro__paragraph">We're working on lots of useful guides at the moment, please bare with us and pop back soon.</p>
-          <p className="guide-intro__paragraph">In the meantime, the quickest way to reach us is via our helpful and very welcoming <a className="guide-intro__paragraph-link" href="https://mueslack.herokuapp.com/" target="_blank">Slack Channel</a>.</p>
+        <GuideIntro title="For Developers">
+          <p className="guide-intro__paragraph">All code and commits are accessible with Github. Please go here for further information <a className="guide-intro__paragraph-link" href="https://github.com/muecoin" target="_blank">github.com/muecoin</a>.</p>
         </GuideIntro>
 
         <GetStarted title="Discover More" />

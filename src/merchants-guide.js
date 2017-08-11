@@ -23,9 +23,13 @@ export default () => {
           <GuideSelectionTabs merchants="--active"/>
         </Hero>
 
-        <GuideIntro title="Coming soon">
-          <p className="guide-intro__paragraph">We're working on lots of useful guides at the moment, please bare with us and pop back soon.</p>
-          <p className="guide-intro__paragraph">In the meantime, the quickest way to reach us is via our helpful and very welcoming <a className="guide-intro__paragraph-link" href="https://mueslack.herokuapp.com/" target="_blank">Slack Channel</a>.</p>
+        <GuideIntro title="For Merchants">
+          <p className="guide-intro__paragraph">Resources for integrating Monetary Unit payments into your website:</p>
+          <p className="guide-intro__paragraph">
+            <a className="guide-intro__paragraph-link" href="https://gourl.io/monetaryunit-payment-gateway-api.html" target="_blank">Monetaryunit Payment PHP API Examples</a>
+            <br/>
+            <a className="guide-intro__paragraph-link" href="https://www.coinpayments.net/merchant-tools" target="_blank">CoinPayments Merchant Tools</a>
+          </p>
         </GuideIntro>
 
         <GetStarted title="Discover More" />

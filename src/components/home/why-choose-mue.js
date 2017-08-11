@@ -89,13 +89,13 @@ export default () => (
             <p className="why-choose-mue__description">Let StartMy help start your; website, app, service, project. Seed funding from the crypto community.</p>
           </div>
           <div className="why-choose-mue__project-progress-list">
-            <h2 className="why-choose-mue__sub-heading"><a href="https://www.microsoft.com/en-gb/store/p/goldfinger-bank/9nblggh43vmj?rtc=1#" target="_blank">The Goldfinger Poloniex Lending Bot</a></h2>
+            <h2 className="why-choose-mue__sub-heading"><a href="https://www.microsoft.com/en-gb/store/p/goldfinger-bank/9nblggh43vmj?rtc=1#" target="_blank">Goldfinger Lending Bot</a></h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-9">
                 <span className="why-choose-mue__progress-percent">100%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">This automated lending bot is exclusive to MUE & will generate you income on autopilot.</p>
+            <p className="why-choose-mue__description">This automated Poloniex lending bot is exclusive to MUE & will generate you income on autopilot.</p>
           </div>
         </div>
     </section>
