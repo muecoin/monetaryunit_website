@@ -24,7 +24,7 @@ export default ({title = "Get Started"}) => (
               <span className="get-started__guide-icon--consumers"></span>
             </div>
             <h2 className="get-started__sub-heading">For Consumers</h2>
-            <a className="get-started__find-out-more-btn" href="#" target="_self">Find out more</a>
+            <a className="get-started__find-out-more-btn" href="/consumers-guide.html" target="_self">Find out more</a>
             <p className="get-started__description">Buying and spending with MUE is easier than you think. Download a wallet and find retailers and other spending touch points here.</p>
           </div>
         </div>
