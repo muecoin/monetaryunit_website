@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUE</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/manifest.json">
+    <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <meta name="msapplication-config" content="assets/images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+          content="At MUE, we aim to break away from the mould that cryptocurrency is only for tech-savvy people.">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-87464347-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="layout">
+    <header class="fixed-nav" data-fixed-nav="true">
+        <div class="fixed-nav__wrapper"><a class="fixed-nav__logo" id="logo-test" href="/"><img
+                class="fixed-nav__logo-image" src="/assets/images/monetary-unit-logo.svg" alt="Monetary Unit"/></a>
+            <div class="fixed-nav__menu-button-slices" data-toggle="true"><span
+                    class="fixed-nav__menu-button-slice--top"></span><span
+                    class="fixed-nav__menu-button-slice--middle"></span><span
+                    class="fixed-nav__menu-button-slice--bottom"></span></div>
+            <div class="fixed-nav__overlay" data-overlay-wrapper="true">
+                <nav class="fixed-nav__overlay-menu" id="overlay">
+                    <ul class="fixed-nav__list">
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link link--active" href="/"
+                                                            data-jump-to=".home-hero">Home</a></li>
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link" href="/#about"
+                                                            data-jump-to=".about">About</a></li>
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link" href="/#why-choose-mue"
+                                                            data-jump-to=".why-choose-mue">Why MUE?</a></li>
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link" href="/#get-started"
+                                                            data-jump-to=".get-started">Get Started</a></li>
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link" href="/#join-the-community"
+                                                            data-jump-to=".join-the-community">Community</a></li>
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link"
+                                                            href="https://monetaryunitfoundation.org/" target="_blank">Foundation</a>
+                        </li>
+                        <li class="fixed-nav__list-item"><a class="fixed-nav__link"
+                                                            href="/frequently-asked-questions.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="wallet-download-modal--hidden" data-modal="true" data-modal-id="wallet-download"><span
+            class="wallet-download-modal__close"></span>
+        <div class="wallet-download-modal__modal"><h1 class="wallet-download-modal__heading">Download Your Wallet</h1>
+            <div class="wallet-download-modal__wallet-container">
+                <div class="wallet-download-modal__download-item"><a class="wallet-download-modal__btn--windows"
+                                                                     href="https://github.com/muecoin/MUECore/releases"
+                                                                     target="_blank">
+                    <div class="wallet-download-modal__platform-icon-wrapper"><span
+                            class="wallet-download-modal__platform-icon--windows"></span></div>
+                    Windows X11 Wallet<span class="wallet-download-modal__btn-icon--download"></span></a></div>
+                <div class="wallet-download-modal__download-item"><a class="wallet-download-modal__btn--mac"
+                                                                     href="https://github.com/muecoin/MUECore/releases"
+                                                                     target="_blank">
+                    <div class="wallet-download-modal__platform-icon-wrapper"><span
+                            class="wallet-download-modal__platform-icon--mac"></span></div>
+                    Mac X11 Wallet<span class="wallet-download-modal__btn-icon--download"></span></a></div>
+                <div class="wallet-download-modal__download-item"><a class="wallet-download-modal__btn--ubuntu"
+                                                                     href="https://github.com/muecoin/MUECore/releases"
+                                                                     target="_blank">
+                    <div class="wallet-download-modal__platform-icon-wrapper"><span
+                            class="wallet-download-modal__platform-icon--ubuntu"></span></div>
+                    Ubuntu X11 Wallet<span class="wallet-download-modal__btn-icon--download"></span></a></div>
+                <div class="wallet-download-modal__download-item"><a class="wallet-download-modal__btn--source"
+                                                                     href="https://github.com/muecoin/MUECore/releases"
+                                                                     target="_blank">
+                    <div class="wallet-download-modal__platform-icon-wrapper"><span
+                            class="wallet-download-modal__platform-icon--source"></span></div>
+                    Source Code<span class="wallet-download-modal__btn-icon--download"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="video-modal--hidden" data-modal="true" data-modal-id="why-buy-mue-video"><span
+            class="video-modal__close"></span>
+        <div class="video-modal__modal">
+            <div class="video-modal__embed-container">
+                <iframe class="video-modal__embed-container-iframe"
+                        src="https://www.youtube.com/embed/nwPw0xn2qHI?ecver=1&amp;rel=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="home-hero" data-fixed-nav-target="true">
+        <header class="nav" data-fixed-nav="false">
+            <div class="nav__wrapper"><a class="nav__logo" id="logo-test" href="/"><img class="nav__logo-image"
+                                                                                        src="/assets/images/monetary-unit-logo.svg"
+                                                                                        alt="Monetary Unit"/></a>
+                <div class="nav__menu-button-slices" data-toggle="true"><span
+                        class="nav__menu-button-slice--top"></span><span
+                        class="nav__menu-button-slice--middle"></span><span
+                        class="nav__menu-button-slice--bottom"></span></div>
+                <div class="nav__overlay" data-overlay-wrapper="true">
+                    <nav class="nav__overlay-menu" id="overlay">
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a class="nav__link link--active" href="/"
+                                                          data-jump-to=".home-hero">Home</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="/#about"
+                                                          data-jump-to=".about">About</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="/#why-choose-mue"
+                                                          data-jump-to=".why-choose-mue">Why MUE?</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="/#get-started"
+                                                          data-jump-to=".get-started">Get Started</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="/#join-the-community"
+                                                          data-jump-to=".join-the-community">Community</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="https://monetaryunitfoundation.org/"
+                                                          target="_blank">Foundation</a></li>
+                            <li class="nav__list-item"><a class="nav__link"
+                                                          href="/frequently-asked-questions.html">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="home-hero__container">
+            <div class="home-hero__aside">
+                <div class="home-hero__aside-image-container"><img class="home-hero__aside-image"
+                                                                   src="assets/images/home/hero-mobiles-medium.png"/>
+                </div>
+            </div>
+            <div class="home-hero__lead">
+                <div class="home-hero__lead-container"><h1 class="home-hero__lead-heading">Monetary Unit</h1>
+                    <h2 class="home-hero__lead-subheading">For Me, U and Everyone</h2>
+                    <p class="home-hero__lead-intro">MUE is a well established and respected brand with a mature
+                        ecosystem and progression driven by a dedicated foundation team.</p>
+                    <p class="home-hero__lead-intro">We aim to break away from the mould that cryptocurrency is only for
+                        tech-savvy people.</p>
+                    <ul class="home-hero__actions">
+                        <li class="home-hero__actions-why-mue"><a class="home-hero__actions-btn-why-mue"
+                                                                  data-modal-target="why-buy-mue-video" href="">Why
+                            choose MonetaryUnit? <span class="home-hero__actions-btn-why-mue--play-icon"></span></a>
+                        </li>
+                        <li class="home-hero__actions-start-using"><a class="home-hero__actions-btn-start-using"
+                                                                      href="#get-started" data-jump-to=".get-started">Start
+                            using MonetaryUnit today</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="about" id="about">
+        <section class="about__container">
+            <div class="about__intro">
+                <div class="about__intro-text-container"><h1 class="about__intro-heading">About</h1>
+                    <p class="about__intro-paragraph">Launched in July 2014 Monetary Unit is a decentralised,
+                        self-sustainable and self-governed cryptocurrency project with long term goals. Our focus has
+                        always been to create a cryptocurrency that is accessible to all and breaks away from the stigma
+                        of being understood not only by the tech industry but be an attractive offering for developers,
+                        investors and the general public alike.</p>
+                    <p class="about__intro-paragraph">Maintained by a friendly and committed community and with many
+                        exciting projects on the horizon, here at MUE, we continue to innovate and build on our
+                        reputation to launch into the mainstream as the most trusted and exciting cryptocurrency project
+                        in the market.</p></div>
+            </div>
+            <div class="about__benefits">
+                <div class="about__benefits-row">
+                    <div class="about__benefits-item"><span class="about__benefits-icon--rocket"></span>
+                        <p class="about__benefits-description"><b>Instant Transactions:</b> For urgent transactions a
+                            payment can be instantly received and confirmed by the recipient via the Instantsend
+                            function. If privacy is a concern, use our PrivateSend function that uses multiple layers of
+                            obfuscation to hide from the recipient the source of the funds.</p></div>
+                    <div class="about__benefits-item"><span class="about__benefits-icon--users"></span>
+                        <p class="about__benefits-description"><b>Community &amp; Foundation:</b> Helpful community and
+                            Foundation Team always on hand to assist with questions and to help educate.</p></div>
+                </div>
+                <div class="about__benefits-row">
+                    <div class="about__benefits-item"><span class="about__benefits-icon--balance"></span>
+                        <p class="about__benefits-description"><b>MasterNodes:</b> Our unique business model ensures
+                            stability within the community with inbuilt governance and voting systems.</p></div>
+                    <div class="about__benefits-item"><span class="about__benefits-icon--cycle"></span>
+                        <p class="about__benefits-description"><b>Self Sustaining:</b> The economic design of
+                            MonetaryUnit means that 10% of all created MUE is reserved for the benefit of the project.
+                        </p></div>
+                </div>
+                <div class="about__benefits-row">
+                    <div class="about__benefits-item"><span class="about__benefits-icon--chart"></span>
+                        <p class="about__benefits-description"><b>Commercial Arms &amp; Affiliates:</b> MUE is focused
+                            on the continual development of their surrounding ecosystem to ensure maximum currency
+                            exposure and usage to benefit the entire crypto community.</p></div>
+                    <div class="about__benefits-item"><span class="about__benefits-icon--wallet"></span>
+                        <p class="about__benefits-description"><b>Long Term Low Inflation Rate:</b> With a long term
+                            inflation rate of 3% per year, this promotes the use and distribution of MUE. 40 MUE every
+                            40 seconds from now for at least the next 130 years.</p></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="why-choose-mue" id="why-choose-mue">
+        <section class="why-choose-mue__container">
+            <div class="why-choose-mue__intro">
+                <div class="why-choose-mue__intro-text-container"><h1 class="why-choose-mue__intro-heading">Why Choose
+                    MUE?</h1>
+                    <p class="why-choose-mue__intro-paragraph">Within the crypto currency industry MUE is a well
+                        established and respected brand with a mature ecosystem and progress is driven by a dedicated
+                        foundation team. The rate of growth since launch and the potential to continue this trend shows
+                        MUE is only heading in one direction.</p>
+                    <p class="why-choose-mue__intro-paragraph">Recent migration to the X11 code base (based on Dash)
+                        allows us to reach a larger market of miners and brings added security with a likely rise in
+                        price from a more advanced hash rate. The MasterNode network manages a pool of funds which is
+                        set aside to fund the project moving forward. Proposals put before MasterNodes allows for a
+                        democratic process over future decisions unlike other currencies in the market.</p>
+                    <h2 class="why-choose-mue__intro-sub-heading">In Progress Projects:</h2></div>
+            </div>
+            <div class="why-choose-mue__project-progress">
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.muex.io</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-1"><span
+                                class="why-choose-mue__progress-percent">80%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Crypto accepting portal for Forex trading, web hosting,
+                        Domain names &amp; physical goods listed at Amazon.</p></div>
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.muegs.com</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-2"><span
+                                class="why-choose-mue__progress-percent">95%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Bringing multi-player online gaming to the crypto world &amp;
+                        crypto to the online gaming world.</p></div>
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.webwallets.io</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-3"><span
+                                class="why-choose-mue__progress-percent">75%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Multi-currency web wallets with staking facility and option
+                        to sell direct for multiple fiat currencies.</p></div>
+            </div>
+            <div class="why-choose-mue__project-progress">
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.coinbuy.io</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-4"><span
+                                class="why-choose-mue__progress-percent">35%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Buy &amp; sell dozens of cryptocurrencies in a P2P
+                        marketplace for multiple fiat currencies.</p></div>
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.cashchat.io</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-5"><span
+                                class="why-choose-mue__progress-percent">25%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Earn rewards for posting quality content and engaging in the
+                        CashChat community in a positive way.</p></div>
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">GS
+                    Points</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-6"><span
+                                class="why-choose-mue__progress-percent">35%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Earn &quot;Go Shopping&quot; reward points to spend
+                        throughout the MUE ecosystem &amp; platform.</p></div>
+            </div>
+            <div class="why-choose-mue__project-progress">
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.cryptofeed.io</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-7"><span
+                                class="why-choose-mue__progress-percent">15%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Now you can just visit ONE site to get your crypto marketcap,
+                        mining difficulty, charts &amp; graphs.</p></div>
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading">
+                    www.startmy.io</h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-8"><span
+                                class="why-choose-mue__progress-percent">10%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">Let StartMy help start your; website, app, service, project.
+                        Seed funding from the crypto community.</p></div>
+                <div class="why-choose-mue__project-progress-list"><h2 class="why-choose-mue__sub-heading"><a
+                        href="https://www.microsoft.com/en-gb/store/p/goldfinger-bank/9nblggh43vmj?rtc=1#"
+                        target="_blank">Goldfinger Lending Bot</a></h2>
+                    <div class="why-choose-mue__progress-bar">
+                        <div class="why-choose-mue__progress-bar-fill--project-9"><span
+                                class="why-choose-mue__progress-percent">100%</span></div>
+                    </div>
+                    <p class="why-choose-mue__description">This automated Poloniex lending bot is exclusive to MUE &amp;
+                        will generate you income on autopilot.</p></div>
+            </div>
+        </section>
+    </div>
+    <div class="get-started" id="get-started">
+        <section class="get-started__container"><h1 class="get-started__heading">Get Started</h1>
+            <div class="get-started__guides-list">
+                <div class="get-started__guide-item">
+                    <div class="get-started__guide">
+                        <div class="get-started__guide-icon"><span class="get-started__guide-icon--investors"></span>
+                        </div>
+                        <h2 class="get-started__sub-heading">For Investors</h2><a class="get-started__find-out-more-btn"
+                                                                                  href="/investors-guide.html"
+                                                                                  target="_self">Find out more</a>
+                        <p class="get-started__description">MUE has shown consistent growth since launch in July 2014.
+                            Can you miss out on the opportunity for a sound and reliable investment?</p></div>
+                </div>
+                <div class="get-started__guide-item">
+                    <div class="get-started__guide">
+                        <div class="get-started__guide-icon"><span class="get-started__guide-icon--consumers"></span>
+                        </div>
+                        <h2 class="get-started__sub-heading">For Consumers</h2><a
+                            class="get-started__find-out-more-btn disableClick" href="#" target="_self">Coming Soon</a>
+                        <p class="get-started__description">Buying and spending with MUE is easier than you think.
+                            Download a wallet and find retailers and other spending touch points here.</p></div>
+                </div>
+                <div class="get-started__guide-item">
+                    <div class="get-started__guide">
+                        <div class="get-started__guide-icon"><span class="get-started__guide-icon--merchants"></span>
+                        </div>
+                        <h2 class="get-started__sub-heading">For Merchants</h2><a
+                            class="get-started__find-out-more-btn disableClick" href="/merchants-guide.html"
+                            target="_self">Coming Soon</a>
+                        <p class="get-started__description">Enhance your ecommerce solution by allowing customers to pay
+                            using MUE currency payments. Let us show you how.</p></div>
+                </div>
+                <div class="get-started__guide-item">
+                    <div class="get-started__guide">
+                        <div class="get-started__guide-icon"><span class="get-started__guide-icon--developers"></span>
+                        </div>
+                        <h2 class="get-started__sub-heading">For Developers</h2><a
+                            class="get-started__find-out-more-btn disableClick" href="/developers-guide.html"
+                            target="_self">Coming Soon</a>
+                        <p class="get-started__description">For the tech savvy amongst you to start making your own MUE
+                            we can show you the coin specs and get you going.</p></div>
+                </div>
+            </div>
+            <div class="get-started__wallet-cta-container"><a class="get-started__wallet-download"
+                                                              data-modal-target="wallet-download" href="#">Download
+                wallet now<span class="get-started__download-icon--download"></span></a></div>
+        </section>
+    </div>
+    <div class="join-the-community" id="join-the-community">
+        <section class="join-the-community__container">
+            <div class="join-the-community__intro">
+                <div class="join-the-community__intro-text-container"><h1 class="join-the-community__intro-heading">Join
+                    the Community</h1>
+                    <p class="join-the-community__intro-paragraph">At MUE we pride ourselves on being honest and
+                        transparent in everything we do. Keep in touch with all the news and chat to the team via our
+                        social channels, communication tools and open source developer networks.</p></div>
+                <div class="join-the-community__social-links">
+                    <div class="join-the-community__social-link"><a href="https://twitter.com/monetaryunit"
+                                                                    target="_blank"><span
+                            class="join-the-community__icon--twitter"></span></a></div>
+                    <div class="join-the-community__social-link"><a href="https://www.facebook.com/MonetaryUnit/"
+                                                                    target="_blank"><span
+                            class="join-the-community__icon--facebook"></span></a></div>
+                    <div class="join-the-community__social-link"><a href="https://mueslack.herokuapp.com/"
+                                                                    target="_blank"><span
+                            class="join-the-community__icon--slack"></span></a></div>
+                    <div class="join-the-community__social-link"><a href="https://github.com/MUEcoin/"
+                                                                    target="_blank"><span
+                            class="join-the-community__icon--github"></span></a></div>
+                    <div class="join-the-community__social-link"><a
+                            href="https://bitcointalk.org/index.php?topic=778322.0" target="_blank"><span
+                            class="join-the-community__icon--btc"></span></a></div>
+                    <div class="join-the-community__social-link"><a
+                            href="https://tree.taiga.io/project/monetaryunit-monetaryunit/kanban" target="_blank"><span
+                            class="join-the-community__icon--kanban"></span></a></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__sitemap">
+            <div class="footer__sitemap-column"><h2 class="footer__sitemap-category">About</h2>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/#about"
+                                                        data-jump-to=".about">About MonetaryUnit</a></li>
+                </ul>
+            </div>
+            <div class="footer__sitemap-column"><h2 class="footer__sitemap-category">Why Choose MUE?</h2>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/#why-choose-mue"
+                                                        data-jump-to=".why-choose-mue" target="_self">muex.io</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/#why-choose-mue"
+                                                        data-jump-to=".why-choose-mue" target="_self">webwallets.io</a>
+                    </li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/#why-choose-mue"
+                                                        data-jump-to=".why-choose-mue" target="_self">coinbuy.io</a>
+                    </li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/#why-choose-mue"
+                                                        data-jump-to=".why-choose-mue" target="_self">cashchat.io</a>
+                    </li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/#why-choose-mue"
+                                                        data-jump-to=".why-choose-mue" target="_self">GS Points</a></li>
+                </ul>
+            </div>
+            <div class="footer__sitemap-column"><h2 class="footer__sitemap-category">Get Started</h2>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/investors-guide.html"
+                                                        target="_self">For Investors</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/consumers-guide.html"
+                                                        target="_self">For Consumers</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/merchants-guide.html"
+                                                        target="_self">For Merchants</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="/developers-guide.html"
+                                                        target="_self">For Developers</a></li>
+                </ul>
+            </div>
+            <div class="footer__sitemap-column"><h2 class="footer__sitemap-category">Community</h2>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://twitter.com/monetaryunit"
+                                                        target="_blank">Twitter</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://www.facebook.com/MonetaryUnit/" target="_blank">Facebook</a>
+                    </li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://mueslack.herokuapp.com/" target="_blank">Slack</a>
+                    </li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="https://github.com/MUEcoin/"
+                                                        target="_blank">Github</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://bitcointalk.org/index.php?topic=778322.0"
+                                                        target="_blank">Bitcoin talk</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://tree.taiga.io/project/monetaryunit-monetaryunit/kanban"
+                                                        target="_blank">Kanban</a></li>
+                </ul>
+            </div>
+            <div class="footer__sitemap-column"><h2 class="footer__sitemap-category">Other</h2>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="http://monetaryunitfoundation.org/" target="_blank">Foundation</a>
+                    </li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://www.zazzle.co.uk/monetaryunit/products"
+                                                        target="_blank">UK Shop</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="https://www.zazzle.com/monetaryunit/products"
+                                                        target="_blank">US Shop</a></li>
+                    <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                                        href="/frequently-asked-questions.html" target="_self">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-wrapper"><img class="footer__logo"
+                                                            src="/assets/images/monetary-unit-white-logo.png"
+                                                            alt="Monetary Unit"/>
+                    <small class="footer__legal">Copyright 2017 Monetary Unit, All Rights Reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>
