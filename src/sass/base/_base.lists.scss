@@ -15,17 +15,18 @@ $list-item-margin-top-spacing-large: $spacing-scale-1-small;
   margin: 0;
   padding-top: $unordered-list-padding-top-left-spacing-small;
   margin-top: $spacing-scale-1-small;
+  padding-left: $unordered-list-padding-top-left-spacing-small;
 
   @include respond-to(medium) {
     margin-top: $spacing-scale-1-medium;
     padding-top: $unordered-list-padding-top-left-spacing-medium;
-    padding-left: $unordered-list-padding-top-left-spacing-medium;
+    padding-left: $unordered-list-padding-top-left-spacing-medium * 2;
   }
 
   @include respond-to(large) {
     margin-top: $spacing-scale-1-large;
     padding-top: $unordered-list-padding-top-left-spacing-large;
-    padding-left: $unordered-list-padding-top-left-spacing-large;
+    padding-left: $unordered-list-padding-top-left-spacing-large * 2;
   }
 }
 

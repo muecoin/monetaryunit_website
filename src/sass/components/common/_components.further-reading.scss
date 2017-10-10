@@ -1,9 +1,10 @@
-$press-articles-theme-color: $green-light;
+$further-reading-theme-color: $muted-blue;
 
-.press-articles {
+
+.further-reading {
   @extend %container-full;
-  background-color: $press-articles-theme-color;
-  //color: $press-articles-text-color;
+  background-color: $further-reading-theme-color;
+
   &__container {
     @extend %container-row;
     @extend %module-top-bottom-padding-style;
@@ -11,34 +12,35 @@ $press-articles-theme-color: $green-light;
   &__heading {
     @extend %heading-1-style-white-center;
   }
-  &__articles-list {
+  &__posts-list {
     @extend %container-row;
   }
-  &__article-item {
+  &__post-item {
     @extend %column;
   }
-  &__article {
+  &__post {
     max-width: 300px;
     margin: 0 auto 40px auto;
     text-align: center;
   }
-
-  &__article-logo {
-    max-width: 230px;
-    margin: 2em auto 2em auto;
-    width: 50%;
-    @extend %icon-bottom-padding-1;
-  }
-
   &__sub-heading {
     @extend %heading-3-style-white-center;
   }
   &__description {
     @extend %paragraph-s-style-white-center;
   }
-  &__visit-btn {
+  &__learn-more-btn {
     @extend %button-style-1-small;
     margin-bottom: 25px;
-    color: $press-articles-theme-color;
+    color: $further-reading-theme-color;
+  }
+}
+
+// Behaviours
+.further-reading {
+  &__post, &__description {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

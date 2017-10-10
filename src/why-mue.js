@@ -6,6 +6,7 @@ import Hero from './components/common/hero';
 import WrittenContent from './components/common/written-content';
 import JoinTheCommunity from './components/common/join-the-community';
 import PressArticles from './components/common/press-articles';
+import FurtherReading from './components/common/further-reading';
 import Footer from './components/common/footer';
 
 export default () => {
@@ -27,7 +28,7 @@ export default () => {
             <li>Development team of 15+</li>
             <li>Well established, launched July 2014</li>
             <li>Consistently growing price &amp; network security</li>
-            <li>Road map &amp; objectives</li>
+            <li>Road map &amp; <a href="https://tree.taiga.io/project/monetaryunit-monetaryunit/" target="_blank">objectives</a></li>
             <li>Development budget</li>
             <li>Committed team</li>
             <li>Commercial arms &amp; affiliates
@@ -52,6 +53,8 @@ export default () => {
         </WrittenContent>
 
         <PressArticles />
+
+        <FurtherReading />
 
         <JoinTheCommunity />
 
