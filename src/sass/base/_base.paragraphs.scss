@@ -1,6 +1,6 @@
 // element-property-(size)-breakpoint
 
-// PARAGRAPH M
+// PARAGRAPH L
 $paragraph-font-size-l-small: 15px;
 $paragraph-font-size-l-medium: 18px;
 
@@ -46,6 +46,11 @@ $paragraph-hero-line-height-medium: 30px;
 $hero-p-max-width: 480px;
 $common-hero-p-max-width: 480px;
 $small-column-max-width-1: 365px;
+
+// WRITTEN CONTENT VARIANT
+$paragraph-written-content-margin-top-large: 21px;
+$paragraph-written-content-margin-top-medium: 14px;
+$paragraph-written-content-margin-top-small: 12px;
 
 // HERO COMMON VARIANT
 $paragraph-font-size-hero-common-large: 20px;
@@ -114,6 +119,28 @@ $paragraph-line-height-hero-common-large: 2;
     line-height: $paragraph-line-height-hero-common-large;
     @include font-size($paragraph-font-size-hero-common-large);
   }
+}
+
+// WRITTEN CONTENT VARIANT
+%paragraph-written-content-style {
+  margin-bottom: 0;
+  line-height: 1.58;
+  @include font-size($paragraph-font-size-l-small);
+  margin-top: $paragraph-written-content-margin-top-small;
+  @include respond-to(medium) {
+    margin-top: $paragraph-written-content-margin-top-medium;
+    @include font-size($paragraph-font-size-l-medium);
+  }
+  @include respond-to(large) {
+    margin-top: $paragraph-written-content-margin-top-large;
+    @include font-size($paragraph-font-size-l-medium);
+  }
+}
+
+
+%paragraph-written-content-style--light {
+  @extend %paragraph-written-content-style;
+  color: $white;
 }
 
 //LARGE SIZE P

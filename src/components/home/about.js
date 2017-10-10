@@ -16,14 +16,13 @@ export default () => (
             <div className="about__benefits-item">
               <span className="about__benefits-icon--rocket"></span>
               <p className="about__benefits-description">
-                <b>Instant Transactions:</b> For urgent transactions a payment can be instantly received and confirmed by the recipient via the Instantsend {'function'}.
-                  If privacy is a concern, use our PrivateSend {'function'} that uses multiple layers of obfuscation to hide from the recipient the source of the funds.
+                <b>Instant Transactions:</b> For urgent transactions a payment can be instantly received and confirmed by the recipient via the Instantsend function.
               </p>
             </div>
             <div className="about__benefits-item">
               <span className="about__benefits-icon--users"></span>
               <p className="about__benefits-description">
-                <b>Community & Foundation:</b> Helpful community and Foundation Team always on hand to assist with questions and to help educate.
+                <b>Community & Foundation:</b> Helpful community and Foundation Team always on hand to assist with questions and educate.
               </p>
             </div>
           </div>
@@ -31,7 +30,7 @@ export default () => (
             <div className="about__benefits-item">
               <span className="about__benefits-icon--balance"></span>
               <p className="about__benefits-description">
-                <b>MasterNodes:</b> Our unique business model ensures stability within the community with inbuilt governance and voting systems.
+                <b>MasterNodes:</b> Our unique business infrastructure ensures stability within the community and constant maintenance.
               </p>
             </div>
             <div className="about__benefits-item">
@@ -51,7 +50,7 @@ export default () => (
             <div className="about__benefits-item">
               <span className="about__benefits-icon--wallet"></span>
               <p className="about__benefits-description">
-                <b>Long Term Low Inflation Rate:</b> With a long term inflation rate of 3% per year, this promotes the use and distribution of MUE. 40 MUE every 40 seconds from now for at least the next 130 years.
+                <b>Long Term Low Inflation Rate:</b> Inflation is going to be about 3% per year, which promotes the use and distribution of MUE. 40 MUE every 40 seconds from now for at least the next 130 years.
               </p>
             </div>
           </div>

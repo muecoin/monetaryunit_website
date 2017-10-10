@@ -1,0 +1,67 @@
+$unordered-list-padding-top-left-spacing-small: $spacing-scale-1-small;
+$unordered-list-padding-top-left-spacing-medium: $spacing-scale-1-medium;
+$unordered-list-padding-top-left-spacing-large: $spacing-scale-1-large;
+
+$unordered-list-padding-top-left-spacing-small: $spacing-scale-1-small;
+$unordered-list-padding-top-left-spacing-medium: $spacing-scale-1-medium;
+$unordered-list-padding-top-left-spacing-large: $spacing-scale-1-large;
+
+$list-item-margin-top-spacing-small: 14px;
+$list-item-margin-top-spacing-medium: $spacing-scale-1-small;
+$list-item-margin-top-spacing-large: $spacing-scale-1-small;
+
+
+%unordered-list {
+  margin: 0;
+  padding-top: $unordered-list-padding-top-left-spacing-small;
+  margin-top: $spacing-scale-1-small;
+
+  @include respond-to(medium) {
+    margin-top: $spacing-scale-1-medium;
+    padding-top: $unordered-list-padding-top-left-spacing-medium;
+    padding-left: $unordered-list-padding-top-left-spacing-medium;
+  }
+
+  @include respond-to(large) {
+    margin-top: $spacing-scale-1-large;
+    padding-top: $unordered-list-padding-top-left-spacing-large;
+    padding-left: $unordered-list-padding-top-left-spacing-large;
+  }
+}
+
+%list-item {
+  line-height: 1.6;
+  font-family: $paragraph-font-family;
+  border-left: 3px solid $orange;
+  padding-left: 12px;
+  margin-top: $list-item-margin-top-spacing-small;
+
+  @include respond-to(medium) {
+    margin-top: $list-item-margin-top-spacing-medium;
+    @include font-size(22px);
+    padding-left: 16px;
+  }
+
+  @include respond-to(large) {
+    margin-top: $list-item-margin-top-spacing-large;
+  }
+}
+
+%list-item-dark {
+  @extend %list-item;
+  color: $dark-blue;
+}
+
+%list-item-light {
+  @extend %list-item;
+  color: $white;
+}
+
+%nested-list {
+  margin-top: 12px;
+}
+
+%child-list-item {
+  font-size: 90%;
+  border-left: 3px solid $orange-light;
+}

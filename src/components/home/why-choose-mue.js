@@ -11,6 +11,7 @@ export default () => (
             <h2 className="why-choose-mue__intro-sub-heading">In Progress Projects:</h2>
           </div>
         </div>
+
         <div className="why-choose-mue__project-progress">
           <div className="why-choose-mue__project-progress-list">
             <h2 className="why-choose-mue__sub-heading">www.muex.io</h2>
@@ -25,7 +26,7 @@ export default () => (
             <h2 className="why-choose-mue__sub-heading">www.muegs.com</h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-2">
-                <span className="why-choose-mue__progress-percent">95%</span>
+                <span className="why-choose-mue__progress-percent">30%</span>
               </div>
             </div>
             <p className="why-choose-mue__description">Bringing multi-player online gaming to the crypto world & crypto to the online gaming world.</p>
@@ -34,7 +35,7 @@ export default () => (
             <h2 className="why-choose-mue__sub-heading">www.webwallets.io</h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-3">
-                <span className="why-choose-mue__progress-percent">75%</span>
+                <span className="why-choose-mue__progress-percent">20%</span>
               </div>
             </div>
             <p className="why-choose-mue__description">Multi-currency web wallets with staking facility and option to sell direct for multiple fiat currencies.</p>
@@ -45,7 +46,7 @@ export default () => (
             <h2 className="why-choose-mue__sub-heading">www.coinbuy.io</h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-4">
-                <span className="why-choose-mue__progress-percent">35%</span>
+                <span className="why-choose-mue__progress-percent">80%</span>
               </div>
             </div>
             <p className="why-choose-mue__description">Buy &amp; sell dozens of cryptocurrencies in a P2P marketplace for multiple fiat currencies.</p>
@@ -54,7 +55,7 @@ export default () => (
             <h2 className="why-choose-mue__sub-heading">www.cashchat.io</h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-5">
-                <span className="why-choose-mue__progress-percent">25%</span>
+                <span className="why-choose-mue__progress-percent">59%</span>
               </div>
             </div>
             <p className="why-choose-mue__description">Earn rewards for posting quality content and engaging in the CashChat community in a positive way.</p>
@@ -63,39 +64,10 @@ export default () => (
             <h2 className="why-choose-mue__sub-heading">GS Points</h2>
             <div className="why-choose-mue__progress-bar">
               <div className="why-choose-mue__progress-bar-fill--project-6">
-                <span className="why-choose-mue__progress-percent">35%</span>
+                <span className="why-choose-mue__progress-percent">96%</span>
               </div>
             </div>
-            <p className="why-choose-mue__description">Earn "Go Shopping" reward points to spend throughout the MUE ecosystem & platform.</p>
-          </div>
-        </div>
-        <div className="why-choose-mue__project-progress">
-          <div className="why-choose-mue__project-progress-list">
-            <h2 className="why-choose-mue__sub-heading">www.cryptofeed.io</h2>
-            <div className="why-choose-mue__progress-bar">
-              <div className="why-choose-mue__progress-bar-fill--project-7">
-                <span className="why-choose-mue__progress-percent">15%</span>
-              </div>
-            </div>
-            <p className="why-choose-mue__description">Now you can just visit ONE site to get your crypto marketcap, mining difficulty, charts & graphs.</p>
-          </div>
-          <div className="why-choose-mue__project-progress-list">
-            <h2 className="why-choose-mue__sub-heading">www.startmy.io</h2>
-            <div className="why-choose-mue__progress-bar">
-              <div className="why-choose-mue__progress-bar-fill--project-8">
-                <span className="why-choose-mue__progress-percent">10%</span>
-              </div>
-            </div>
-            <p className="why-choose-mue__description">Let StartMy help start your; website, app, service, project. Seed funding from the crypto community.</p>
-          </div>
-          <div className="why-choose-mue__project-progress-list">
-            <h2 className="why-choose-mue__sub-heading"><a href="https://www.microsoft.com/en-gb/store/p/goldfinger-bank/9nblggh43vmj?rtc=1#" target="_blank">Goldfinger Lending Bot</a></h2>
-            <div className="why-choose-mue__progress-bar">
-              <div className="why-choose-mue__progress-bar-fill--project-9">
-                <span className="why-choose-mue__progress-percent">100%</span>
-              </div>
-            </div>
-            <p className="why-choose-mue__description">This automated Poloniex lending bot is exclusive to MUE & will generate you income on autopilot.</p>
+            <p className="why-choose-mue__description">Earn "Go Shopping" reward points to spend throughout the MUE ecosystem & platform</p>
           </div>
         </div>
     </section>

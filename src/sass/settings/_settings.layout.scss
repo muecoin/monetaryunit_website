@@ -1,6 +1,6 @@
 $gutter: 25px !default;
 
-$breakpoints: (  
+$breakpoints: (
   'small': '700px',
   'medium': '992px',
   'medium-large': '1170px',
@@ -34,3 +34,7 @@ $sizes: (
 $spacing-l-size: 2.5em;
 $spacing-m-size: 1.5em;
 $spacing-s-size: .5em;
+
+$spacing-scale-1-small: 25px;
+$spacing-scale-1-medium: 30px;
+$spacing-scale-1-large: 54px;

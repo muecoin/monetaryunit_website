@@ -1,0 +1,47 @@
+$benefit-icon-color: $white;
+$get-started-text-color: $white;
+$icon-size-small: 65px;
+$press-articles-bg: $green-light;
+
+
+.press-articles {
+  @extend %container-full;
+  background-color: $press-articles-bg;
+  color: $get-started-text-color;
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-style;
+  }
+  &__heading {
+    @extend %heading-1-style-white-center;
+  }
+  &__articles-list {
+    @extend %container-row;
+  }
+  &__article-item {
+    @extend %column;
+  }
+  &__article {
+    max-width: 300px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+
+  &__article-logo {
+    max-width: 230px;
+    margin: 2em auto 2em auto;
+    width: 50%;
+    @extend %icon-bottom-padding-1;
+  }
+
+  &__sub-heading {
+    @extend %heading-3-style-white-center;
+  }
+  &__description {
+    @extend %paragraph-s-style-white-center;
+  }
+  &__visit-btn {
+    @extend %button-style-1-small;
+    margin-bottom: 25px;
+  }
+}

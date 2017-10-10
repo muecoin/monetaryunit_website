@@ -21,3 +21,13 @@
   background: linear-gradient(to bottom, #ff612d 0%,#ff9e1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff612d', endColorstr='#ff9e1e',GradientType=0 ); /* IE6-8 */
 }
+
+%fade-grey-to-black {
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#30323d+0,08080a+100 */
+  background: #30323d; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #30323d 0%, #08080a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #30323d 0%,#08080a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #30323d 0%,#08080a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30323d', endColorstr='#08080a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

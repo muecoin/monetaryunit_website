@@ -1,0 +1,113 @@
+$written-content-bg-color-1: $slate-dark-blue;
+$written-content-bg-color-2: $black-1;
+
+
+.written-content {
+  @extend %container-full;
+
+  &--color-theme--1 {
+    @extend .written-content;
+    background-color: $written-content-bg-color-1;
+  }
+
+  &--color-theme--2 {
+    @extend .written-content;
+    background-color: $written-content-bg-color-2;
+  }
+
+  &__container {
+    @extend %container-row;
+    @extend %module-top-bottom-padding-equal-style;
+    @extend %paragraph-max-width;
+  }
+
+  &__content {
+    @extend %column;
+  }
+
+  // written content typography styles
+  &__paragraph {
+    @extend %paragraph-written-content-style;
+
+    &--light-theme {
+      @extend %paragraph-written-content-style--light;
+    }
+  }
+
+  &__subheading {
+    @extend %written-content-subheading;
+
+    &--light-theme {
+      @extend %written-content-subheading--light;
+    }
+  }
+
+  &__list {
+    @extend %unordered-list;
+  }
+
+  &__nested-list {
+    @extend %nested-list;
+  }
+
+  &__child-list-item {
+    @extend %child-list-item;
+  }
+
+  &__list-item {
+
+    &--light-theme {
+      @extend %list-item-light;
+    }
+    &--dark-theme {
+      @extend %list-item-dark;
+    }
+  }
+}
+
+
+// written content behaviours - to ensure pure BEM above.
+.written-content {
+  p {
+    @extend .written-content__paragraph;
+  }
+  h2 {
+    @extend .written-content__subheading;
+  }
+  ul {
+    @extend .written-content__list;
+  }
+  li {
+    @extend .written-content__list-item--dark-theme;
+  }
+
+  p, h1, h2, ul, li {
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  ul, ol {
+    ol, ul {
+      @extend .written-content__nested-list;
+      li {
+        @extend .written-content__child-list-item;
+      }
+    }
+  }
+}
+
+.written-content--color-theme--1,
+.written-content--color-theme--2  {
+  @extend .written-content;
+  li {
+    @extend .written-content__list-item--light-theme;
+  }
+  p {
+    @extend .written-content__paragraph--light-theme;
+  }
+  h2 {
+    @extend .written-content__subheading--light-theme;
+  }
+}
