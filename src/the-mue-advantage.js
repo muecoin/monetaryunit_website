@@ -16,11 +16,11 @@ export default () => {
         <WrittenContent>
           <h2>Well, firstly it works!</h2>
 
-          <p>We did a straw poll recently and chose 5 random crypto projects with a market cap between 2-5 X the MUE market cap. So these aren’t “hobby projects”, they are quite serious net worth projects.</p>
+          <p>We did a straw poll recently and chose 5 random crypto projects with a market cap between 2-5 X the MUE market cap. So these aren't "hobby projects", they are quite serious net worth projects.</p>
           <p>Out of those 5 projects, only <b>ONE</b> had no issues with installing the software wallets.</p>
           <p>The MUE wallets all work. We have multiple versions, Windows 32 & 64 bit, OSX, Android &amp; web.</p>
 
-          <h2>We’re established</h2>
+          <h2>We're established</h2>
 
           <p>We launched 27th July 2014. The MonetaryUnit reputation and brand has been well established. The project is respected and trusted within the crypto community and has not been accused of any wrong doing of any kind.</p>
 
@@ -52,7 +52,7 @@ export default () => {
 
           <p>The budget proposal system is not a free for all. It is a democratic process that is maintained and monitored by the MasterNode network.</p>
           <p>Once a budget proposal has been made, the MasterNode network, the stakeholders of the MUE project, maintained by the individuals or groups that manage those MasterNodes, can then vote. 1 vote per MasterNode.</p>
-          <p>A majority decision has to be achieved for the budget proposal to be approved. The funds are released at the end of the month through what is called a “SuperBlock”.</p>
+          <p>A majority decision has to be achieved for the budget proposal to be approved. The funds are released at the end of the month through what is called a "SuperBlock".</p>
           <p>Again, this self governing model is not widely used amongst other cryptocurrencies, and helps MUE maintain the integrity of the project, and helps to improve strategic &amp; commercial decisions for the project and how it spends its own funds.</p>
 
           <h2>Instant payments &amp; privacy</h2>
@@ -80,8 +80,8 @@ export default () => {
           <p>MonetaryUnit is about getting people involved.</p>
           <p>We are not an elitist group of academics or high net worth individuals.</p>
           <p>As a group, we want to grow the project, involve and help people about MUE, and get a grass roots growth not just on the internet, but also on the high street, with people carrying around MUE coupons, or having MUE wallets installed on their phone.</p>
-          <p>The coin is not being marketed as a “scarce commodity” like so many other cryptocurrencies. The worth of the project comes from allowing people to get involved at any time. It is attainable, and if you don’t want to buy any, just ask the community and someone will just send you some to use and test :)</p>
-          <p>We don’t have any kind of “halving” of coin production.</p>
+          <p>The coin is not being marketed as a "scarce commodity" like so many other cryptocurrencies. The worth of the project comes from allowing people to get involved at any time. It is attainable, and if you don’t want to buy any, just ask the community and someone will just send you some to use and test :)</p>
+          <p>We don’t have any kind of "halving" of coin production.</p>
           <p>Inflation is going to be about 3% per year, which promotes the use and distribution of MUE.</p>
           <p>40 MUE every 40 seconds from now for at least the next 130 years.</p>
           <p>There is time for you get involved, and we welcome all who do.</p>
