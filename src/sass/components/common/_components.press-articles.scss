@@ -16,6 +16,11 @@ $press-articles-theme-color: $green-light;
   }
   &__article-item {
     @extend %column;
+
+    &--last-child {
+      @extend .press-articles__post-item;
+      margin-bottom: 0;
+    }
   }
   &__article {
     max-width: 300px;
@@ -24,9 +29,14 @@ $press-articles-theme-color: $green-light;
   }
 
   &__article-logo {
-    max-width: 230px;
+    width: 35%;
     margin: 2em auto 2em auto;
-    width: 50%;
+
+    @include respond-to(medium) {
+      max-width: 230px;
+      width: 50%;
+    };
+
     @extend %icon-bottom-padding-1;
   }
 
@@ -40,5 +50,15 @@ $press-articles-theme-color: $green-light;
     @extend %button-style-1-small;
     margin-bottom: 25px;
     color: $press-articles-theme-color;
+  }
+}
+
+.press-articles__post-item {
+  &:last-child {
+    @extend .press-articles__article-item--last-child;
+    .press-articles__article,
+    .press-articles__description {
+      margin-bottom: 0;
+    }
   }
 }

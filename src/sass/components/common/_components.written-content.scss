@@ -44,6 +44,10 @@ $written-content-bg-color-2: $black-1;
 
   &__list {
     @extend %unordered-list;
+
+    &--only-child {
+      @extend %unordered-list-remove-padding;
+    }
   }
 
   &__nested-list {
@@ -95,6 +99,10 @@ $written-content-bg-color-2: $black-1;
         @extend .written-content__child-list-item;
       }
     }
+  }
+
+  ul:only-child {
+    @extend .written-content__list--only-child;
   }
 }
 

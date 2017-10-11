@@ -1,6 +1,5 @@
 $further-reading-theme-color: $muted-blue;
 
-
 .further-reading {
   @extend %container-full;
   background-color: $further-reading-theme-color;
@@ -17,6 +16,11 @@ $further-reading-theme-color: $muted-blue;
   }
   &__post-item {
     @extend %column;
+
+    &--last-child {
+      @extend .further-reading__post-item;
+      margin-bottom: 0;
+    }
   }
   &__post {
     max-width: 300px;
@@ -29,6 +33,7 @@ $further-reading-theme-color: $muted-blue;
   &__description {
     @extend %paragraph-s-style-white-center;
   }
+
   &__learn-more-btn {
     @extend %button-style-1-small;
     margin-bottom: 25px;
@@ -37,9 +42,11 @@ $further-reading-theme-color: $muted-blue;
 }
 
 // Behaviours
-.further-reading {
-  &__post, &__description {
-    &:last-child {
+.further-reading__post-item {
+  &:last-child {
+    @extend .further-reading__post-item--last-child;
+    .further-reading__post,
+    .further-reading__description {
       margin-bottom: 0;
     }
   }

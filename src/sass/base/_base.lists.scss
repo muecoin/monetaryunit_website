@@ -14,20 +14,28 @@ $list-item-margin-top-spacing-large: $spacing-scale-1-small;
 %unordered-list {
   margin: 0;
   padding-top: $unordered-list-padding-top-left-spacing-small;
-  margin-top: $spacing-scale-1-small;
-  padding-left: $unordered-list-padding-top-left-spacing-small;
+  //margin-top: $spacing-scale-1-small;
+  //padding-left: $unordered-list-padding-top-left-spacing-small;
+  padding-bottom: $unordered-list-padding-top-left-spacing-small;
 
   @include respond-to(medium) {
-    margin-top: $spacing-scale-1-medium;
+    //margin-top: $spacing-scale-1-medium;
     padding-top: $unordered-list-padding-top-left-spacing-medium;
-    padding-left: $unordered-list-padding-top-left-spacing-medium * 2;
+    //padding-left: $unordered-list-padding-top-left-spacing-medium * 2;
+    padding-bottom: $unordered-list-padding-top-left-spacing-medium;
   }
 
   @include respond-to(large) {
-    margin-top: $spacing-scale-1-large;
+  //  margin-top: $spacing-scale-1-large;
     padding-top: $unordered-list-padding-top-left-spacing-large;
-    padding-left: $unordered-list-padding-top-left-spacing-large * 2;
+    //padding-left: $unordered-list-padding-top-left-spacing-large * 2;
+    padding-bottom: $unordered-list-padding-top-left-spacing-large;
   }
+}
+
+%unordered-list-remove-padding {
+  margin: 0;
+  padding: 0;
 }
 
 %list-item {

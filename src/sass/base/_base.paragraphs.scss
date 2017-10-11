@@ -3,6 +3,7 @@
 // PARAGRAPH L
 $paragraph-font-size-l-small: 15px;
 $paragraph-font-size-l-medium: 18px;
+$paragraph-font-size-l-large: 21px;
 
 $paragraph-line-height-l-small: 30px;
 $paragraph-line-height-l-medium: 38px;
@@ -133,7 +134,7 @@ $paragraph-line-height-hero-common-large: 2;
   }
   @include respond-to(large) {
     margin-top: $paragraph-written-content-margin-top-large;
-    @include font-size($paragraph-font-size-l-medium);
+    @include font-size($paragraph-font-size-l-large);
   }
 }
 
