@@ -11,7 +11,6 @@ export default ({title = "Further Reading"}) => (
           <div className="further-reading__post">
             <h2 className="further-reading__sub-heading">The MUE Advantage</h2>
             <a className="further-reading__learn-more-btn" href="/the-mue-advantage.html" target="_self">Learn more</a>
-            <p className="further-reading__description">Short summary of what this is about.</p>
           </div>
         </div>
 
@@ -19,7 +18,6 @@ export default ({title = "Further Reading"}) => (
           <div className="further-reading__post">
             <h2 className="further-reading__sub-heading">MasterNode ROI</h2>
             <a className="further-reading__learn-more-btn" href="https://docs.google.com/spreadsheets/d/14AVDtxfYAnIVtzbCSONO5MBQ948eVCcGChUcmpPBGWA/edit?ts=59d252d6#gid=2002781196" target="_blank">Learn more</a>
-            <p className="further-reading__description">Short summary of what this is about.</p>
           </div>
         </div>
 
@@ -27,7 +25,6 @@ export default ({title = "Further Reading"}) => (
           <div className="further-reading__post">
             <h2 className="further-reading__sub-heading">MUE inflation rate</h2>
             <a className="further-reading__learn-more-btn" href="#" target="_self">Learn more</a>
-            <p className="further-reading__description">Short summary of what this is about.</p>
           </div>
         </div>
 
@@ -35,7 +32,6 @@ export default ({title = "Further Reading"}) => (
           <div className="further-reading__post">
             <h2 className="further-reading__sub-heading">The MUE vision</h2>
             <a className="further-reading__learn-more-btn" href="/the-mue-vision.html" target="_self">Learn more</a>
-            <p className="further-reading__description">Short summary of what this is about.</p>
           </div>
         </div>
       </div>
