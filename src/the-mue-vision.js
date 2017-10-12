@@ -49,16 +49,16 @@ export default () => {
             <li>Several world firsts for crypto
               <ol>
                 <li>
-                  First multi-crypto crowdfunding website<br/><a href="https://www.startmy.io/" target="_blank">www.StartMy.io</a>
+                  First multi-crypto crowdfunding website - <a href="https://www.startmy.io/" target="_blank">www.StartMy.io</a>
                 </li>
                 <li>
-                  Worlds first instantly activated MasterNode shares service<br/><a href="http://mymue.com/" target="_blank">MyMue.com</a>
+                  Worlds first instantly activated MasterNode shares service - <a href="http://mymue.com/" target="_blank">MyMue.com</a>
                 </li>
                 <li>
-                  Worlds first multi-crypto forex trading<br/><a href="https://muex.io/forex" target="_blank">www.Muex.io/forex</a>
+                  Worlds first multi-crypto forex trading - <a href="https://muex.io/forex" target="_blank">www.Muex.io/forex</a>
                 </li>
                 <li>
-                  Worlds first auto-detect wallet nodes<br/><a href="https://muex.io/Nodes" target="_blank">Muex.io/nodes</a>
+                  Worlds first auto-detect wallet nodes - <a href="https://muex.io/Nodes" target="_blank">Muex.io/nodes</a>
                 </li>
               </ol>
             </li>

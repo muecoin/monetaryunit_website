@@ -13,22 +13,20 @@ $list-item-margin-top-spacing-large: $spacing-scale-1-small;
 
 %unordered-list {
   margin: 0;
+  list-style-position: inside;
   padding-top: $unordered-list-padding-top-left-spacing-small;
-  //margin-top: $spacing-scale-1-small;
-  //padding-left: $unordered-list-padding-top-left-spacing-small;
+  padding-left: $unordered-list-padding-top-left-spacing-small;
   padding-bottom: $unordered-list-padding-top-left-spacing-small;
 
   @include respond-to(medium) {
-    //margin-top: $spacing-scale-1-medium;
     padding-top: $unordered-list-padding-top-left-spacing-medium;
-    //padding-left: $unordered-list-padding-top-left-spacing-medium * 2;
+    padding-left: $unordered-list-padding-top-left-spacing-medium * 2;
     padding-bottom: $unordered-list-padding-top-left-spacing-medium;
   }
 
   @include respond-to(large) {
-  //  margin-top: $spacing-scale-1-large;
     padding-top: $unordered-list-padding-top-left-spacing-large;
-    //padding-left: $unordered-list-padding-top-left-spacing-large * 2;
+    padding-left: $unordered-list-padding-top-left-spacing-large * 2;
     padding-bottom: $unordered-list-padding-top-left-spacing-large;
   }
 }
@@ -40,15 +38,24 @@ $list-item-margin-top-spacing-large: $spacing-scale-1-small;
 
 %list-item {
   line-height: 1.6;
+  list-style-type: none;
   font-family: $paragraph-font-family;
-  border-left: 3px solid $orange;
-  padding-left: 12px;
   margin-top: $list-item-margin-top-spacing-small;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: 0.375rem;
+    border-radius: 0.4rem;
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 0.85rem;
+    background-color: $orange;
+  }
 
   @include respond-to(medium) {
     margin-top: $list-item-margin-top-spacing-medium;
     @include font-size(22px);
-    padding-left: 16px;
   }
 
   @include respond-to(large) {
@@ -68,9 +75,20 @@ $list-item-margin-top-spacing-large: $spacing-scale-1-small;
 
 %nested-list {
   margin-top: 12px;
+  padding-left: 35px;
 }
 
 %child-list-item {
   font-size: 90%;
-  border-left: 3px solid $orange-light;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    margin-right: 0.7rem;
+    background-color: $orange;
+  }
 }

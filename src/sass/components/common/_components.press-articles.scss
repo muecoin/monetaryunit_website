@@ -6,7 +6,7 @@ $press-articles-theme-color: $green-light;
   //color: $press-articles-text-color;
   &__container {
     @extend %container-row;
-    @extend %module-top-bottom-padding-style;
+    @extend %module-top-bottom-padding-equal-style;
   }
   &__heading {
     @extend %heading-1-style-white-center;
@@ -35,7 +35,7 @@ $press-articles-theme-color: $green-light;
     @include respond-to(medium) {
       max-width: 230px;
       width: 50%;
-    };
+    }
 
     @extend %icon-bottom-padding-1;
   }
