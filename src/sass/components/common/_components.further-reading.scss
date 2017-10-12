@@ -6,7 +6,7 @@ $further-reading-theme-color: $muted-blue;
 
   &__container {
     @extend %container-row;
-    @extend %module-top-bottom-padding-style;
+    @extend %module-top-bottom-padding-equal-style;
   }
   &__heading {
     @extend %heading-1-style-white-center;
@@ -26,12 +26,20 @@ $further-reading-theme-color: $muted-blue;
     max-width: 300px;
     margin: 0 auto 40px auto;
     text-align: center;
+
+    @include respond-to(small) {
+      margin-bottom: 0;
+    }
   }
   &__sub-heading {
     @extend %heading-3-style-white-center;
   }
   &__description {
     @extend %paragraph-s-style-white-center;
+
+    @include respond-to(small) {
+      margin-bottom: 0;
+    }
   }
 
   &__learn-more-btn {

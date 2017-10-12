@@ -22,10 +22,15 @@ $press-articles-theme-color: $green-light;
       margin-bottom: 0;
     }
   }
+
   &__article {
     max-width: 300px;
     margin: 0 auto 40px auto;
     text-align: center;
+
+    @include respond-to(small) {
+      margin-bottom: 0;
+    }
   }
 
   &__article-logo {
@@ -45,6 +50,10 @@ $press-articles-theme-color: $green-light;
   }
   &__description {
     @extend %paragraph-s-style-white-center;
+
+    @include respond-to(small) {
+      margin-bottom: 0;
+    }
   }
   &__visit-btn {
     @extend %button-style-1-small;

@@ -28,6 +28,7 @@ $header-bg-color: $black-1;
   &__logo {
     @extend .nav__logo;
     margin-top: 13px;
+
     @include respond-to(medium){
       margin-top: 0;
       top: 9px;
@@ -71,16 +72,14 @@ $header-bg-color: $black-1;
   }
   &__link {
     @extend .nav__link;
+
     @include respond-to(medium) {
       padding: 1.1em 0.75em 1.1em 1.1em;
     }
+
     @include respond-to(medium-large) {
       padding-right: 1.1em;
     }
-
-
-
-
   }
 }
 
@@ -187,7 +186,6 @@ $header-bg-color: $black-1;
       height: calc(100% / 6);
       min-height: 50px;
       position: relative;
-      // opacity: 0;
     }
 
     &__link {

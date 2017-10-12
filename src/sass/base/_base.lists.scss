@@ -1,39 +1,34 @@
 $unordered-list-padding-top-left-spacing-small: $spacing-scale-1-small;
 $unordered-list-padding-top-left-spacing-medium: $spacing-scale-1-medium;
-$unordered-list-padding-top-left-spacing-large: $spacing-scale-1-large;
-
-$unordered-list-padding-top-left-spacing-small: $spacing-scale-1-small;
-$unordered-list-padding-top-left-spacing-medium: $spacing-scale-1-medium;
-$unordered-list-padding-top-left-spacing-large: $spacing-scale-1-large;
+$unordered-list-padding-top-left-spacing-large: 90px;
 
 $list-item-margin-top-spacing-small: 14px;
 $list-item-margin-top-spacing-medium: $spacing-scale-1-small;
 $list-item-margin-top-spacing-large: $spacing-scale-1-small;
+
+$custom-breakpoint-ul-left-padding-begins: 530px;
 
 
 %unordered-list {
   margin: 0;
   list-style-position: inside;
   padding-top: $unordered-list-padding-top-left-spacing-small;
-  padding-left: $unordered-list-padding-top-left-spacing-small;
+  padding-left: 0;
   padding-bottom: $unordered-list-padding-top-left-spacing-small;
+
+  @media all and (min-width: $custom-breakpoint-ul-left-padding-begins) {
+    padding-left: $unordered-list-padding-top-left-spacing-small;
+  }
 
   @include respond-to(medium) {
     padding-top: $unordered-list-padding-top-left-spacing-medium;
     padding-left: $unordered-list-padding-top-left-spacing-medium * 2;
     padding-bottom: $unordered-list-padding-top-left-spacing-medium;
   }
-
-  @include respond-to(large) {
-    padding-top: $unordered-list-padding-top-left-spacing-large;
-    padding-left: $unordered-list-padding-top-left-spacing-large * 2;
-    padding-bottom: $unordered-list-padding-top-left-spacing-large;
-  }
 }
 
 %unordered-list-remove-padding {
   margin: 0;
-  padding: 0;
 }
 
 %list-item {
@@ -76,6 +71,10 @@ $list-item-margin-top-spacing-large: $spacing-scale-1-small;
 %nested-list {
   margin-top: 12px;
   padding-left: 35px;
+
+  @include respond-to(medium) {
+    margin-top: 20px;
+  }
 }
 
 %child-list-item {
