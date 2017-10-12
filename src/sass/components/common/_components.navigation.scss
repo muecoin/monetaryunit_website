@@ -20,6 +20,7 @@ $button-width: 35px;
     padding-top: 18px;
     @include respond-to(medium) {
       padding-top: 33px;
+      float: right;
     }
   }
   &__list-item {
@@ -230,9 +231,17 @@ $button-width: 35px;
       margin: 0;
       overflow: auto;
       padding-left: 5.5em;
+      float: right;
     }
     &__list-item {
       list-style-type: none;
+      display: table-cell;
+      vertical-align: middle;
+      float:left;
+
+      &:last-child > .nav__link {
+        padding-right: 0;
+      }
     }
     &__link {
       padding: 1.1em;
