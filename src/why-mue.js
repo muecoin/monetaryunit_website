@@ -12,8 +12,8 @@ import Footer from './components/common/footer';
 export default () => {
   return renderComponent(
     <Layout className="layout">
-        <Hero title="Why MUE?" subheading="Brief description here please tom if possible" containerClassName="hero__container">
-          <p className="hero__lead-intro">Or here too/instead if you wanted to write something a bit longer.</p>
+        <Hero title="Why MUE?" subheading="What makes MUE different from your average crypto currency?" containerClassName="hero__container">
+          <p className="hero__lead-intro">Here is an overview of the project and a breakdown of what MUE is all about.</p>
         </Hero>
 
         <WrittenContent containerThemeModifier="--color-theme--2">
