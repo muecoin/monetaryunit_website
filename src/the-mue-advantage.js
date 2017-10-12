@@ -80,8 +80,8 @@ export default () => {
           <p>MonetaryUnit is about getting people involved.</p>
           <p>We are not an elitist group of academics or high net worth individuals.</p>
           <p>As a group, we want to grow the project, involve and help people about MUE, and get a grass roots growth not just on the internet, but also on the high street, with people carrying around MUE coupons, or having MUE wallets installed on their phone.</p>
-          <p>The coin is not being marketed as a "scarce commodity" like so many other cryptocurrencies. The worth of the project comes from allowing people to get involved at any time. It is attainable, and if you don’t want to buy any, just ask the community and someone will just send you some to use and test :)</p>
-          <p>We don’t have any kind of "halving" of coin production.</p>
+          <p>The coin is not being marketed as a "scarce commodity" like so many other cryptocurrencies. The worth of the project comes from allowing people to get involved at any time. It is attainable, and if you don't want to buy any, just ask the community and someone will just send you some to use and test :)</p>
+          <p>We don't have any kind of "halving" of coin production.</p>
           <p>Inflation is going to be about 3% per year, which promotes the use and distribution of MUE.</p>
           <p>40 MUE every 40 seconds from now for at least the next 130 years.</p>
           <p>There is time for you get involved, and we welcome all who do.</p>
