@@ -23,7 +23,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.muex.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-8">
+                        <div className="why-choose-mue__progress-bar-fill--project-2">
                             <span className="why-choose-mue__progress-percent">80%</span>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.muegs.com</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-8">
+                        <div className="why-choose-mue__progress-bar-fill--project-2">
                             <span className="why-choose-mue__progress-percent">80%</span>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.webwallets.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-1">
+                        <div className="why-choose-mue__progress-bar-fill--project-9">
                             <span className="why-choose-mue__progress-percent">10%</span>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.coinbuy.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-1">
+                        <div className="why-choose-mue__progress-bar-fill--project-9">
                             <span className="why-choose-mue__progress-percent">10%</span>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.cashchat.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-2">
+                        <div className="why-choose-mue__progress-bar-fill--project-8">
                             <span className="why-choose-mue__progress-percent">20%</span>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">GS Points</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-2">
+                        <div className="why-choose-mue__progress-bar-fill--project-8">
                             <span className="why-choose-mue__progress-percent">20%</span>
                         </div>
                     </div>
