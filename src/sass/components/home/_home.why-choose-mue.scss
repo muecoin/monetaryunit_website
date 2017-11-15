@@ -136,15 +136,15 @@ $bar-fill-top-offset-small: -4px;
     }
     &--project-2 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-95-progress;
+      width: $project-80-progress;
     }
     &--project-3 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-75-progress;
+      width: $project-10-progress;
     }
     &--project-4 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-35-progress;
+      width: $project-15-progress;
     }
     &--project-5 {
       @extend .why-choose-mue__progress-bar-fill;
@@ -152,7 +152,7 @@ $bar-fill-top-offset-small: -4px;
     }
     &--project-6 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-35-progress;
+      width: $project-25-progress;
     }
     &--project-7 {
       @extend .why-choose-mue__progress-bar-fill;
