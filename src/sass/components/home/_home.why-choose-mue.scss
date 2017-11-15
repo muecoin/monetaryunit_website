@@ -132,37 +132,41 @@ $bar-fill-top-offset-small: -4px;
 
     &--project-1 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-80-progress;
+      width: $project-10-progress;
     }
     &--project-2 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-80-progress;
+      width: $project-20-progress;
     }
     &--project-3 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-10-progress;
+      width: $project-30-progress;
     }
     &--project-4 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-15-progress;
+      width: $project-40-progress;
     }
     &--project-5 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-25-progress;
+      width: $project-50-progress;
     }
     &--project-6 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-25-progress;
+      width: $project-60-progress;
     }
     &--project-7 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-15-progress;
+      width: $project-70-progress;
     }
     &--project-8 {
       @extend .why-choose-mue__progress-bar-fill;
-      width: $project-10-progress;
+      width: $project-80-progress;
     }
     &--project-9 {
+      @extend .why-choose-mue__progress-bar-fill;
+      width: $project-90-progress;
+    }
+    &--project-10 {
       @extend .why-choose-mue__progress-bar-fill;
       width: $project-100-progress;
     }

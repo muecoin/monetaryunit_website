@@ -23,7 +23,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.muex.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-1">
+                        <div className="why-choose-mue__progress-bar-fill--project-8">
                             <span className="why-choose-mue__progress-percent">80%</span>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.muegs.com</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-2">
+                        <div className="why-choose-mue__progress-bar-fill--project-8">
                             <span className="why-choose-mue__progress-percent">80%</span>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.webwallets.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-3">
+                        <div className="why-choose-mue__progress-bar-fill--project-1">
                             <span className="why-choose-mue__progress-percent">10%</span>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.coinbuy.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-4">
-                            <span className="why-choose-mue__progress-percent">15%</span>
+                        <div className="why-choose-mue__progress-bar-fill--project-1">
+                            <span className="why-choose-mue__progress-percent">10%</span>
                         </div>
                     </div>
                     <p className="why-choose-mue__description">Buy &amp; sell dozens of cryptocurrencies in a P2P
@@ -65,8 +65,8 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">www.cashchat.io</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-5">
-                            <span className="why-choose-mue__progress-percent">25%</span>
+                        <div className="why-choose-mue__progress-bar-fill--project-2">
+                            <span className="why-choose-mue__progress-percent">20%</span>
                         </div>
                     </div>
                     <p className="why-choose-mue__description">Earn rewards for posting quality content and engaging in
@@ -75,8 +75,8 @@ export default () => (
                 <div className="why-choose-mue__project-progress-list">
                     <h2 className="why-choose-mue__sub-heading">GS Points</h2>
                     <div className="why-choose-mue__progress-bar">
-                        <div className="why-choose-mue__progress-bar-fill--project-6">
-                            <span className="why-choose-mue__progress-percent">25%</span>
+                        <div className="why-choose-mue__progress-bar-fill--project-2">
+                            <span className="why-choose-mue__progress-percent">20%</span>
                         </div>
                     </div>
                     <p className="why-choose-mue__description">Earn "Go Shopping" reward points to spend throughout the
