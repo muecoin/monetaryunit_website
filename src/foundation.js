@@ -12,7 +12,7 @@ import Footer from './components/common/footer';
 export default () => {
   return renderComponent(
     <Layout className="layout">
-        <Hero title="MonetaryUnit Foundation" subheading="Meet the pros" containerClassName="hero__container">
+        <Hero title="MonetaryUnit Foundation" containerClassName="hero__container">
         </Hero>
 
         <PressArticles />
