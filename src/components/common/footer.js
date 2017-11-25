@@ -79,7 +79,7 @@ export default () => (
           <h2 className="footer__sitemap-category">Other</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
-              <a className="footer__sitemap-link" href="http://monetaryunitfoundation.org/" target="_blank">Foundation</a>
+              <a className="footer__sitemap-link" href="/foundation.html" target="_blank">Foundation</a>
             </li>
             <li className="footer__sitemap-item">
               <a className="footer__sitemap-link" href="https://www.zazzle.co.uk/monetaryunit/products" target="_blank">UK Shop</a>
