@@ -20,7 +20,7 @@ export default ({title = "Foundation"}) => (
 	<div className="press-articles__article-item">
           <div className="press-articles__article">
             <h1 className="press-articles__sub-heading">Bbobb</h1>
-            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" target="_blank">Profile</a>
+            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" onclick="return false;" target="_blank">Profile</a>
             <b><p className="press-articles__description">Started in crypto:</p></b> October 2012
 <b><p className="press-articles__description">Current industry sector:</p></b> ICT
 <b><p className="press-articles__description">Previous industry experience:</p></b> Tech ops, PM, BDM
@@ -56,7 +56,7 @@ export default ({title = "Foundation"}) => (
 	<div className="press-articles__article-item">
           <div className="press-articles__article">
             <h1 className="press-articles__sub-heading">Mike.N</h1>
-            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" target="_blank">Profile</a>
+            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" onclick="return false;" target="_blank">Profile</a>
             <b><p className="press-articles__description">Started in crypto:</p></b> May 2013
 <b><p className="press-articles__description">Current industry sector:</p></b> Security
 <b><p className="press-articles__description">Previous industry experience:</p></b> -
@@ -76,7 +76,7 @@ export default ({title = "Foundation"}) => (
         <div className="press-articles__article-item">
           <div className="press-articles__article">
             <h1 className="press-articles__sub-heading">Roslinpl</h1>
-            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" target="_blank">Profile</a>
+            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" onclick="return false;" target="_blank">Profile</a>
             <b><p className="press-articles__description">Started in crypto:</p></b> November 2013
 <b><p className="press-articles__description">Current industry sector:</p></b> I.T
 <b><p className="press-articles__description">Previous industry experience:</p></b> I.T
@@ -86,7 +86,7 @@ export default ({title = "Foundation"}) => (
 	<div className="press-articles__article-item">
           <div className="press-articles__article">
             <h1 className="press-articles__sub-heading">Sojuz88</h1>
-            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" target="_blank">Profile</a>
+            <a className="press-articles__visit-btn" href="INSERT SOCIAL MEDIA OR ANYTHING" onclick="return false;" target="_blank">Profile</a>
             <b><p className="press-articles__description">Started in crypto:</p></b> Autumn 2015
 <b><p className="press-articles__description">Current industry sector:</p></b> Web App Development
 <b><p className="press-articles__description">Previous industry experience:</p></b> -
