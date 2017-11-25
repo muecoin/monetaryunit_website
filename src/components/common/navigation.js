@@ -30,7 +30,7 @@ export default ({ block = "nav", fixed = false }) => (
               <a className={`${block}__link`} href="/#join-the-community" data-jump-to=".join-the-community">Community</a>
             </li>
             <li className={`${block}__list-item`}>
-              <a className={`${block}__link`} href="https://monetaryunitfoundation.org/" target="_blank">Foundation</a>
+              <a className={`${block}__link`} href="/foundation.html" target="_blank">Foundation</a>
             </li>
             <li className={`${block}__list-item`}>
               <a className={`${block}__link`} href="/frequently-asked-questions.html">FAQ</a>
