@@ -10,7 +10,7 @@ export default () => (
             </a>
           </dt>
           <dd className="faq-accordion-menu__item faq-accordion-menu__item--is-collapsed" id="accordion1" aria-hidden="true">
-            <p className="faq-accordion-menu__paragraph">You can get MUE from <a className="faq-accordion-menu__link" href="https://bittylicious.com/" target="_blank">Bittylicious</a> &amp; <a className="faq-accordion-menu__link" href="https://bittrex.com/Market/?MarketName=BTC-MUE" target="_blank">Bittrex</a></p>
+            <p className="faq-accordion-menu__paragraph">You can get MUE from <a className="faq-accordion-menu__link" href="https://bittylicious.com/" target="_blank">Bittylicious</a> &amp; <a className="faq-accordion-menu__link" href="https://bittrex.com/Market/?MarketName=BTC-MUE" target="_blank">Bittrex</a> &amp; <a className="faq-accordion-menu__link" href="https://www.coinexchange.io/market/MUE/BTC" target="_blank">CoinExchange</a></p>
           </dd>
           <dt className="faq-accordion-menu__define-term">
             <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" data-accordion-trigger className="faq-accordion-menu__title">
