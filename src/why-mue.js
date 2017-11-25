@@ -24,7 +24,7 @@ export default () => {
             <li>Decentralised governance allows stakeholders to vote democratically</li>
             <li>Efficient mining hardware can be used</li>
             <li>No ignored or delayed transactions</li>
-            <li><a href="http://www.monetaryunitfoundation.org/" target="_blank">Foundation team</a></li>
+            <li><a href="/foundation.html" target="_blank">Foundation team</a></li>
             <li>Development team of 15+</li>
             <li>Well established, launched July 2014</li>
             <li>Consistently growing price &amp; network security</li>
