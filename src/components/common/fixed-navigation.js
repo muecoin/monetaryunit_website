@@ -30,7 +30,10 @@ export default () => (
               <a className="fixed-nav__link" href="/#join-the-community" data-jump-to=".join-the-community">Community</a>
             </li>
             <li className="fixed-nav__list-item">
-              <a className="fixed-nav__link" href="https://monetaryunitfoundation.org/" target="_blank">Foundation</a>
+              <a className="fixed-nav__link" href="/foundation.html" target="_blank">Foundation</a>
+            </li>
+            <li className="fixed-nav__list-item">
+              <a className="fixed-nav__link" href="/directors.html" target="_blank">Directors</a>
             </li>
             <li className="fixed-nav__list-item">
               <a className="fixed-nav__link" href="/frequently-asked-questions.html">FAQ</a>
