@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({title = "Foundation"}) => (
-    <div className="press-articles" id="press-articles">
+    <div className="foundation" id="foundation">
         <section className="press-articles__container">
 
 
