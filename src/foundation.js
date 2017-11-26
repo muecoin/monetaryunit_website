@@ -12,7 +12,7 @@ import Footer from './components/common/footer';
 export default () => {
   return renderComponent(
     <Layout className="layout">
-        <Hero title="MonetaryUnit Foundation" containerClassName="hero__container">
+        <Hero title="MonetaryUnit Foundation" subheading="The MonetaryUnit Foundation was set up to help guide and support the sustained growth of the MonetaryUnit (MUE) cryptocurrency and surrounding ecosystem." containerClassName="hero__container">
         </Hero>
 
         <PressArticles />
