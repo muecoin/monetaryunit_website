@@ -32,6 +32,9 @@ export default ({ block = "nav", fixed = false }) => (
             <li className={`${block}__list-item`}>
               <a className={`${block}__link`} href="/foundation.html" target="_blank">Foundation</a>
             </li>
+	    <li className={`${block}__list-item`}>
+              <a className={`${block}__link`} href="/directors.html" target="_blank">Directors</a>
+            </li>
             <li className={`${block}__list-item`}>
               <a className={`${block}__link`} href="/frequently-asked-questions.html">FAQ</a>
             </li>
