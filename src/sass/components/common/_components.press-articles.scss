@@ -1,4 +1,5 @@
 $press-articles-theme-color: $green-light;
+$foundation-theme-color: $tree-poppy;
 
 .press-articles {
   @extend %container-full;
@@ -70,4 +71,9 @@ $press-articles-theme-color: $green-light;
       margin-bottom: 0;
     }
   }
+}
+
+.foundation {
+  @extend %container-full;
+  background-color: $foundation-theme-color;
 }
