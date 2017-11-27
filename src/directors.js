@@ -12,7 +12,7 @@ import Footer from './components/common/footer';
 export default () => {
     return renderComponent(
         <Layout className="layout">
-            <Hero title="Board of Directors" containerClassName="hero__container">
+            <Hero title="Board of Directors" subheading="The board of directors are the driving force behind the commercial success of MUE and the surrounding ecosystem.  Experienced self starters, investors and experts in their fields, they will bring to bear their formidable skills to ensure the long term success of MonetaryUnit" containerClassName="hero__container">
                 <WrittenContent>
                     <ul>
                         <li>Founder / Director of International Business Development (inc. UK)- Bizzyb</li>
