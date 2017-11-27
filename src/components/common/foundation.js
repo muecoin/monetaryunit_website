@@ -21,8 +21,7 @@ export default ({title = "Foundation"}) => (
                 <div className="press-articles__article-item">
                     <div className="press-articles__article">
                         <h1 className="press-articles__sub-heading">Bbobb</h1>
-                        <a className="press-articles__visit-btn" href="https://twitter.com/Cryptophi"
-                           onclick="return false;" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=563625" target="_blank">BitcoinTalk</a>
+                        <a className="press-articles__visit-btn" href="https://twitter.com/Cryptophi" onclick="return false;" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=563625" target="_blank">BitcoinTalk</a> <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/awzzwa/" target="_blank">in</a>
                         <b><p className="press-articles__description">Started in crypto:</p></b> October 2012
                         <b><p className="press-articles__description">Current industry sector:</p></b> ICT
                         <b><p className="press-articles__description">Previous industry experience:</p></b> Tech ops,
