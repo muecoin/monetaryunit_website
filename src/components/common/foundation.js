@@ -71,6 +71,17 @@ export default ({title = "Foundation"}) => (
 
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
+                            <h1 className="press-articles__sub-heading">NotSoFast</h1>
+                            <a className="press-articles__visit-btn" href="https://twitter.com/notsofast"
+                               onclick="return false;" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=339189" target="_blank">BitcoinTalk</a>
+                            <b><p className="press-articles__description">Started in crypto:</p></b> 2014
+                            <b><p className="press-articles__description">Current industry sector:</p></b> Independent Advisor/Analyst
+                            <b><p className="press-articles__description">Previous industry experience:</p></b> Independent mining, Trading, and related research
+                        </div>
+                    </div>
+
+                    <div className="press-articles__article-item">
+                        <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">Pjcltd</h1>
                             <a className="press-articles__visit-btn" href="https://twitter.com/mphostinguk"
                                target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=151913" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/paul-jenkinson-28482974" target="_blank">in</a>
@@ -92,16 +103,7 @@ export default ({title = "Foundation"}) => (
                         </div>
                     </div>
 
-                    <div className="press-articles__article-item">
-                        <div className="press-articles__article">
-                            <h1 className="press-articles__sub-heading">NotSoFast</h1>
-                            <a className="press-articles__visit-btn" href="https://twitter.com/notsofast"
-                               onclick="return false;" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=339189" target="_blank">BitcoinTalk</a>
-                            <b><p className="press-articles__description">Started in crypto:</p></b> 2014
-                            <b><p className="press-articles__description">Current industry sector:</p></b> Independent Advisor/Analyst
-                            <b><p className="press-articles__description">Previous industry experience:</p></b> Independent mining, Trading, and related research
-                        </div>
-                    </div>
+
                 </div>
 
 
