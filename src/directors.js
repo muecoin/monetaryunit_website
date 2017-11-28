@@ -62,12 +62,11 @@ export default () => {
                             <h1 className="press-articles__sub-heading">C4</h1>
                             <h4>Director of Project Controls</h4>
                             <br/>
-                            <a className="press-articles__visit-btn" href="https://twitter.com/c44c_" target="_blank">Twitter</a>
-                            <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=122406" target="_blank">BitcoinTalk</a>
+                            <a className="press-articles__visit-btn" href="https://twitter.com/c44c_" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=122406" target="_blank">BitcoinTalk</a>
                             <b><p className="press-articles__description">Started in crypto:</p></b> April-May 2013
                             <b><p className="press-articles__description">Current industry sector:</p></b> Mechanical
                             Engineering and Consulting
-                            <b><p className="press-articles__description">Previous industry experience:</p></b> Mech. Eng
+                            <b><p className="press-articles__description">Previous industry experience:</p></b> Mech. Eng.
                         </div>
                     </div>
 
@@ -84,27 +83,27 @@ export default () => {
                             <b><p className="press-articles__description">Previous industry experience:</p></b> -
                         </div>
                     </div>
-                    <div className="press-articles__article">
+                    <div className="press-articles__article-item">
+                        <div className="press-articles__article">
                         <h1 className="press-articles__sub-heading">Pjcltd</h1>
                         <h4>Director of Value Added Services</h4>
                         <br/>
-                        <a className="press-articles__visit-btn" href="https://twitter.com/mphostinguk" target="_blank">Twitter</a>
-                        <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=151913" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/paul-jenkinson-28482974" target="_blank">in</a>
+                        <a className="press-articles__visit-btn" href="https://twitter.com/mphostinguk" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=151913" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/paul-jenkinson-28482974" target="_blank">in</a>
                         <b><p className="press-articles__description">Started in crypto:</p></b> June 2013
                         <b><p className="press-articles__description">Current industry sector:</p></b> I.T. Hosting,
                         SIP, 3CX
                         <b><p className="press-articles__description">Previous industry experience:</p></b> -
+                    </div>
                     </div>
 
                     <h1 className="press-articles__heading"></h1>
 
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
-                            <h1 className="press-articles__sub-heading">Bbobb</h1>
+                            <h1 className="press-articles__sub-heading">BBoBB</h1>
                             <h4>Director of Operations & Software Architecture</h4>
                             <br/>
-                            <a className="press-articles__visit-btn" href="https://twitter.com/Cryptophi" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=563625" target="_blank">BitcoinTalk</a>
-                            <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/awzzwa/" target="_blank">in</a>
+                            <a className="press-articles__visit-btn" href="https://twitter.com/Cryptophi" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=563625" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/awzzwa/" target="_blank">in</a>
                             <b><p className="press-articles__description">Started in crypto:</p></b> October 2012
                             <b><p className="press-articles__description">Current industry sector:</p></b> ICT
                             <b><p className="press-articles__description">Previous industry experience:</p></b> Tech ops,
