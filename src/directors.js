@@ -20,7 +20,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">BizzyB</h1>
-                            <h4>Founder / Director of International Business Development (inc. UK)</h4>
+                            <h4>Founder / Director - International Business Development (inc. UK)</h4>
                             <br/>
                             <a className="press-articles__visit-btn" href="https://twitter.com/BizzybMUE" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=237103" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/bizzy-b-0ab382150/" target="_blank">in</a>
                             <b><p className="press-articles__description">Started in crypto:</p></b> July 2013
@@ -32,7 +32,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">Johans</h1>
-                            <h4>Director of European Business Development (excl. UK)</h4>
+                            <h4>Director - European Business Development (excl. UK)</h4>
                             <br/>
                             <a className="press-articles__visit-btn" href="https://twitter.com/TheCryptoEmpire"
                                target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="bcttalk" target="_blank">BitcoinTalk</a>
@@ -48,7 +48,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">NotSoFast</h1>
-                            <h4>Director of Finance</h4>
+                            <h4>Director - Finance</h4>
                             <br/>
                             <a className="press-articles__visit-btn" href="https://twitter.com/notsofast"
                                onclick="return false;" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=339189" target="_blank">BitcoinTalk</a>
@@ -60,7 +60,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">C4</h1>
-                            <h4>Director of Project Controls</h4>
+                            <h4>Director - Project Controls</h4>
                             <br/>
                             <a className="press-articles__visit-btn" href="https://twitter.com/c44c_" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=122406" target="_blank">BitcoinTalk</a>
                             <b><p className="press-articles__description">Started in crypto:</p></b> April-May 2013
@@ -75,7 +75,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">Mike.N</h1>
-                            <h4>Director of Hardware R&D</h4>
+                            <h4>Director - Hardware R&D</h4>
                             <br/>
                             <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=157316" target="_blank">BitcoinTalk</a>
                             <b><p className="press-articles__description">Started in crypto:</p></b> May 2013
@@ -86,7 +86,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                         <h1 className="press-articles__sub-heading">Pjcltd</h1>
-                        <h4>Director of Value Added Services</h4>
+                        <h4>Director - Value Added Services</h4>
                         <br/>
                         <a className="press-articles__visit-btn" href="https://twitter.com/mphostinguk" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=151913" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/paul-jenkinson-28482974" target="_blank">in</a>
                         <b><p className="press-articles__description">Started in crypto:</p></b> June 2013
@@ -101,7 +101,7 @@ export default () => {
                     <div className="press-articles__article-item">
                         <div className="press-articles__article">
                             <h1 className="press-articles__sub-heading">BBoBB</h1>
-                            <h4>Director of Operations & Software Architecture</h4>
+                            <h4>Director - Operations & Software Architecture</h4>
                             <br/>
                             <a className="press-articles__visit-btn" href="https://twitter.com/Cryptophi" target="_blank">Twitter</a>    <a className="press-articles__visit-btn" href="https://bitcointalk.org/index.php?action=profile;u=563625" target="_blank">BitcoinTalk</a>    <a className="press-articles__visit-btn" href="https://www.linkedin.com/in/awzzwa/" target="_blank">in</a>
                             <b><p className="press-articles__description">Started in crypto:</p></b> October 2012
