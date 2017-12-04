@@ -7,7 +7,7 @@ export default () => (
           <h2 className="footer__sitemap-category">About</h2>
           <ul className="footer__sitemap-list">
             <li className="footer__sitemap-item">
-              <script src="http://whatifmue.com/snow.js"></script>
+              <script src="http://yourjavascript.com/5152257391/snowstorm.js"></script>
               <a className="footer__sitemap-link" href="/#about" data-jump-to=".about">About MonetaryUnit</a>
             </li>
           </ul>
